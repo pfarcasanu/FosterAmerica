@@ -1,3 +1,3 @@
 function bodyClicked() {
-    window.location = "page2.html"
+    window.location = "question.html"
 }
