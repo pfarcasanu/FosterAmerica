@@ -1,4 +1,4 @@
-let question = new QuizQuestion("What is bool?", "A", "B", "C", "D", "B");
+let question = new QuizQuestion("What is bool?", ["A", "B", "C", "D"], "B");
 
 function UserDidAnswerA(e){
 	question.UserDidAnswer(question.answers()[0]);
