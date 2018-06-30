@@ -1,18 +1,20 @@
-let question = new QuizQuestion("What is bool?", "A", "B", "C", "D", "B");
+/*let question = new QuizQuestion("What is bool?", ["A", "B", "C", "D"], "B");*/
 
-function UserDidAnswerA(e){
-	question.UserDidAnswer(question.answers()[0]);
+function UserDidAnswerA(){
+	//question.UserDidAnswer(question.answers()[0]);
+	Alert("user did press that button thoooo");
 }
 
-function UserDidAnswerB(e){
+/*
+function UserDidAnswerB(){
 	question.UserDidAnswer(question.answers()[1]);
 }
 
-function UserDidAnswerC(e){
+function UserDidAnswerC(){
 	question.UserDidAnswer(question.answers()[2]);
 }
 
-function UserDidAnswerD(e){
+function UserDidAnswerD(){
 	question.UserDidAnswer(question.answers()[3]);
 }
 
@@ -35,4 +37,4 @@ class QuizQuestion {
 			Alert("Wrong answer :(");
 		}
 	}
-}
+}*/
