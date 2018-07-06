@@ -1,0 +1,12 @@
+body{
+    background-image: url("levelselect.png");
+}
+
+div{
+ text-align: center;
+ vertical-align: middle;
+ font-size: 300%;
+ max-width: 100%;
+ height: 50%;
+ background-color: green;
+}
