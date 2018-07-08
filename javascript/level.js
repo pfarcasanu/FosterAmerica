@@ -1,5 +1,5 @@
 function fadeOut() {
-  document.getElementById('button1').fadeOut()
+  document.getElementById('button1').style.display = "none";
 }
 
 function closeDiv2() {
@@ -7,7 +7,7 @@ function closeDiv2() {
 }
 
 function closeDiv3() {
-  document.getElementById('button3').class = ".hidden";
+  document.getElementById('button3').style.display = "none";
 }
 
 function closeDiv4() {
