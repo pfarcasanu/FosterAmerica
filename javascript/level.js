@@ -24,6 +24,13 @@ function zero_opacity(e){
     targ=e.srcElement;
     targID = targ.id;
     document.getElementById(targID).style.opacity = 0;
-
     window.open('question.html', '_blank');
+    /*
+    opac = document.getElementById(targID).style.opacity
+    if()  opac;
+      return
+    else;
+      document.getElementById(targID).style.opacity = 0;
+      window.open('question.html', '_blank');
+      */
 }
