@@ -22,4 +22,9 @@ function closeDiv6() {
   document.getElementById('button6').style.display = "none";
 }
 
+function zeroopacity(){
+  document.getElementById('button1').style.opacity = 0;
+}
+
+
 
