@@ -1,11 +1,11 @@
 (function() {
   const myQuestions = [
     {
-      question: "Who is the strongest?",
+      question: "Question 1?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "Answer A",
+        b: "Answer B",
+        c: "Answer C"
       },
       correctAnswer: "c"
     }/*,
