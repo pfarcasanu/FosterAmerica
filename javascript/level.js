@@ -1,30 +1,21 @@
-function closeDiv1() {
-  document.getElementById('button1').style.display = "none";
+
+function zeroopacity1(){
+  document.getElementById("button1").style.opacity = 0;
 }
 
-function closeDiv2() {
-  document.getElementById('button2').style.display = "none";
+function zeroopacity2(){
+  document.getElementById("button2").style.opacity = 0;
 }
 
-function closeDiv3() {
-  document.getElementById('button3').style.display = "none";
+function zeroopacity3(){
+  document.getElementById("button3").style.opacity = 0;
 }
-
-function closeDiv4() {
-  document.getElementById('button4').style.display = "none";
+function zeroopacity4(){
+  document.getElementById("button4").style.opacity = 0;
 }
-
-function closeDiv5() {
-  document.getElementById('button5').style.display = "none";
+function zeroopacity5(){
+  document.getElementById("button5").style.opacity = 0;
 }
-
-function closeDiv6() {
-  document.getElementById('button6').style.display = "none";
+function zeroopacity6(){
+  document.getElementById("button6").style.opacity = 0;
 }
-
-function zeroopacity(){
-  document.getElementById('button1').style.opacity = 0;
-}
-
-
-
