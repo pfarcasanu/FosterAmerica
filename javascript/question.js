@@ -66,6 +66,7 @@
 
   function showResults() {
     // gather answer containers from our quiz
+    window.close();
     const answerContainers = quizContainer.querySelectorAll(".answers");
 
     // keep track of user's answers
