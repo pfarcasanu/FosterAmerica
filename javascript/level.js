@@ -1,5 +1,4 @@
-
-function zeroopacity1(){
+/*function zeroopacity1(){
   document.getElementById("button1").style.opacity = 0;
 }
 
@@ -18,4 +17,13 @@ function zeroopacity5(){
 }
 function zeroopacity6(){
   document.getElementById("button6").style.opacity = 0;
+}*/
+
+function zero_opacity(e){
+	var targ;
+    targ=e.srcElement;
+    targID = targ.id;
+    document.getElementById(targID).style.opacity = 0;
+
+    window.open('question.html', '_blank');
 }
