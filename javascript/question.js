@@ -66,8 +66,8 @@
 
   function showResults() {
     // gather answer containers from our quiz
-    window.close();
-    const answerContainers = quizContainer.querySelectorAll(".answers");
+    //window.location = 'rightanswer.html';
+   const answerContainers = quizContainer.querySelectorAll(".answers");
 
     // keep track of user's answers
     let numCorrect = 0;
@@ -85,7 +85,8 @@
         numCorrect++;
 
         // color the answers green
-        answerContainers[questionNumber].style.color = "lightgreen";
+        window.location = 'rightanswer.html'
+        //answerContainers[questionNumber].style.color = "lightgreen";
       } else {
         // if answer is wrong or blank
         // color the answers red
@@ -94,7 +95,8 @@
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    //resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = 'Try Again!'
   }
 
   function showSlide(n) {
