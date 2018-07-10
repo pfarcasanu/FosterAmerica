@@ -8,7 +8,7 @@
         c: "Answer C"
       },
       correctAnswer: "c"
-    }/*,
+    },
     {
       question: "What is the best site ever created?",
       answers: {
@@ -27,7 +27,7 @@
         d: "Minding his own business, so stop asking"
       },
       correctAnswer: "d"
-    }*/
+    }
   ];
 
   function buildQuiz() {
