@@ -1,10 +1,20 @@
+@keyframes example {
+    0%   {background-color:goldenrod; left:0px; top:0px;}
+    25%  {background-color:lavender; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:fuchsia; left:0px; top:200px;}
+    100% {background-color:goldenrod; left:0px; top:0px;}
+  }
+
 body{
   max-width: 1000px;
   margin:auto;
-  background-color: lavender;
   text-align: center;
   padding-top: 150px;
   font-size: 150%;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 
 
   }
