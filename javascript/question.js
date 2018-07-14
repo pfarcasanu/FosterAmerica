@@ -8,26 +8,25 @@
         c: "Answer C"
       },
       correctAnswer: "c"
-    },
+    }/*,
     {
-      question: "What is the best site ever created?",
+      question: "Question 2?",
       answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
+        a: "Answer A",
+        b: "Answer B",
+        c: "Answer C"
       },
       correctAnswer: "c"
     },
     {
-      question: "Where is Waldo really?",
+      question: "Question 3",
       answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "Answer A",
+        b: "Answer B",
+        c: "Answer C"
       },
       correctAnswer: "d"
-    }
+    }*/
   ];
 
   function buildQuiz() {
