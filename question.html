@@ -4,6 +4,19 @@
 
 		<title>Foster Trivia</title>
 		<link rel="stylesheet" href="css/question.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          $.getJSON('data/questions.json',function(data){
+              console.log('success');
+              $.each(data.employees,function(i,emp){
+                  $('ul').append('<li>'+emp.firstName+' '+emp.lastName+'</li>');
+              });
+          }).error(function(){
+              console.log('error');
+          });
+      });
+    </script>
 
 	</head>
 	<body>
