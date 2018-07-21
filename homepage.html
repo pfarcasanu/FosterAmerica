@@ -6,15 +6,22 @@
 		<link rel="stylesheet" href="css/homepage.css">
 
 	</head>
-  
-	<body onmousedown="bodyClicked()">
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+     <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+   </div>
+   </div>
+	<body>
   		<h1>
   			Foster Trivia: Improve Your Foster IQ!
   		</h1>
-  		<p>
-  			Tap Anywhere to Play
+  		<p onmousedown="bodyClicked()">
+  			Tap Here to Play
   		</p>
-     <embed name="myMusic" loop="true" hidden="true" src="music/bensound-straight.mp3"></embed>
+     <!--embed name="myMusic" loop="true" hidden="true" src="music/bensound-straight.mp3"></embed-->
      
 
   		<script type="text/javascript" src="javascript/homepage.js">
