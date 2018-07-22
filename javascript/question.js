@@ -1,3 +1,20 @@
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    var q = "";
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            q =  c.substring(name.length, c.length);
+        }
+    }
+    if (q!= "") q = q.substring(q.length-1,q.length);
+    return parseInt(q);
+}
+
 (function() {
   const questions = [
     {
@@ -26,10 +43,38 @@
         c: "Answer C"
       },
       correctAnswer: "d"
+    },
+    {
+      question: "Question 4",
+      answers: {
+        a: "Answer A",
+        b: "Answer B",
+        c: "Answer C"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "Question 5",
+      answers: {
+        a: "Answer A",
+        b: "Answer B",
+        c: "Answer C"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "Question 6",
+      answers: {
+        a: "Answer A",
+        b: "Answer B",
+        c: "Answer C"
+      },
+      correctAnswer: "d"
     }
   ];
 
-  const myQuestions = [questions[checkCookie(questions.length)]];
+  console.log(getCookie("question"));
+  const myQuestions = [questions[getCookie("question")]];
   //const myQuestions = [questions[0]];
 
   function buildQuiz() {
