@@ -28,16 +28,21 @@ body{
    font-size: 200%;
    padding-top: 8%;
     color: gray;
-  }
+  }  
 
-  /* Dropdown Button */
+.menu {
+  height: 5%;
+  width: 5%;
+
+  
+}
+/* Dropdown Button */
 .dropbtn {
-    background-color: #3498DB;
-    color: white;
-    font-size: 100%;
-    float: right;
+    height: 5%;
+    width: 5%;
     border: none;
     cursor: pointer;
+    float: right;
 }
 
 /* Dropdown button on hover & focus */
@@ -58,21 +63,22 @@ body{
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    right: 0;
+    float: right;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
+
     color: black;
-    padding: 12px 16px;
+    padding: 5% 10%;
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {background-color: lavender}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
