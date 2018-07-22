@@ -1,5 +1,5 @@
 (function() {
-  const myQuestions = [
+  const questions = [
     {
       question: "Question 1?",
       answers: {
@@ -8,7 +8,7 @@
         c: "Answer C"
       },
       correctAnswer: "c"
-    }/*,
+    },
     {
       question: "Question 2?",
       answers: {
@@ -26,8 +26,11 @@
         c: "Answer C"
       },
       correctAnswer: "d"
-    }*/
+    }
   ];
+
+  const myQuestions = [questions[checkCookie(questions.length)]];
+  //const myQuestions = [questions[0]];
 
   function buildQuiz() {
     // we'll need a place to store the HTML output
