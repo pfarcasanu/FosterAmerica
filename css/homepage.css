@@ -7,10 +7,6 @@
   }
 
 body{
-  max-width: 1000px;
-  margin:auto;
-  text-align: center;
-  font-size: 150%;
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -18,10 +14,19 @@ body{
 
   }
   h1{
-    padding-top: 10%;
+    padding-top: 20%;
     color: midnightblue;
+    max-width: 1000px;
+    margin:auto;
+    text-align: center;
+    font-size: 300%;
   }
   p{
+    max-width: 1000px;
+   margin:auto;
+   text-align: center;
+   font-size: 200%;
+   padding-top: 8%;
     color: gray;
   }
 
@@ -30,7 +35,7 @@ body{
     background-color: #3498DB;
     color: white;
     font-size: 100%;
-    padding: 5%;
+    float: right;
     border: none;
     cursor: pointer;
 }
