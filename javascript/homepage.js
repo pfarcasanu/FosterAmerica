@@ -10,7 +10,10 @@ function myFunction() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (event.target.matches('.dropdown-content')) or (event.target.matches('.dropbtn')){
+    openDropdown.classList.contains('show')
+  }
+  /*if (!event.target.matches('.dropbtn'))*/ else {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -21,6 +24,8 @@ window.onclick = function(event) {
       }
     }
   }
+  
+
 }
 
 
@@ -32,7 +37,7 @@ function diffImage(img)
 }
 
 function mute() { 
-  if {document.getElementById("music1").muted = true}
+  if (document.getElementById("music1").muted == false)
   document.getElementById("music1").muted = true;
-  else {}
+  else (document.getElementById("music1").muted = false)
 }
