@@ -1,4 +1,4 @@
-function getCookie(cname) {
+function getQuestionCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
     var cookie = "";
@@ -20,10 +20,33 @@ function getCookie(cname) {
     }
 }
 
+function getLevelCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  var cookie = "";
+  for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          cookie =  c.substring(name.length, c.length);
+      }
+  }
+  try {
+    q_array = cookie.split(',');
+    console.log()
+    return parseInt(q_array[q_array.length-1]);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 (function() {
   const questions = [
+    [
     {
-      question: "Question 1?",
+      question: "Level 1: Question 1?",
       answers: {
         a: "Answer A",
         b: "Answer B",
@@ -32,7 +55,7 @@ function getCookie(cname) {
       correctAnswer: "c"
     },
     {
-      question: "Question 2?",
+      question: "Level 1: Question 2?",
       answers: {
         a: "Answer A",
         b: "Answer B",
@@ -41,7 +64,7 @@ function getCookie(cname) {
       correctAnswer: "c"
     },
     {
-      question: "Question 3",
+      question: "Level 1: Question 3",
       answers: {
         a: "Answer A",
         b: "Answer B",
@@ -50,7 +73,7 @@ function getCookie(cname) {
       correctAnswer: "d"
     },
     {
-      question: "Question 4",
+      question: "Level 1: Question 4",
       answers: {
         a: "Answer A",
         b: "Answer B",
@@ -59,7 +82,7 @@ function getCookie(cname) {
       correctAnswer: "d"
     },
     {
-      question: "Question 5",
+      question: "Level 1: Question 5",
       answers: {
         a: "Answer A",
         b: "Answer B",
@@ -68,18 +91,76 @@ function getCookie(cname) {
       correctAnswer: "d"
     },
     {
-      question: "Question 6",
+      question: "Level 1: Question 6",
       answers: {
         a: "Answer A",
         b: "Answer B",
         c: "Answer C"
       },
       correctAnswer: "d"
-    }
+    }], 
+    [
+      {
+        question: "Level 2: Question 1?",
+        answers: {
+          a: "Answer A",
+          b: "Answer B",
+          c: "Answer C"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "Level 2: Question 2?",
+        answers: {
+          a: "Answer A",
+          b: "Answer B",
+          c: "Answer C"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "Level 2: Question 3",
+        answers: {
+          a: "Answer A",
+          b: "Answer B",
+          c: "Answer C"
+        },
+        correctAnswer: "d"
+      },
+      {
+        question: "Level 2: Question 4",
+        answers: {
+          a: "Answer A",
+          b: "Answer B",
+          c: "Answer C"
+        },
+        correctAnswer: "d"
+      },
+      {
+        question: "Level 2: Question 5",
+        answers: {
+          a: "Answer A",
+          b: "Answer B",
+          c: "Answer C"
+        },
+        correctAnswer: "d"
+      },
+      {
+        question: "Level 2: Question 6",
+        answers: {
+          a: "Answer A",
+          b: "Answer B",
+          c: "Answer C"
+        },
+        correctAnswer: "d"
+      }]
   ];
 
-  console.log(getCookie("question"));
-  const myQuestions = [questions[getCookie("question")]];
+  console.log(getQuestionCookie("question"));
+  console.log(getLevelCookie("level"))
+  var quesion = getQuestionCookie("quesion");
+  var level = getLevelCookie("level");
+  const myQuestions = [questions[level][quesion]];
   //const myQuestions = [questions[0]];
 
   function buildQuiz() {
