@@ -1,5 +1,9 @@
-function bodyClicked() {
+function levelSelect() {
     window.location = "levelselect.html"
+}
+
+function email() {
+  window.location = "email.html"
 }
 
 /* When the user clicks on the button, 
@@ -8,12 +12,10 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (event.target.matches('.dropdown-content')) or (event.target.matches('.dropbtn')){
-    openDropdown.classList.contains('show')
-  }
-  /*if (!event.target.matches('.dropbtn'))*/ else {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('.speaker')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -28,6 +30,7 @@ window.onclick = function(event) {
 
 }
 
+
 function diffImage(img) 
 {
    	
@@ -35,22 +38,8 @@ function diffImage(img)
    else img.src = "images/speaker2.png"; 
 }
 
-<<<<<<< HEAD
 function mute() { 
   if (document.getElementById("music1").muted == false)
   document.getElementById("music1").muted = true;
   else (document.getElementById("music1").muted = false)
 }
-=======
-function mute() {
-	if (document.getElementById('music/bensound-straight.ogg').muted == false) 
-	{
-    document.getElementById('music/bensound-straight.ogg').muted = true;
-	}
-	else 
-	{
-	    document.getElementById('music/bensound-straight.ogg').muted = false;
-	}
-	}
-
->>>>>>> 561bfab89bbbb1b10120323c2db8d5fc3fa421f9
