@@ -43,124 +43,131 @@ function getLevelCookie(cname) {
 }
 
 (function() {
-  const questions = [
-    [
+  const level1_questions = [
     {
-      question: "Level 1: Question 1?",
+      question: "Level 1: Question 1",
       answers: {
-        a: "Answer A",
-        b: "Answer B",
-        c: "Answer C"
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
       },
       correctAnswer: "c"
     },
     {
-      question: "Level 1: Question 2?",
+      question: "Level 1: Question 2",
       answers: {
-        a: "Answer A",
-        b: "Answer B",
-        c: "Answer C"
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
       },
       correctAnswer: "c"
     },
     {
       question: "Level 1: Question 3",
       answers: {
-        a: "Answer A",
-        b: "Answer B",
-        c: "Answer C"
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
       },
       correctAnswer: "d"
     },
     {
       question: "Level 1: Question 4",
       answers: {
-        a: "Answer A",
-        b: "Answer B",
-        c: "Answer C"
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
       },
-      correctAnswer: "d"
+      correctAnswer: "c"
     },
     {
       question: "Level 1: Question 5",
       answers: {
-        a: "Answer A",
-        b: "Answer B",
-        c: "Answer C"
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
       },
       correctAnswer: "d"
     },
     {
       question: "Level 1: Question 6",
       answers: {
-        a: "Answer A",
-        b: "Answer B",
-        c: "Answer C"
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
       },
       correctAnswer: "d"
-    }], 
-    [
-      {
-        question: "Level 2: Question 1?",
-        answers: {
-          a: "Answer A",
-          b: "Answer B",
-          c: "Answer C"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Level 2: Question 2?",
-        answers: {
-          a: "Answer A",
-          b: "Answer B",
-          c: "Answer C"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Level 2: Question 3",
-        answers: {
-          a: "Answer A",
-          b: "Answer B",
-          c: "Answer C"
-        },
-        correctAnswer: "d"
-      },
-      {
-        question: "Level 2: Question 4",
-        answers: {
-          a: "Answer A",
-          b: "Answer B",
-          c: "Answer C"
-        },
-        correctAnswer: "d"
-      },
-      {
-        question: "Level 2: Question 5",
-        answers: {
-          a: "Answer A",
-          b: "Answer B",
-          c: "Answer C"
-        },
-        correctAnswer: "d"
-      },
-      {
-        question: "Level 2: Question 6",
-        answers: {
-          a: "Answer A",
-          b: "Answer B",
-          c: "Answer C"
-        },
-        correctAnswer: "d"
-      }]
+    }
   ];
+
+  const level2_questions = [
+    {
+      question: "Level 2: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 2: Question 2",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 2: Question 3",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    },{
+      question: "Level 2: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 2: Question 5",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 2: Question 6",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    }
+  ];
+
+  const questions_collect = [level1_questions, level2_questions];
 
   console.log(getQuestionCookie("question"));
   console.log(getLevelCookie("level"))
-  var quesion = getQuestionCookie("quesion");
+  var question = getQuestionCookie("question");
   var level = getLevelCookie("level");
-  const myQuestions = [questions[level][quesion]];
+  const myQuestions = [questions_collect[level][question]];
   //const myQuestions = [questions[0]];
 
   function buildQuiz() {

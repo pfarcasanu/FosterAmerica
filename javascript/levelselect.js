@@ -25,12 +25,12 @@ function setCookie(cname, levels_string, new_level) {
   
   function checkCookie(level_number) {
       var cname = "level";
-      var level = getQuestionCookie(cname);
+      var level = getCookie(cname);
       console.log("level = " + level)
       setCookie(cname, level , level_number);
   }
 
-function bodyClicked(event) {
+function bodyClicked(e) {
 	var targ;
     targ=e.srcElement;
     targID = targ.id;
