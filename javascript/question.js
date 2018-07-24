@@ -1,18 +1,23 @@
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
-    var q = "";
+    var cookie = "";
     for(var i = 0; i < ca.length; i++) {
         var c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-            q =  c.substring(name.length, c.length);
+            cookie =  c.substring(name.length, c.length);
         }
     }
-    if (q!= "") q = q.substring(q.length-1,q.length);
-    return parseInt(q);
+    try {
+      q_array = cookie.split(',');
+      console.log()
+      return parseInt(q_array[q_array.length-1]);
+    } catch (error) {
+      console.log(error);
+    }
 }
 
 (function() {

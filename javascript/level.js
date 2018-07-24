@@ -1,24 +1,3 @@
-/*function zeroopacity1(){
-  document.getElementById("button1").style.opacity = 0;
-}
-
-function zeroopacity2(){
-  document.getElementById("button2").style.opacity = 0;
-}
-
-function zeroopacity3(){
-  document.getElementById("button3").style.opacity = 0;
-}
-function zeroopacity4(){
-  document.getElementById("button4").style.opacity = 0;
-}
-function zeroopacity5(){
-  document.getElementById("button5").style.opacity = 0;
-}
-function zeroopacity6(){
-  document.getElementById("button6").style.opacity = 0;
-}*/
-
 function setCookie(cname, questions_string, new_question) {
   if (questions_string == null || questions_string == ""){
     document.cookie = cname + "=" + new_question + ";";

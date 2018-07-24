@@ -23,7 +23,6 @@ window.onclick = function(event) {
   }
 }
 
-
 function diffImage(img) 
 {
    	
