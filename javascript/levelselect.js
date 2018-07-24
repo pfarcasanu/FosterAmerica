@@ -1,8 +1,8 @@
-function setCookie(cname, questions_string, new_question) {
-    if (questions_string == null || questions_string == ""){
-      document.cookie = cname + "=" + new_question + ";";
+function setCookie(cname, levels_string, new_level) {
+    if (levels_string == null || levels_string == ""){
+      document.cookie = cname + "=" + new_level + ";";
     } else {
-      document.cookie = cname + "=" + questions_string + "," + new_question + ";";
+      document.cookie = cname + "=" + levels_string + "," + new_level + ";";
     }
   }
   
@@ -25,12 +25,19 @@ function setCookie(cname, questions_string, new_question) {
   
   function checkCookie(level_number) {
       var cname = "level";
-      var q = getCookie(cname);
-      console.log("q = " + q)
-      setCookie(cname, q , q_number);
+      var level = getQuestionCookie(cname);
+      console.log("level = " + level)
+      setCookie(cname, level , level_number);
   }
 
-function bodyClicked() {
+function bodyClicked(event) {
+	var targ;
+    targ=e.srcElement;
+    targID = targ.id;
+    console.log("targID = " + targID);
+    console.log(typeof targID);
+    checkCookie(targID);
+
     window.location = "level.html";
 }
 
