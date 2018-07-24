@@ -8,20 +8,27 @@
 	</head>
   <div class="dropdown">
     <img onclick="myFunction()" class="dropbtn" src="images/Windows_Settings_app_icon.png">
-     <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
+    <div id="myDropdown" class="dropdown-content">
+    <a href="#"><img class="speaker" src="images/speaker2.png" id="image1" onmousedown="diffImage(this); mute();"></a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
    </div>
    </div>
 	<body>
+
   		<h1>
   			Foster Trivia: Improve Your Foster IQ!
   		</h1>
   		<p onmousedown="bodyClicked()">
   			Tap Here to Play
   		</p>
-     <!--embed name="myMusic" loop="true" hidden="true" src="music/bensound-straight.mp3"></embed-->
+     <!--embed id="music1" loop="true" hidden="true" src="music/bensound-straight.mp3"></embed-->
+  <audio autoplay>
+  <source id="music1" src="music/bensound-straight.ogg" type="audio/ogg" muted="false">
+  <source id="music1" src="music/bensound-straight.mp3" type="audio/mpeg" muted="false">
+  Your browser does not support the audio tag.
+  </audio>
+  
      
 
   		<script type="text/javascript" src="javascript/homepage.js">

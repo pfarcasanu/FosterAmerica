@@ -22,3 +22,23 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+function diffImage(img) 
+{
+   	
+   if(img.src.match("images/speaker2.png")) img.src = "images/mute3.png";
+   else img.src = "images/speaker2.png"; 
+}
+
+function mute() {
+	if (document.getElementById('music/bensound-straight.ogg').muted == false) 
+	{
+    document.getElementById('music/bensound-straight.ogg').muted = true;
+	}
+	else 
+	{
+	    document.getElementById('music/bensound-straight.ogg').muted = false;
+	}
+	}
+
