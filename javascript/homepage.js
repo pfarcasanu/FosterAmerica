@@ -28,7 +28,6 @@ window.onclick = function(event) {
 
 }
 
-
 function diffImage(img) 
 {
    	
@@ -36,8 +35,22 @@ function diffImage(img)
    else img.src = "images/speaker2.png"; 
 }
 
+<<<<<<< HEAD
 function mute() { 
   if (document.getElementById("music1").muted == false)
   document.getElementById("music1").muted = true;
   else (document.getElementById("music1").muted = false)
 }
+=======
+function mute() {
+	if (document.getElementById('music/bensound-straight.ogg').muted == false) 
+	{
+    document.getElementById('music/bensound-straight.ogg').muted = true;
+	}
+	else 
+	{
+	    document.getElementById('music/bensound-straight.ogg').muted = false;
+	}
+	}
+
+>>>>>>> 561bfab89bbbb1b10120323c2db8d5fc3fa421f9
