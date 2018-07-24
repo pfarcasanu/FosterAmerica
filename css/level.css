@@ -7,6 +7,11 @@ body{
     width: 100%;
 }
 
+html{
+    height: 100%;
+    width: 100%;
+}
+
 div{
  background-color: green;
  text-align: center;
