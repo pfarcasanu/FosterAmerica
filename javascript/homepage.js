@@ -31,14 +31,8 @@ function diffImage(img)
    else img.src = "images/speaker2.png"; 
 }
 
-function mute() {
-	if (document.getElementById('music/bensound-straight.ogg').muted == false) 
-	{
-    document.getElementById('music/bensound-straight.ogg').muted = true;
-	}
-	else 
-	{
-	    document.getElementById('music/bensound-straight.ogg').muted = false;
-	}
-	}
-
+function mute() { 
+  if {document.getElementById("music1").muted = true}
+  document.getElementById("music1").muted = true;
+  else {}
+}
