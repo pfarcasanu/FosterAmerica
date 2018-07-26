@@ -1,9 +1,10 @@
-function setCookie(cname, questions_string, new_question) {
-  if (questions_string == null || questions_string == ""){
-    document.cookie = cname + "=" + new_question + ";";
-  } else {
-    document.cookie = cname + "=" + questions_string + "," + new_question + ";";
-  }
+function setQuestionCookie(cname, new_question) {
+    document.cookie = cname + "=" +  new_question + ";";
+}
+
+function questionWasPressed(q_number) {
+    var cname = "question";
+    setQuestionCookie(cname, q_number);
 }
 
 function getCookie(cname) {
@@ -15,7 +16,7 @@ function getCookie(cname) {
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
-        console.log("c = " + c);
+        console.log(cname + " = " + c);
         if (c.indexOf(name) == 0) {
             return c.substring(name.length, c.length);
         }
@@ -23,20 +24,12 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookie(q_number) {
-    var cname = "question";
-    var q = getCookie(cname);
-    console.log("q = " + q)
-    setCookie(cname, q , q_number);
-}
-
-function zero_opacity(e){
+function questionClick(e){
 	var targ;
     targ=e.srcElement;
     targID = targ.id;
-    document.getElementById(targID).style.opacity = 0;
     console.log("targID = " + targID);
     console.log(typeof targID);
-    checkCookie(targID);
-    window.open('question.html', '_blank');
+    questionWasPressed(targID);
+    window.location = 'question.html';
 }
