@@ -1,4 +1,4 @@
-function getQuestionCookie(cname) {
+function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
     var cookie = "";
@@ -11,13 +11,17 @@ function getQuestionCookie(cname) {
             cookie =  c.substring(name.length, c.length);
         }
     }
-    try {
-      q_array = cookie.split(',');
-      console.log()
-      return parseInt(q_array[q_array.length-1]);
-    } catch (error) {
-      console.log(error);
-    }
+    return cookie;
+}
+
+function getQuesion(cookie){
+  try {
+    q_array = cookie.split(',');
+    console.log()
+    return parseInt(q_array[q_array.length-1]);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 function getLevelCookie(cname) {
@@ -40,6 +44,11 @@ function getLevelCookie(cname) {
   } catch (error) {
     console.log(error);
   }
+}
+
+function setQACookie(cname, number){
+  var q_str = getCookie(cname);
+  document.cookie = cname + "=" + q_str + "," + number.toString();
 }
 
 (function() {
@@ -163,9 +172,9 @@ function getLevelCookie(cname) {
 
   const questions_collect = [level1_questions, level2_questions];
 
-  console.log(getQuestionCookie("question"));
+  console.log(getQuesion(getCookie("question")));
   console.log(getLevelCookie("level"))
-  var question = getQuestionCookie("question");
+  var question = getQuesion(getCookie("question"));
   var level = getLevelCookie("level");
   const myQuestions = [questions_collect[level][question]];
   //const myQuestions = [questions[0]];
@@ -224,8 +233,10 @@ function getLevelCookie(cname) {
         // add to the number of correct answers
         numCorrect++;
 
+        setQACookie("answered_questions", question);
+
         // color the answers green
-        window.location = 'rightanswer.html'
+        window.location = 'level.html'
         //answerContainers[questionNumber].style.color = "lightgreen";
       } else {
         // if answer is wrong or blank
