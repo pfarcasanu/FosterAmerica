@@ -1,0 +1,130 @@
+/*body{
+    background-image: url("screenshot.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}*/
+
+/*
+ * CSS for the moving bubbles
+ * Makes sure the bubble container appears behind the contents of the page
+ * Gerard Godone-Maresca
+ */
+ html, body {
+	padding:0;
+	margin:0;
+	min-height:100%;
+	background-color:#50afe4;
+	background-image:linear-gradient(to bottom,#57B7E0,#3C799D);
+	background-attachment:fixed;
+}
+html * { z-index: 1; position:relative; }
+#bubbleContainer {
+	z-index:0;
+	overflow:hidden;
+	position:fixed;
+	height:100%;
+	width:100%;
+}
+#bubbleContainer div {
+	position:fixed;
+	z-index:-1;
+	border-radius:1000px;
+}
+
+
+h1{
+ text-align: center;
+ font-size: 300%;
+ max-width: 80%;
+ margin-left: 5%;
+ margin-right: 5%;
+ background-color:lavender;
+ border-width: thick;
+ border-color: purple;
+ border-style: outset;
+}
+
+ h2{
+ text-align: center;
+ font-size: 175%;
+ max-width: 60%;
+ margin-right: 12.5%;
+ margin-left: 12.5%;
+ background-color: white;
+ opacity: 0.5;
+
+
+}
+
+h3{
+ text-align: center;
+ font-size: 85%;
+ background-color: white;
+ max-width: 58%;
+ margin-right: 12.5%;
+ margin-left: 12.5%;
+ border-width: medium;
+ border-color: limegreen;
+ border-style: solid;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 10%;
+    width: 10%;
+    border: none;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    opacity: 1;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: fixed;
+    float: right;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    right: 0%;
+    top: 10%;
+    /*min-width: 15%;*/
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+
+    color: black;
+    padding-right: 2%;
+    padding-top: 10%;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    image-orientation: right;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: none}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.speaker{
+  height: 10%;
+  width: 10%;
+}
