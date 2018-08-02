@@ -23,11 +23,9 @@ div{
 }
 
 .bump{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 40%;
+    position: relative;
     height: 40%;
-    margin-top: -20%; /* Half the height */
-    margin-left: -20%; /* Half the width */
+    width: 40%;
+    margin-top: 25%;
+    margin-bottom: 10%;
  }
