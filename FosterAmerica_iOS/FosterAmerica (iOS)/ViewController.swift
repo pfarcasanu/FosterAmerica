@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //let app_url = URL(string: "https://pfarcasanu.github.io/FosterAmerica/");
-        let app_url = URL(string: "https://www.zooyza.com/cportal/Account/Login");
+        let app_url = URL(string: "https://pfarcasanu.github.io/FosterAmerica/");
         appWebView.load(URLRequest(url: app_url!));
     }
 
