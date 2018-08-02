@@ -36,7 +36,7 @@ html * { z-index: 1; position:relative; }
 
 h1{
  text-align: center;
- font-size: 300%;
+ font-size: 350%;
  max-width: 80%;
  margin-left: 5%;
  margin-right: 5%;
@@ -48,7 +48,7 @@ h1{
 
  h2{
  text-align: center;
- font-size: 175%;
+ font-size: 300%;
  max-width: 60%;
  margin-right: 12.5%;
  margin-left: 12.5%;
@@ -60,7 +60,7 @@ h1{
 
 h3{
  text-align: center;
- font-size: 85%;
+ font-size: 150%;
  background-color: white;
  max-width: 59%;
  margin-right: 12.5%;
