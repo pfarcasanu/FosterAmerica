@@ -16,15 +16,13 @@ div{
  text-align: center;
  line-height: 300%;
  font-size: 300%;
- border-color: white;
- border-style: solid;
- border-width: 0.1px;
 }
 
 
 
 div.image {
-    background-image:url(fosteramericalogo.png);
+    content: url(white.png);
+    background-image: url(fosteramericalogo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;
