@@ -37,6 +37,7 @@ html * { z-index: 1; position:relative; }
 
 .levelselect{
  margin-top: 2%;
+ margin-bottom: 2%;
  text-align: center;
  font-size: 300%;
  max-width: 80%;
