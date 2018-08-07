@@ -28,6 +28,28 @@ function getCookie(cname) {
   return cookie;
 }
 
+window.onload = function(){
+  var empty_str = "0,0,0,0,0,0|0,0,0,0,0,0";
+  var str = getCookie("array");
+  if (str = ""){
+    document.cookie = "array =" + empty_str;
+  }
+  else{
+    var ar = [];
+    var sp = str.split('|');
+    for (var i = 0; i < sp.length; i++) {
+      var sub = sp[i].split(',');
+      for (var j = 0; j < sub.length; j++) {
+          ar.push(parseInt(sub[j]));
+      }
+    }
+    if (!Math.max(ar)){
+      document.cookie = "array =" + empty_str;
+    }
+  }
+  console.log(getCookie("array"));
+}
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn') && !event.target.matches('.speaker')) {
