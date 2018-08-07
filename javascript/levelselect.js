@@ -46,7 +46,7 @@ function bodyClicked(e) {
     targID = targ.id;
     console.log("targID = " + targID);
     console.log(typeof targID);
-    setCookie(targID.toString());
+    setCookie("level", targID.toString());
 
     window.location = "level.html";
 }

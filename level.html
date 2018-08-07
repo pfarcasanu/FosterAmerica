@@ -22,10 +22,8 @@
 <script type="text/javascript">
   window.onload = function(){
     var str = getCookie("array");
-    console.log("input stirng is" + str);
+    console.log("array  =  " + str);
     var level = parseInt(getCookie("level"));
-    console.log("level is " + level.toString());
-    console.log(typeof level);
     var questions = str.split("|")[level].split(",");
     for (i = 0; i<questions; i++){
       if (questions[i] == 1){
