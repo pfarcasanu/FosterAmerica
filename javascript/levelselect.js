@@ -1,23 +1,10 @@
 window.onload = function(){
 	var empty_str = "0,0,0,0,0,0|0,0,0,0,0,0";
 	var str = getCookie("array");
+	console.log("onload str = " + str);
 	if (str = ""){
 	  document.cookie = "array =" + empty_str;
 	}
-	else{
-	  var ar = [];
-	  var sp = str.split('|');
-	  for (var i = 0; i < sp.length; i++) {
-		var sub = sp[i].split(',');
-		for (var j = 0; j < sub.length; j++) {
-			ar.push(parseInt(sub[j]));
-		}
-	  }
-	  if (!Math.max(ar)){
-		document.cookie = "array =" + empty_str;
-	  }
-	}
-	console.log(getCookie("array"));
   }
 
 function setCookie(cname, new_level) {
@@ -27,7 +14,6 @@ function setCookie(cname, new_level) {
 function getCookie(cname) {
 	var name = cname + "=";
 	var ca = document.cookie.split(';');
-	console.log("document cookie is " + document.cookie);
 	for(var i = 0; i < ca.length; i++) {
 		var c = ca[i];
 		while (c.charAt(0) == ' ') {
