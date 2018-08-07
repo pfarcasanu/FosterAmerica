@@ -14,41 +14,22 @@ function getCookie(cname) {
     return cookie;
 }
 
-function getQuesion(cookie){
+function getLevelOrQuestion(cookie){
   try {
-    q_array = cookie.split(',');
-    console.log()
-    return parseInt(q_array[q_array.length-1]);
+    return parseInt(cookie);
   } catch (error) {
     console.log(error);
   }
 }
 
-function getLevelCookie(cname) {
-  var name = cname + "=";
-  var ca = document.cookie.split(';');
-  var cookie = "";
-  for(var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-          cookie =  c.substring(name.length, c.length);
-      }
-  }
-  try {
-    q_array = cookie.split(',');
-    console.log()
-    return parseInt(q_array[q_array.length-1]);
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-function setQACookie(cname, number){
-  var q_str = getCookie(cname);
-  document.cookie = cname + "=" + q_str + "," + number.toString();
+function setQuestionAnswered(cname, level, question){
+  var str = getCookie(cname);
+  var level_arr = str.split("|");
+  var q_arr =  level_arr[level].split(",");
+  q_arr[question] = "1";
+  level_arr[level] = q_arr.join(",");
+  str = level_arr.join("|");
+  document.cookie = cname + "=" + str;
 }
 
 (function() {
@@ -172,10 +153,8 @@ function setQACookie(cname, number){
 
   const questions_collect = [level1_questions, level2_questions];
 
-  console.log(getQuesion(getCookie("question")));
-  console.log(getLevelCookie("level"))
-  var question = getQuesion(getCookie("question"));
-  var level = getLevelCookie("level");
+  var question = getLevelOrQuestion(getCookie("question"));
+  var level = getLevelOrQuestion(getCookie("level"));
   const myQuestions = [questions_collect[level][question]];
   //const myQuestions = [questions[0]];
 
@@ -233,7 +212,7 @@ function setQACookie(cname, number){
         // add to the number of correct answers
         numCorrect++;
 
-        setQACookie("answered_questions", question);
+        setQuestionAnswered("array", level, question);
 
         // color the answers green
         window.location = 'level.html'

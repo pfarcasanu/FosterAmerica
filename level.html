@@ -21,15 +21,15 @@
 
 <script type="text/javascript">
   window.onload = function(){
-    var str = getCookie("answered_questions");
-    console.log("onload string  = " + str);
-    var questions = str.split(",");
-    questions.forEach(elem => {
-        if (elem != "") {
-          document.getElementById(elem).onclick = null;
-          document.getElementById(elem).style.opacity = 0;
-        }
-    });
+    var str = getCookie("array");
+    var level = int.Parse(getCookie("level"));
+    var questions = str.split("|")[level].split(",");
+    for (i = 0; i<questions; i++){
+      if (questions[i] == 1){
+        document.getElementById(i).onclick = null;
+        document.getElementById(i).style.opacity = 0;
+      }
+    }
   }
   </script>
 
