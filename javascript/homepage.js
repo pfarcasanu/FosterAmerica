@@ -12,6 +12,21 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  var cookie = "";
+  for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          cookie =  c.substring(name.length, c.length);
+      }
+  }
+  return cookie;
+}
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
