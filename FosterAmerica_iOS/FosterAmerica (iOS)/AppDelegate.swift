@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  FosterAmerica (iOS)
 //
-//  Created by Paul Farcasanu on 7/22/18.
-//  Copyright © 2018 Paul Farcasanu. All rights reserved.
+//  Created by Paul Farcasanu and William Wolf on 7/22/18.
+//  Copyright © 2018 Paul Farcasanu and William Wolf. All rights reserved.
 //
 
 import UIKit
