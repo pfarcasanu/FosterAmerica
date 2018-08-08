@@ -23,6 +23,11 @@ function getLevelOrQuestion(cookie){
 }
 
 function setQuestionAnswered(cname, level, question){
+  console.log("level = " + level)
+  console.log(typeof level);
+  console.log("question = " + question)
+  console.log(typeof question)
+  console.log(getCookie(cname));
   var str = getCookie(cname);
   var level_arr = str.split("|");
   var q_arr =  level_arr[level].split(",");
