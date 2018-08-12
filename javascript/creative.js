@@ -1,9 +1,13 @@
+function levelSelect() {
+  window.location = "levelselect.html"
+}
+
 (function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    /*if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
@@ -12,8 +16,7 @@
         }, 1000, "easeInOutExpo");
         return false;
       }
-    }*/
-    window.location = "levelselect.html";
+    }
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
