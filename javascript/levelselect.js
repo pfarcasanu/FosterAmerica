@@ -123,7 +123,7 @@ var bubbleOptions = {
 	}
 };
 
-//Instantiate the bubble on page load
+/*Instantiate the bubble on page load
 if(window.onload) {
 	windowOnLoad = window.onload;
 	window.onload = function() {
