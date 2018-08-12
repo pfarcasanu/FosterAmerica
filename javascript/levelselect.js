@@ -3,7 +3,7 @@ window.onload = function(){
 	var str = getCookie("array");
 	console.log("onload str = " + str);
 	if (str == ""){
-	  document.cookie = "array =" + empty_str;
+	  document.cookie = "array=" + empty_str;
 	}
   }
 
