@@ -2,8 +2,8 @@ window.onload = function(){
 	var empty_str = "0,0,0,0|0,0,0,0";
 	var str = getCookie("array");
 	console.log("onload str = " + str);
-	if (str = ""){
-	  document.cookie = "array =" + empty_str;
+	if (str == ""){
+	  document.cookie = "array=" + empty_str;
 	}
   }
 
@@ -30,8 +30,6 @@ function bodyClicked(e) {
 	var targ;
     targ=e.srcElement;
     targID = targ.id;
-    console.log("targID = " + targID);
-    console.log(typeof targID);
     setCookie("level", targID.toString());
 
     window.location = "level.html";
@@ -125,7 +123,7 @@ var bubbleOptions = {
 	}
 };
 
-//Instantiate the bubble on page load
+/*Instantiate the bubble on page load
 if(window.onload) {
 	windowOnLoad = window.onload;
 	window.onload = function() {

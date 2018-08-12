@@ -14,7 +14,7 @@ function getCookie(cname) {
     return cookie;
 }
 
-function getLevelOrQuestion(cookie){
+function getNumber(cookie){
   try {
     return parseInt(cookie);
   } catch (error) {
@@ -22,11 +22,16 @@ function getLevelOrQuestion(cookie){
   }
 }
 
-function setQuestionAnswered(cname, level, question){
+function setQuestionAnswered(cname, level, question, value){
+  console.log("level = " + level);
+  console.log(typeof level);
+  console.log("question = " + question)
+  console.log(typeof question)
+  console.log(getCookie(cname));
   var str = getCookie(cname);
   var level_arr = str.split("|");
   var q_arr =  level_arr[level].split(",");
-  q_arr[question] = "1";
+  q_arr[question] = value.toString();
   level_arr[level] = q_arr.join(",");
   str = level_arr.join("|");
   document.cookie = cname + "=" + str;
@@ -35,11 +40,11 @@ function setQuestionAnswered(cname, level, question){
 (function() {
   const level1_questions = [
     {
-      question: "Level 1: Question 1",
+      question: "Hamilton is:",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "Cool",
+        b: "Funny",
+        c: "a loser"
       },
       correctAnswer: "c"
     },
@@ -150,13 +155,16 @@ function setQuestionAnswered(cname, level, question){
       correctAnswer: "d"
     }
   ];
-
+  // compile the questions
   const questions_collect = [level1_questions, level2_questions];
 
-  var question = getLevelOrQuestion(getCookie("question"));
-  var level = getLevelOrQuestion(getCookie("level"));
+  // pull the specific questions
+  var question = getNumber(getCookie("question"));
+  var level = getNumber(getCookie("level"));
   const myQuestions = [questions_collect[level][question]];
-  //const myQuestions = [questions[0]];
+
+  // the user hasn't gottena  question wrong yet
+  var correctness = 2;
 
   function buildQuiz() {
     // we'll need a place to store the HTML output
@@ -212,7 +220,7 @@ function setQuestionAnswered(cname, level, question){
         // add to the number of correct answers
         numCorrect++;
 
-        setQuestionAnswered("array", level, question);
+        setQuestionAnswered("array", level, question, correctness);
 
         // color the answers green
         window.location = 'level.html'
@@ -221,6 +229,7 @@ function setQuestionAnswered(cname, level, question){
         // if answer is wrong or blank
         // color the answers red
         answerContainers[questionNumber].style.color = "red";
+        correctness = 1;
       }
     });
 
