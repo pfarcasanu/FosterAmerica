@@ -1,0 +1,62 @@
+<head>
+
+    <title>Foster Trivia</title>
+</head>
+<body>
+    <!--Navigation Bar--> 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Foster Trivia</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Level Select</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Foster Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Mute</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  <!--<div id="0" class="image" onclick="questionClick(event)" style="width:50%; height: 50%; float: left;";></div>
+  <div id="1" class="image" onclick="questionClick(event)" style="width:50%; height: 50%; float: right;";></div>
+
+  <div id="2" class="image" onclick="questionClick(event)" style="width:50%; height: 50%; float: left;";></div>
+  <div id="3" class="image" onclick="questionClick(event)" style="width:50%; height: 50%; float: right;";></div>-->
+
+
+
+
+<script type="text/javascript" src="javascript/level.js">
+</script>
+
+<script type="text/javascript">
+  window.onload = function(){
+    var str = getCookie("array");
+    console.log("array  =  " + str);
+    var level = parseInt(getCookie("level"));
+    var questions = str.split("|")[level].split(",");
+    for (i = 0; i<questions.length; i++){
+      if (questions[i] != 0){
+        document.getElementById(i).onclick = null;
+        document.getElementById(i).style.opacity = 0;
+      }
+    }
+  }
+  </script>
+
+<link rel="stylesheet" href="css/creative.css">
+</body>
+</html>
