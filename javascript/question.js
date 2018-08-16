@@ -75,26 +75,6 @@ function setQuestionAnswered(cname, level, question, value){
         c: "Trick question; they're both the best"
       },
       correctAnswer: "c"
-    },
-    {
-      question: "Level 1: Question 5",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
-      },
-      correctAnswer: "d"
-    },
-    {
-      question: "Level 1: Question 6",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
-      },
-      correctAnswer: "d"
     }
   ];
 
@@ -134,9 +114,21 @@ function setQuestionAnswered(cname, level, question, value){
         c: "Waluigi, obviously"
       },
       correctAnswer: "c"
+    }
+  ];
+
+  const level3_questions = [
+    {
+      question: "Level 3: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
     },
     {
-      question: "Level 2: Question 5",
+      question: "Level 3: Question 2",
       answers: {
         a: "SitePoint",
         b: "Simple Steps Code",
@@ -145,7 +137,7 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "c"
     },
     {
-      question: "Level 2: Question 6",
+      question: "Level 3: Question 3",
       answers: {
         a: "Antarctica",
         b: "Exploring the Pacific Ocean",
@@ -153,10 +145,294 @@ function setQuestionAnswered(cname, level, question, value){
         d: "Minding his own business, so stop asking"
       },
       correctAnswer: "d"
+    },{
+      question: "Level 3: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    }
+  ];
+
+  const level4_questions = [
+    {
+      question: "Level 4: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 4: Question 2",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 4: Question 3",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    },{
+      question: "Level 4: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    }
+  ];
+
+  const level5_questions = [
+    {
+      question: "Level 5: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 5: Question 2",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 5: Question 3",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    },{
+      question: "Level 5: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    }
+  ];
+
+  const level6_questions = [
+    {
+      question: "Level 6: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 6: Question 2",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 6: Question 3",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    },{
+      question: "Level 6: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    }
+  ];
+
+  const level7_questions = [
+    {
+      question: "Level 7: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 7: Question 2",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 7: Question 3",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    },{
+      question: "Level 7: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    }
+  ];
+
+  const level8_questions = [
+    {
+      question: "Level 8: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 8: Question 2",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 8: Question 3",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    },{
+      question: "Level 8: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    }
+  ];
+
+  const level9_questions = [
+    {
+      question: "Level 9: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 9: Question 2",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 9: Question 3",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    },{
+      question: "Level 9: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    }
+  ];
+
+  const level10_questions = [
+    {
+      question: "Level 10: Question 1",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 10: Question 2",
+      answers: {
+        a: "SitePoint",
+        b: "Simple Steps Code",
+        c: "Trick question; they're both the best"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Level 10: Question 3",
+      answers: {
+        a: "Antarctica",
+        b: "Exploring the Pacific Ocean",
+        c: "Sitting in a tree",
+        d: "Minding his own business, so stop asking"
+      },
+      correctAnswer: "d"
+    },{
+      question: "Level 10: Question 4",
+      answers: {
+        a: "Superman",
+        b: "The Terminator",
+        c: "Waluigi, obviously"
+      },
+      correctAnswer: "c"
     }
   ];
   // compile the questions
-  const questions_collect = [level1_questions, level2_questions];
+  const questions_collect = [level1_questions, level2_questions, level3_questions,
+							level4_questions, level5_questions, level6_questions,
+							level7_questions, level8_questions, level9_questions, 
+							level10_questions];
 
   // pull the specific questions
   var question = getNumber(getCookie("question"));
