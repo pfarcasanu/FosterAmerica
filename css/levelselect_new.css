@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    height: 400px;
+    align-content: start;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: transparent;
+    padding: 10px;
+  }
+  .grid-container > a {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
