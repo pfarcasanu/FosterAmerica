@@ -1,5 +1,5 @@
 window.onload = function(){
-	var empty_str = "0,0,0,0|0,0,0,0";
+	var empty_str = "0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
 	var str = getCookie("array");
 	console.log("onload str = " + str);
 	if (str == ""){
