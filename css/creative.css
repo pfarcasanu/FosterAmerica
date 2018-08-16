@@ -323,18 +323,3 @@ header.masthead p {
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
-
-div{
-  text-align: center;
-  line-height: 300%;
-  font-size: 300%;
- }
-
- div.image {
-  content: url(white.png);
-  background-image: url(fosteramericalogo.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50% 50%;
-  background-color: dodgerblue;
-}
