@@ -6,10 +6,6 @@ html {
 
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-  background-image: url(levelselect.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 hr {
