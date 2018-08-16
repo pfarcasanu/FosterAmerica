@@ -2,131 +2,67 @@
 <html lang="en">
 	<head>
 
-		<title>Foster Trivia</title>
-    <link rel="stylesheet" href="css/levelselect.css" />
-		<p><meta name="viewport" content="width=device-width, initial-scale=1"></p>
+		<title>Foster Trivia</title><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/creative.css">
 
   </head>
-<body>
-    <div class="dropdown">
-        <img onclick="myFunction()" class="dropbtn" src="images/Windows_Settings_app_icon.png">
-        <div id="myDropdown" class="dropdown-content">
-        <a href="#"><img class="speaker" src="images/speaker2.png" id="image1" onmousedown="mute(); diffImage(this);"></a>
-        <a href="#"><img class="speaker" src="images/menubutton2.png" id="image2" onmousedown="levelSelect()"></a>
-        <a href="#"><img class="speaker" src="images/fosteramericalogo.png" id="image3" onmousedown="email()"></a>
-       </div>
-       </div>
-<div class="levelselect" style="height: 7%">Level Select</div>
-<div style="width:100%; height:100%"> 
-  <div style="width:50%; height: 100%; float:left";>
-    <div style="height: 7.5%" class="levels" id = "0" onmousedown="bodyClicked(event)">Level 1</div>
-    <div style="height: 7.5%" class="levels" id = "2" onmousedown="bodyClicked(event)">Level 3</div>
-    <div style="height: 7.5%" class="levels" id = "4" onmousedown="bodyClicked(event)">Level 5</div>
-    <div style="height: 7.5%" class="levels" id = "6" onmousedown="bodyClicked(event)">Level 7</div>
-    <div style="height: 7.5%" class="levels" id = "7" onmousedown="bodyClicked(event)">Level 9</div>
-    <div style="height: 7.5%" class="levels" id = "10" onmousedown="bodyClicked(event)">Level 11</div>
-    <div style="height: 6%" class="links" onmousedown="bodyClicked()">About Foster America</div>
-  </div>
+  <body id="page-top">
 
-  
-  <div style="width:50%; height:100%; float:right;">
-    <div style="height: 7.5%" class="levels" id = "1" onmousedown="bodyClicked(event)">Level 2</div>
-    <div style="height: 7.5%" class="levels" id = "3" onmousedown="bodyClicked(event)">Level 4</div>
-    <div style="height: 7.5%" class="levels" id = "5" onmousedown="bodyClicked(event)">Level 6</div>
-    <div style="height: 7.5%" class="levels" id = "7" onmousedown="bodyClicked(event)">Level 7</div>
-    <div style="height: 7.5%" class="levels" id = "9" onmousedown="bodyClicked(event)">Level 10</div>
-    <div style="height: 7.5%" class="levels" id = "11" onmousedown="bodyClicked(event)">Level 12</div>
-    <div style="height: 6%" class="links" onmousedown="inputEmail()">Sign Up to Learn More!</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Level Select</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Level Select</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Learn More</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Mute</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  </div>
-</div>
-<!--embed name="myMusic" loop="true" hidden="true" src="music/bensound-creativeminds.mp3"></embed-->
+    <header class="masthead text-center text-white d-flex">
+        <div class="container my-auto">
+        </div>
+      </header>
 
-  		<script type="text/javascript" src="javascript/levelselect.js">
-      </script>
-      
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-7">
-      <title>Animated Bubbles</title>
-      <link rel="stylesheet" href="css/movingbubbles.css" type="text/css" />
-      <style>
-        /* Start slider CSS 
-        #sliderContainer {
-          position:absolute;
-          top:20px;
-          right:20px;
-          background-color:#fff;
-          background-image:linear-gradient(to bottom, #fff, #eee);
-          border-radius:5px;
-          padding:10px;
-          box-shadow:0 5px 5px rgba(0, 0, 0, .2);
-          text-shadow:0 1px #fff;
-          opacity:0.2;
-          transition:opacity linear 0.25s;
-          font-family:Arial, sans-serif;
-        }
-        #sliderContainer:hover {
-          opacity:1;
-        }
-        #sliderContainer h3 {
-          margin:0;
-          text-align:center;
-        }
-        #sliderContainer strong {
-          width:115px;
-          display:inline-block;
-        }
-        #sliderContainer input {
-          width:200px;
-          margin:0;
-        }
-        #sliderContainer span {
-          padding:5px 0;
-          width:5%;
-        }
-        #sliderContainer hr {
-          background:#999;
-          box-shadow:0 1px #fff;
-          border:0;
-          height:1px;
-        }
-        End slider CSS */
-      </style>
-          <script src="javascript/movingbubbles.js" type="text/javascript"></script>
-          <script type="text/javascript">
-            /**
-             * A function for the settings sliders to properly update bubbleOptions
-             * @this {Window}
-             * @param {[object HTMLInputElement]} slider The slider element
-             * @param {String} bubbleSetting The variable name of bubbleOptions that the slider modifies
-             */
-            function sliderUpdate(slider, bubbleSetting) {
-              var value = parseFloat(slider.value);
-              //Special cases
-              //The bubble-pixel ratio requires changing the number of bubbles
-              //And if the bubble cap is lower than the number of bubbles,
-              //then the bubbles also need to be changed
-              if(bubbleSetting == 'ratio' ||
-                 (bubbleSetting == 'maxBubbles' && bubbleOptions.bubbles.length > value)) {
-                var bubbleContainer = document.getElementById('bubbleContainer');
-                if(bubbleContainer) {
-                  document.body.removeChild(bubbleContainer);
-                  bubbleOptions.bubbles = [];
-                }
-              }
-              slider.title = value + " - bubbleOptions."+bubbleSetting;
-              bubbleOptions[bubbleSetting] = value;
-              //Turn the ratio slider into an inverse 100-20 scale
-              if(bubbleSetting == 'ratio') {
-                slider.title = "Pixel to Bubble Ratio: 1:"+value+" - bubbleOptions.ratio";
-                value = (120000 - value) / 1000;
-              }
-              document.getElementById(bubbleSetting + "Slider").innerHTML = value;
-              bubbleOptions.update();
-            }
-          </script>
-    </head>
-  
-    <body>
-      
-<body>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  </body>
 </html>
