@@ -1,5 +1,5 @@
 function levelSelect() {
-  window.location = "levelselect.html"
+  window.location = "levelselect_new.html"
 }
 
 (function($) {
