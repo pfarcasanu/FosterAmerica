@@ -499,7 +499,7 @@ function setQuestionAnswered(cname, level, question, value){
         setQuestionAnswered("array", level, question, correctness);
 
         // color the answers green
-        window.location = 'level.html'
+        window.location = 'levelnew.html'
         //answerContainers[questionNumber].style.color = "lightgreen";
       } else {
         // if answer is wrong or blank
