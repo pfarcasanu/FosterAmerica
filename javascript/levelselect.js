@@ -32,7 +32,7 @@ function bodyClicked(e) {
     targID = targ.id;
     setCookie("level", targID.toString());
 
-    window.location = "level.html";
+    window.location = "levelNEW.html";
 }
 
 /*function inputEmail() {
