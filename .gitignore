@@ -24,3 +24,4 @@ css/levelselect.css
 *.swift
 
 *.plist
+.DS_Store
