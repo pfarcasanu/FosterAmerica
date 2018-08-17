@@ -344,8 +344,8 @@ div.image {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
   }
   .grid-container > div {
     content: url(white.png);
@@ -354,6 +354,15 @@ div.image {
     background-repeat: no-repeat;
     background-size: 50% 50%;
     background-color: dodgerblue;
-    height: 50vh;
-    width: 50vw;
+    height: 50%;
+    width: 50%;
+  }
+
+  .top{
+    height: 10vh;
+  }
+
+  .bottom{
+    height: 90vh;
+    width: 100vw;
   }
