@@ -168,7 +168,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 0;
   padding-bottom: calc(10rem - 70px);
   background-color: lavender;
   background-position: center center;
@@ -358,8 +358,8 @@ div.image {
     background-repeat: no-repeat;
     background-size: 50% 50%;
     background-color: dodgerblue;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
   }
 
   .top{
@@ -370,4 +370,13 @@ div.image {
   .bottom{
     height: 100%;
     width: 100%;
+  }
+
+  .box {
+    background-color: dodgerblue;
+    text-align: center;
+    background-image: url(fosteramericalogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
   }
