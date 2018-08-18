@@ -179,8 +179,8 @@ header.masthead {
 }
 
 header.masthead hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 header.masthead h1 {
@@ -363,7 +363,7 @@ div.image {
   }
 
   .top{
-    height: 8%;
+    height: 7%;
     width: 100%;
   }
 
