@@ -342,7 +342,7 @@ div.image {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 50% 50%;
     background-image: url(levelselect.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -350,7 +350,7 @@ div.image {
     height: 92%;
     width: 100%;
   }
-  .grid-container > div {
+  .grid-content{
     content: url(white.png);
     background-image: url(fosteramericalogo.png);
     background-position: center;
