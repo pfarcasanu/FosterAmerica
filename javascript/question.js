@@ -453,7 +453,6 @@ function setQuestionAnswered(cname, level, question, value){
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
       // we'll want to store the list of answer choices
-      correctSound.play();
       const answers = [];
 
       // and for each available answer...
@@ -499,6 +498,7 @@ function setQuestionAnswered(cname, level, question, value){
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
+        correctSound.play();
         numCorrect++;
 
         setQuestionAnswered("array", level, question, correctness);
