@@ -447,7 +447,7 @@ function setQuestionAnswered(cname, level, question, value){
   function buildQuiz() {
     // we'll need a place to store the HTML output
     const output = [];
-    correctSound = new correctSound("correct.mp3");
+    correctSound = new correctSound("correct.ogg");
     
 
     // for each question...
