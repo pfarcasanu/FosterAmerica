@@ -375,10 +375,9 @@ div.image {
   }
 
   .box {
+    background-image: url(fosteramericalogo.png), url(border3.gif);
     background-color: dodgerblue;
-    text-align: center;
-    background-image: url(fosteramericalogo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50% auto;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% auto, 100% 100%;
   }
