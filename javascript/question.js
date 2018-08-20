@@ -1,3 +1,5 @@
+var correctSound;
+
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -445,12 +447,13 @@ function setQuestionAnswered(cname, level, question, value){
   function buildQuiz() {
     // we'll need a place to store the HTML output
     const output = [];
-    //correctSound = new correctSound("music/correct.ogg");
+    correctSound = new correctSound("music/correct.ogg");
     
 
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
       // we'll want to store the list of answer choices
+      correctSound.play();
       const answers = [];
 
       // and for each available answer...
