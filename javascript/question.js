@@ -449,7 +449,8 @@ function setQuestionAnswered(cname, level, question, value){
   function buildQuiz() {
     // we'll need a place to store the HTML output
     const output = [];
-    correctSound = new correctSound("music/correct.mp3");
+    correctSound = new correctSound("music/correct.ogg");
+    
 
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
