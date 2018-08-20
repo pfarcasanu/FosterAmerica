@@ -453,7 +453,7 @@ function setQuestionAnswered(cname, level, question, value){
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
       // we'll want to store the list of answer choices
-      //correctSound.play();
+      correctSound.play();
       const answers = [];
 
       // and for each available answer...
