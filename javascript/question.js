@@ -1,6 +1,6 @@
-var correctSound
-var incorrectSound
-var levelcompleteSound
+//var correctSound
+//var incorrectSound
+//var levelcompleteSound
 
 function getCookie(cname) {
     var name = cname + "=";
