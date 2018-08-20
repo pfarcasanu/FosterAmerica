@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-//var correctSound
-//var incorrectSound
-//var levelcompleteSound
-
-=======
->>>>>>> parent of 33501d0... Added sound effect?
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -452,15 +445,8 @@ function setQuestionAnswered(cname, level, question, value){
   function buildQuiz() {
     // we'll need a place to store the HTML output
     const output = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
     //correctSound = new correctSound("music/correct.ogg");
     
-=======
-    correctSound = new correctSound("music/correct.mp3");
->>>>>>> parent of d622449... ""
-=======
->>>>>>> parent of 33501d0... Added sound effect?
 
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
@@ -511,10 +497,6 @@ function setQuestionAnswered(cname, level, question, value){
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
-<<<<<<< HEAD
-        //correctSound.play();
-=======
->>>>>>> parent of 33501d0... Added sound effect?
 
         setQuestionAnswered("array", level, question, correctness);
 
