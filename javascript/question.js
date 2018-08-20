@@ -1,4 +1,4 @@
-//var correctSound;
+var correctSound;
 
 function getCookie(cname) {
     var name = cname + "=";
@@ -440,7 +440,7 @@ function setQuestionAnswered(cname, level, question, value){
   var question = getNumber(getCookie("question"));
   var level = getNumber(getCookie("level"));
   const myQuestions = [questions_collect[level][question]];
-  //correctSound = new correctSound("correct.ogg");
+  correctSound = new correctSound("correct.ogg");
 
   // the user hasn't gottena  question wrong yet
   var correctness = 2;
@@ -499,7 +499,7 @@ function setQuestionAnswered(cname, level, question, value){
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
-        //correctSound.play();
+        correctSound.play();
         numCorrect++;
 
         setQuestionAnswered("array", level, question, correctness);
