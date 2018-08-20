@@ -440,6 +440,7 @@ function setQuestionAnswered(cname, level, question, value){
   var question = getNumber(getCookie("question"));
   var level = getNumber(getCookie("level"));
   const myQuestions = [questions_collect[level][question]];
+  correctSound = new correctSound("correct.ogg");
 
   // the user hasn't gottena  question wrong yet
   var correctness = 2;
@@ -447,7 +448,7 @@ function setQuestionAnswered(cname, level, question, value){
   function buildQuiz() {
     // we'll need a place to store the HTML output
     const output = [];
-    correctSound = new correctSound("correct.ogg");
+    
     
 
     // for each question...
