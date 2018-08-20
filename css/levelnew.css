@@ -360,8 +360,8 @@ div.image {
     background-repeat: no-repeat;
     background-size: 50% 50%;
     background-color: dodgerblue;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
   }
 
   .top{
@@ -370,7 +370,7 @@ div.image {
   }
 
   .bottom{
-    height: 93%;
+    height: 100%;
     width: 100%;
   }
 
