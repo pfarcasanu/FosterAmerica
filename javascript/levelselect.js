@@ -5,7 +5,7 @@ window.onload = function(){
 	if (str == ""){
 	  document.cookie = "array=" + empty_str;
 	}
-  }
+}
 
 function setCookie(cname, new_level) {
     document.cookie = cname + "=" + new_level;
