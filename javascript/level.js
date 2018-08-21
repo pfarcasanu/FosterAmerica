@@ -1,7 +1,3 @@
-function toLevelSelect(){
-    window.location = "levelselect_new.html";
-}
-
 function setQuestionCookie(cname, new_question) {
     document.cookie = cname + "=" +  new_question + ";";
 }
