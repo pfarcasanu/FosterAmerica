@@ -1,6 +1,5 @@
 window.onload = function(){
 var str = getCookie("array");
-console.log("array  =  " + str);
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
 for (i = 0; i<questions.length; i++){
