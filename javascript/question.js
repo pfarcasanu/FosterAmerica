@@ -501,6 +501,8 @@ function setQuestionAnswered(cname, level, question, value){
 
         setQuestionAnswered("array", level, question, correctness);
 
+        window.location = 'levelnew.html';
+
         // color the answers green
         //answerContainers[questionNumber].style.color = "lightgreen";
       } else {
@@ -514,7 +516,6 @@ function setQuestionAnswered(cname, level, question, value){
 
     // show number of correct answers out of total
     //resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-    window.location = 'levelnew.html';
   }
 
   function showSlide(n) {
