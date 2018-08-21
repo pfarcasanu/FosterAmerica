@@ -502,19 +502,19 @@ function setQuestionAnswered(cname, level, question, value){
         setQuestionAnswered("array", level, question, correctness);
 
         // color the answers green
-        //window.location = 'levelnew.html';
         //answerContainers[questionNumber].style.color = "lightgreen";
       } else {
         // if answer is wrong or blank
         // color the answers red
         answerContainers[questionNumber].style.color = "red";
         correctness = 1;
+        resultsContainer.innerHTML = 'Try Again!'
       }
     });
 
     // show number of correct answers out of total
     //resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-    resultsContainer.innerHTML = 'Try Again!'
+    window.location = 'levelnew.html';
   }
 
   function showSlide(n) {
