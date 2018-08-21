@@ -5,10 +5,6 @@ window.onload = function(){
 	if (str == ""){
 	  document.cookie = "array=" + empty_str;
 	}
-  }
-
-function toIndex(){
-  window.location = "index.html";
 }
 
 function setCookie(cname, new_level) {
