@@ -1,6 +1,5 @@
 function playSound() {
-  if (userAnswer === currentQuestion.correctAnswer){
-    document.getElementById("correctSound").play();}
+    document.getElementById("correctSound").play();
 }
 
 function getCookie(cname) {
