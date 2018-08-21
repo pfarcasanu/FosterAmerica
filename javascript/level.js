@@ -1,3 +1,16 @@
+window.onload = function(){
+var str = getCookie("array");
+console.log("array  =  " + str);
+var level = parseInt(getCookie("level"));
+var questions = str.split("|")[level].split(",");
+for (i = 0; i<questions.length; i++){
+    if (questions[i] != 0){
+    document.getElementById(i).onclick = null;
+    document.getElementById(i).style.opacity = 0;
+        }
+    }
+}
+      
 function setQuestionCookie(cname, new_question) {
     document.cookie = cname + "=" +  new_question + ";";
 }
