@@ -7,6 +7,10 @@ window.onload = function(){
 	}
   }
 
+function toIndex(){
+  window.location = "index.html";
+}
+
 function setCookie(cname, new_level) {
     document.cookie = cname + "=" + new_level;
 }
