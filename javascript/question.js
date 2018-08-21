@@ -1,3 +1,5 @@
+var correctSound = new Audio("correct.ogg");
+
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -496,8 +498,7 @@ function setQuestionAnswered(cname, level, question, value){
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
-        var audio = document.getElementById("correctSound");
-        audio.play();
+        correctSound.play();
         numCorrect++;
 
         setQuestionAnswered("array", level, question, correctness);
