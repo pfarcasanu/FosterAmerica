@@ -1,7 +1,3 @@
-function playSound() {
-    document.getElementById("correctSound").play();
-}
-
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -500,12 +496,13 @@ function setQuestionAnswered(cname, level, question, value){
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
+        document.getElementById("correctSound").play();
         numCorrect++;
 
         setQuestionAnswered("array", level, question, correctness);
 
         // color the answers green
-        window.location = 'levelnew.html';
+        //window.location = 'levelnew.html';
         //answerContainers[questionNumber].style.color = "lightgreen";
       } else {
         // if answer is wrong or blank
