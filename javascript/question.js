@@ -1,4 +1,4 @@
-var correctSound = new Audio("correct.ogg");
+var correctSound = new Audio("music/correct.ogg");
 
 function getCookie(cname) {
     var name = cname + "=";
