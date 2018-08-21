@@ -1,3 +1,7 @@
+function newLevel() {
+  window.location = 'levelnew.html';
+}
+
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -501,7 +505,7 @@ function setQuestionAnswered(cname, level, question, value){
 
         setQuestionAnswered("array", level, question, correctness);
 
-        window.location = 'levelnew.html';
+        setTimeout(newLevel, 3000);
 
         // color the answers green
         //answerContainers[questionNumber].style.color = "lightgreen";
