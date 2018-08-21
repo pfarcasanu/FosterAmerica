@@ -1,4 +1,5 @@
 var correctSound;
+correctSound = new correctSound("correct.ogg");
 
 function getCookie(cname) {
     var name = cname + "=";
@@ -440,7 +441,6 @@ function setQuestionAnswered(cname, level, question, value){
   var question = getNumber(getCookie("question"));
   var level = getNumber(getCookie("level"));
   const myQuestions = [questions_collect[level][question]];
-  correctSound = new correctSound("correct.ogg");
 
   // the user hasn't gottena  question wrong yet
   var correctness = 2;
