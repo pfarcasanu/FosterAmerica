@@ -503,6 +503,8 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("correctSound").play();
         numCorrect++;
 
+        answerContainers[questionNumber].style.color = "lightgreen";
+
         setQuestionAnswered("array", level, question, correctness);
 
         setTimeout(newLevel, 3000);
@@ -512,6 +514,7 @@ function setQuestionAnswered(cname, level, question, value){
       } else {
         // if answer is wrong or blank
         // color the answers red
+        document.getElementById("incorrectSound").play();
         answerContainers[questionNumber].style.color = "red";
         correctness = 1;
         resultsContainer.innerHTML = 'Try Again!'
