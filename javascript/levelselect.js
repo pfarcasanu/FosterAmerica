@@ -28,6 +28,8 @@ function getCookie(cname) {
 
 function bodyClicked(e) {
   document.getElementById("buttonSound").play();
+  document.getElementById("buttonSound").currentTime=0;
+
 	var targ;
     targ=e.srcElement;
     targID = targ.id;
