@@ -8,7 +8,7 @@ function levelSelect() {
 }
 
 function levelSelect2() {
-  window.setTimeout(levelSelect, 500)
+  window.setTimeout(levelSelect, 400)
 }
 
 /*
