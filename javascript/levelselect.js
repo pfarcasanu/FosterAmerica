@@ -27,13 +27,13 @@ function getCookie(cname) {
 }
 
 function bodyClicked(e) {
+  document.getElementById("buttonSound").play();
 	var targ;
     targ=e.srcElement;
     targID = targ.id;
     setCookie("level", targID.toString());
-    document.getElementById("buttonSound").play();
 
-    window.setTimeout(levelNew, 100)
+  window.setTimeout(levelNew, 100)
 }
 
 function levelNew() {
