@@ -52,6 +52,7 @@ function levelNew() {
 
 function ResetGame(){
   document.cookie = "array=0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
+  window.location = "index.html";
 }
 
 /*function inputEmail() {
