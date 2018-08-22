@@ -1,10 +1,21 @@
 window.onload = function(){
-	var empty_str = "0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
+  // define the array str if empty
+	var empty_str = "0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
 	var str = getCookie("array");
-	console.log("onload str = " + str);
+  console.log("onload str = " + str);
+
+  var num_answered = 0;
 	if (str == ""){
-	  document.cookie = "array=" + empty_str;
-	}
+    str = "array=" + empty_str;
+    document.cookie = str;
+  } else {
+    // calculate num answered questions
+    var array = str.split("|").join.split(",");
+    array.forEach(element => {
+      if (parseInt(element)>0) num_answered++;
+    });
+  }
+  document.getElementById("quesAnsLabel").innerHTML = "Completed:</br>" + num_answered.toString() + "/25";
 }
 
 function setCookie(cname, new_level) {
