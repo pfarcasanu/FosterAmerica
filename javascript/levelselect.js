@@ -3,14 +3,14 @@ window.onload = function(){
 	var empty_str = "0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
 	var str = getCookie("array");
   console.log("onload str = " + str);
-
+  
   var num_answered = 0;
 	if (str == ""){
     str = "array=" + empty_str;
     document.cookie = str;
   } else {
     // calculate num answered questions
-    var array = str.split("|").join.split(",");
+    var array = str.split("|").join().split(",");
     array.forEach(element => {
       if (parseInt(element)>0) num_answered++;
     });
