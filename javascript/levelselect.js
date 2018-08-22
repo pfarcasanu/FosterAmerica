@@ -39,6 +39,10 @@ function levelNew() {
   window.location="levelnew.html"
 }
 
+function ResetGame(){
+  document.cookie = "array=0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
+}
+
 /*function inputEmail() {
 	window.location = "email.html"
 }
