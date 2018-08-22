@@ -1,3 +1,7 @@
+function buttonClick() {
+  document.getElementById("buttonSound").play();
+}
+
 function levelSelect() {
   window.location = "levelselect_new.html";
 }
