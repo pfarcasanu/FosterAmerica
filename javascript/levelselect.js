@@ -27,8 +27,9 @@ function getCookie(cname) {
 }
 
 function bodyClicked(e) {
+  document.getElementById("buttonSound").load();
   document.getElementById("buttonSound").play();
-  document.getElementById("buttonSound").currentTime=0;
+  
 
 	var targ;
     targ=e.srcElement;
