@@ -7,8 +7,6 @@ function levelSelect() {
 }
 
 function levelSelect2() {
-  document.getElementById("buttonSound").load();
-  document.getElementById("buttonSound").play();
   window.setTimeout(levelSelect, 100)
 }
 

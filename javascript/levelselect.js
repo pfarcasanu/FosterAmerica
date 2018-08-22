@@ -27,11 +27,7 @@ function getCookie(cname) {
 }
 
 function bodyClicked(e) {
-  document.getElementById("buttonSound").load();
-  document.getElementById("buttonSound").play();
-  
-
-	var targ;
+  var targ;
     targ=e.srcElement;
     targID = targ.id;
     setCookie("level", targID.toString());
