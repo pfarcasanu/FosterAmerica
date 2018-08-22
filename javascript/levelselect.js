@@ -15,7 +15,7 @@ window.onload = function(){
       if (parseInt(element)>0) num_answered++;
     });
   }
-  document.getElementById("quesAnsLabel").innerHTML = "Completed:</br>" + num_answered.toString() + "/25";
+  document.getElementById("quesAnsLabel").innerHTML = "Completed:</br>" + num_answered.toString() + "/24";
 }
 
 function setCookie(cname, new_level) {
