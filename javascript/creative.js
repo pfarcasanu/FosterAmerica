@@ -1,4 +1,4 @@
-function buttonClick() {
+async function buttonClick() {
   document.getElementById("buttonSound").load();
   document.getElementById("buttonSound").play();
 }
@@ -11,6 +11,7 @@ function levelSelect2() {
   window.setTimeout(levelSelect, 500)
 }
 
+/*
 (function($) {
   "use strict"; // Start of use strict
 
@@ -83,6 +84,7 @@ function levelSelect2() {
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
-  });*/
+  });
 
 })(jQuery); // End of use strict
+*/
