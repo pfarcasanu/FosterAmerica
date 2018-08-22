@@ -6,6 +6,11 @@ function levelSelect() {
   window.location = "levelselect_new.html";
 }
 
+function levelSelect2() {
+  document.getElementById("buttonSound").play();
+  window.setTimeout(levelSelect, 100)
+}
+
 (function($) {
   "use strict"; // Start of use strict
 

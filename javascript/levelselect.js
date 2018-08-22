@@ -31,8 +31,13 @@ function bodyClicked(e) {
     targ=e.srcElement;
     targID = targ.id;
     setCookie("level", targID.toString());
+    document.getElementById("buttonSound").play();
 
-    window.location = "levelnew.html";
+    window.setTimeout(levelNew, 100)
+}
+
+function levelNew() {
+  window.location="levelnew.html"
 }
 
 /*function inputEmail() {
