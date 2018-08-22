@@ -52,7 +52,7 @@ function levelSelect2() {
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Scroll reveal calls
+  /* Scroll reveal calls
   window.sr = ScrollReveal();
   sr.reveal('.sr-icons', {
     duration: 600,
@@ -83,6 +83,6 @@ function levelSelect2() {
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
-  });
+  });*/
 
 })(jQuery); // End of use strict
