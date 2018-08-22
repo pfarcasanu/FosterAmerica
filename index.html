@@ -61,7 +61,7 @@
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">Brought to you by the Digital Advocacy Brigade</p>
-            <a class="btn btn-primary btn-xl" onmousedown="levelSelect()">Tap to Play</a>
+            <a class="btn btn-primary btn-xl" onclick="buttonClick(); levelSelect2()">Let's Get Started</a>
           </div>
         </div>
       </div>
@@ -77,9 +77,24 @@
     <script async src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
+<<<<<<< HEAD
     <script async src="javascript/creative.js"></script>
     <script src="javascript/creative.js"></script>
     <audio id="backgroundMusic" src="music/bensound-tenderness.mp3" loop="loop"></audio>
+=======
+
+    <script async src="javascript/creative.js"></script>
+
+    <script src="javascript/creative.js"></script>
+    <audio id="backgroundMusic" src="music/bensound-tenderness.mp3" loop="loop"></audio>
+
+    <script>
+    window.onload = function() {
+      document.getElementById("backgroundMusic").play();
+    }
+    </script>
+    <audio id="buttonSound" src="music/zapsplat_multimedia_click_003_19369.mp3" preload="auto"></audio>
+>>>>>>> origin/master
 
   </body>
 

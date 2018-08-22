@@ -51,16 +51,16 @@
     <header class="masthead text-center text-white d-flex">
         <div class="container my-auto">
             <div class="grid-container">
-                <a class="btn btn-primary btn-xl" id = "0" onmousedown="bodyClicked(event)">Level 1</a>
-                <a class="btn btn-primary btn-xl" id = "1" onmousedown="bodyClicked(event)">Level 2</a>
-                <a class="btn btn-primary btn-xl" id = "2" onmousedown="bodyClicked(event)">Level 3</a>
-                <a class="btn btn-primary btn-xl" id = "3" onmousedown="bodyClicked(event)">Level 4</a>
-                <a class="btn btn-primary btn-xl" id = "4" onmousedown="bodyClicked(event)">Level 5</a>
-                <a class="btn btn-primary btn-xl" id = "5" onmousedown="bodyClicked(event)">Level 6</a>
-                <a class="btn btn-primary btn-xl" id = "6" onmousedown="bodyClicked(event)">Level 7</a>
-                <a class="btn btn-primary btn-xl" id = "7" onmousedown="bodyClicked(event)">Level 8</a>
-                <a class="btn btn-primary btn-xl" id = "8" onmousedown="bodyClicked(event)">Level 9</a>
-                <a class="btn btn-primary btn-xl" id = "9" onmousedown="bodyClicked(event)">Level 10</a>
+                <a class="btn btn-primary btn-xl" id = "0" onclick="buttonClick(); bodyClicked(event)">Level 1</a>
+                <a class="btn btn-primary btn-xl" id = "1" onclick="buttonClick(); bodyClicked(event)">Level 2</a>
+                <a class="btn btn-primary btn-xl" id = "2" onclick="buttonClick(); bodyClicked(event)">Level 3</a>
+                <a class="btn btn-primary btn-xl" id = "3" onclick="buttonClick(); bodyClicked(event)">Level 4</a>
+                <a class="btn btn-primary btn-xl" id = "4" onclick="buttonClick(); bodyClicked(event)">Level 5</a>
+                <a class="btn btn-primary btn-xl" id = "5" onclick="buttonClick(); bodyClicked(event)">Level 6</a>
+                <a class="btn btn-primary btn-xl" id = "6" onclick="buttonClick(); bodyClicked(event)">Level 7</a>
+                <a class="btn btn-primary btn-xl" id = "7" onclick="buttonClick(); bodyClicked(event)">Level 8</a>
+                <a class="btn btn-primary btn-xl" id = "8" onclick="buttonClick(); bodyClicked(event)">Level 9</a>
+                <a class="btn btn-primary btn-xl" id = "9" onclick="buttonClick(); bodyClicked(event)">Level 10</a>
             </div>
         </div>
       </header>
@@ -68,12 +68,14 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script async src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/creative.js"></script>
 
     <!-- Plugin JavaScript -->
     <script async src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!--script async src="vendor/scrollreveal/scrollreveal.min.js"></script-->
     <script async src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script async src="javascript/levelselect.js"></script>
+    <audio id="buttonSound" src="music/zapsplat_multimedia_click_003_19369.mp3" preload="auto"></audio>
 
   </body>
 </html>

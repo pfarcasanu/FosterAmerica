@@ -1,5 +1,14 @@
+function buttonClick() {
+  document.getElementById("buttonSound").load();
+  document.getElementById("buttonSound").play();
+}
+
 function levelSelect() {
   window.location = "levelselect_new.html";
+}
+
+function levelSelect2() {
+  window.setTimeout(levelSelect, 500)
 }
 
 (function($) {

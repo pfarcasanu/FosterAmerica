@@ -27,12 +27,16 @@ function getCookie(cname) {
 }
 
 function bodyClicked(e) {
-	var targ;
+  var targ;
     targ=e.srcElement;
     targID = targ.id;
     setCookie("level", targID.toString());
 
-    window.location = "levelnew.html";
+  window.setTimeout(levelNew, 1000)
+}
+
+function levelNew() {
+  window.location="levelnew.html"
 }
 
 /*function inputEmail() {

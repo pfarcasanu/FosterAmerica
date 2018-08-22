@@ -381,3 +381,9 @@ div.image {
     background-repeat: no-repeat, no-repeat;
     background-size: 50% auto, 100% 100%;
   }
+
+  h1 {
+    text-align: center;
+    padding-left: 2%;
+    font-size: 150%;
+  }
