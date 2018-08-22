@@ -1,4 +1,5 @@
 function buttonClick() {
+  document.getElementById("buttonSound").load();
   document.getElementById("buttonSound").play();
 }
 
