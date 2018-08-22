@@ -43,7 +43,7 @@ function bodyClicked(e) {
     targID = targ.id;
     setCookie("level", targID.toString());
 
-  window.setTimeout(levelNew, 700)
+  window.setTimeout(levelNew, 300)
 }
 
 function levelNew() {
