@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
 
-		<title>Foster Trivia</title><meta charset="utf-8">
+  <head>
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
+    <title>Foster Trivia</title>
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
 
@@ -19,55 +22,70 @@
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/levelnew.css">
-
+    <link rel="stylesheet" href="css/creative.css">
   </head>
+
   <body id="page-top">
+    <div class="wrap">
 
     <!-- Navigation -->
-    <div class="top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="levelselect_new.html">Back</a>
-        <b class="navbar-brand1 js-scroll-trigger">You've Turned 18 and Now You Can Vote</b>
-        
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Learn More</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Learn More</a>
+              <a class="nav-link js-scroll-trigger" href="levelselect_new.html">HomePage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Level Select</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">About</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    </div>
 
-    <div class="bottom">
     <header class="masthead text-center text-white d-flex">
-              <div class="grid-container">
-                <a class="box" id = "0" onclick="questionClick(event)"></a>
-                <a class="box" id = "1" onclick="questionClick(event)"></a>
-                <a class="box" id = "2" onclick="questionClick(event)"></a>
-                <a class="box" id = "3" onclick="questionClick(event)"></a>
-            </div>
-      </header>
-    </div>
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong id="quesAnsLabel">You Answered:</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Sign up here to compare your Foster IQ against other users.</p>
+            <p> this is an email entry </p>
+            <a class="btn btn-primary btn-xl" onmousedown="buttonClick();// levelSelect2()">Let's Get Started</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="javascript/level.js"></script>
 
     <!-- Plugin JavaScript -->
     <script async src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script async src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <!--script async src="vendor/scrollreveal/scrollreveal.min.js"></script-->
     <script async src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script async src="javascript/creative.js"></script>
+    <script async src ="javascript/email.js"
+
+    <audio async id="buttonSound" src="music/zap.mp3" preload="auto"></audio>
+    <audio async id="navSound" src="music/splat.mp3" preload="auto"></audio>
+
+  </div>
 
   </body>
 </html>

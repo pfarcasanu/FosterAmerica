@@ -1,7 +1,32 @@
-function video1() {
-	window.location = "https://williamjschreiner.wistia.com/medias/79i2sgwqmb?wvideo=79i2sgwqmb"
+window.onload = function(){
+	var str = getCookie("array");
+	var num_correct = 0;
+	if (str == ""){
+    str = "array=" + empty_str;
+    document.cookie = str;
+  } else {
+    // calculate num answered questions
+    var array = str.split("|").join().split(",");
+    array.forEach(element => {
+      if (parseInt(element) = 2) num_correct++;
+    });
+  }
+  document.getElementById("quesAnsLabel").innerHTML = "You Answered:</br>" + num_correct.toString() + "/24"
+  												" (" + Math.floor(num_correct/24).toString()+ ")";
 }
 
-function video2() {
-	window.location = "https://www.youtube.com/watch?v=ydJVnlVD7pw"
+// region: base cookie functions
+function getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+			return c.substring(name.length, c.length);
+		}
+	}
+	return "";
 }
