@@ -502,7 +502,7 @@ function setQuestionAnswered(cname, level, question, value){
         // add to the number of correct answers
         document.getElementById("correctSound").play();
         document.getElementById("backgroundMusic").pause();
-        document.getElementById("timer").src="images/success2.gif";
+        document.getElementById("timer").src="images/success3.gif";
         answerContainers[questionNumber].style.color = "lightgreen";
         resultsContainer.innerHTML = 'Correct!';
         setTimeout(newLevel, 5000);
