@@ -7,6 +7,10 @@ body{
   font-weight: 300;
   text-align: center;
   background-color: #f8f6f0;
+  overflow: hidden;
+}
+html {
+  overflow: hidden;
 }
 h1{
   font-weight: 300;
