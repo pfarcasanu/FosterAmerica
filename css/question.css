@@ -69,8 +69,12 @@ button:hover{
   margin-top: 40px;
 }
 
+img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
 .fakeTimer {
-  float: right;
-  height: 40%;
-  width: 20%;
+  height: 10%;
+  width: 10%;
 }
