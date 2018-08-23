@@ -504,7 +504,7 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("backgroundMusic").pause();
         document.getElementById("timer").src="images/successFINAL.gif";
         answerContainers[questionNumber].style.color = "lightgreen";
-        resultsContainer.innerHTML = 'Correct!';
+        resultsContainer.innerHTML = 'Nelson Mandela was the first of his family to attend school. When he was nine his father passed away.  From age nine on Nelson Mandela lived with the chief of a tribe who be who be and saw his mother occasionally on visits.';
         setTimeout(newLevel, 4000);
         numCorrect++;
 
