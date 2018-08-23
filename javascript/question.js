@@ -2,6 +2,10 @@ function newLevel() {
   window.location = 'levelnew.html';
 }
 
+function explanation() {
+  document.body.innerHTML='Charles Loring Brace was an American Philanthropist whose mother died when he was 14 and was raised by his father, a history teacher.  He graduated from Yale in 1846 where he studied divinity and theology. He then went on to pursue humanitarian efforts in the streets, rather than the church.  He decided he needed to do something about the 34,000 impoverished homeless children in New York City - “street rats” as police used to call them. America was growing, and many farm communities had “places at the table” and so worked out a system to place orphans in those homes, and that is how our nation’s foster care system was born. '
+}
+
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -505,7 +509,8 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("timer").src="images/successFINAL.gif";
         answerContainers[questionNumber].style.color = "lightgreen";
         resultsContainer.innerHTML = 'Correct!';
-        setTimeout(explanation, 4000);
+        setTimeout(document.body.innerHTML = '', 4000);
+        setTimeout(explanation, 4000)
         numCorrect++;
 
         
