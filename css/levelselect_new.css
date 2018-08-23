@@ -1,14 +1,38 @@
 .grid-container {
     display: grid;
-    height: 400px;
+    height: 100%;
     align-content: start;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-gap: 10px;
     background-color: transparent;
     padding: 10px;
   }
   .grid-container > a {
     text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
+    font-size: 100%;
+  }
+
+  .grid-container > b {
+    text-align: center;
+    font-size: 100%;
+  }
+
+  .grid-container > c {
+    text-align: center;
+    font-size: 100%;
+  }
+
+  .grid-container > d {
+    text-align: center;
+    font-size: 100%;
+  }
+
+  .grid-container > e {
+    text-align: center;
+    font-size: 97%;
+  }
+
+  .grid-container > f {
+    text-align: center;
+    font-size: 100%;
   }
