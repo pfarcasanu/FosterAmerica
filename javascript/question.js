@@ -505,7 +505,7 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("timer").src="images/successFINAL.gif";
         answerContainers[questionNumber].style.color = "lightgreen";
         resultsContainer.innerHTML = 'Correct!';
-        setTimeout(newLevel, 5000);
+        setTimeout(newLevel, 3000);
         numCorrect++;
 
         
@@ -514,7 +514,6 @@ function setQuestionAnswered(cname, level, question, value){
 
         setQuestionAnswered("array", level, question, correctness);
 
-        setTimeout(newLevel, 1500);
 
         // color the answers green
         //answerContainers[questionNumber].style.color = "lightgreen";
