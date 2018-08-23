@@ -11,8 +11,7 @@ window.onload = function(){
       if (parseInt(element) == 2) num_correct++;
     });
   }
-  document.getElementById("quesAnsLabel").innerHTML = "You Answered:</br>" + num_correct.toString() + "/24" +
-  												" (" + Math.floor(num_correct/24).toString()+ ")";
+  document.getElementById("quesAnsLabel").innerHTML = "You Answered:</br>" + num_correct.toString() + "/24" + " (" + Math.floor(num_correct/24).toString()+ ")";
 }
 
 // region: base cookie functions
