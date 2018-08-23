@@ -504,11 +504,13 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("backgroundMusic").pause();
         document.getElementById("timer").src="images/success.gif";
         answerContainers[questionNumber].style.color = "lightgreen";
+        resultsContainer.innerHTML = 'Correct!';
+        setTimeout(newLevel, 1500);
         numCorrect++;
 
         
 
-        resultsContainer.innerHTML = 'Correct!';
+        
 
         setQuestionAnswered("array", level, question, correctness);
 
