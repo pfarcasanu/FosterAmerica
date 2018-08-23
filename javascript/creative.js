@@ -11,6 +11,16 @@ function levelSelect2() {
   window.setTimeout(levelSelect, 400)
 }
 
+function stopBodyScrolling (bool) {
+  if (bool === true) {
+      document.body.addEventListener("touchmove", freezeVp, false);
+  } else {
+      document.body.removeEventListener("touchmove", freezeVp, false);
+  }
+}
+
+window.onload = stopBodyScrolling(true);
+
 /*
 (function($) {
   "use strict"; // Start of use strict
