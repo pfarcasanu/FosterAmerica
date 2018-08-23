@@ -384,8 +384,9 @@ div.image {
 
   #mainNav .navbar-brand1 {
     font-weight: 1000;
-    font-size: 60%;
+    font-size: 50%;
     text-transform: uppercase;
     color: purple;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    align-content: left;
   }
