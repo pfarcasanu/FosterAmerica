@@ -46,13 +46,23 @@ function bodyClicked(e) {
   window.setTimeout(levelNew, 400)
 }
 
-function levelNew() {
+/*function levelNew() {
   window.location="levelnew.html"
-}
+}*/
 
 function ResetGame(){
   document.cookie = "array=0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
   window.location = "index.html";
+}
+
+var button_sound = document.getElementById("buttonSound"); 
+
+function buttonClick2() {
+  button_sound.play();
+
+  button_sound.onended = function(){
+    window.location.href = "levelnew.html";
+  }
 }
 
 /*function inputEmail() {
