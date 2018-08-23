@@ -33,7 +33,9 @@ var freezeVp = function(e) {
 
 window.onload = stopBodyScrolling(true); */
 
-/*
+
+
+/* Built in boostrap code that i think we dont want!
 (function($) {
   "use strict"; // Start of use strict
 
