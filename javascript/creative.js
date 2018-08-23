@@ -16,6 +16,8 @@ function levelSelect() {
   window.setTimeout(levelSelect, 400)
 }*/
 
+
+//body scrolling
 function stopBodyScrolling (bool) {
   if (bool === true) {
       document.body.addEventListener("touchmove", freezeVp, false);
@@ -23,6 +25,10 @@ function stopBodyScrolling (bool) {
       document.body.removeEventListener("touchmove", freezeVp, false);
   }
 }
+
+var freezeVp = function(e) {
+  e.preventDefault();
+};
 
 window.onload = stopBodyScrolling(true);
 
