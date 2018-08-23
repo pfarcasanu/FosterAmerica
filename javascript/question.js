@@ -501,6 +501,8 @@ function setQuestionAnswered(cname, level, question, value){
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         document.getElementById("correctSound").play();
+        document.getElementById("backgroundMusic").scrollTop();
+        document.getElementById("timer").src="images/success.gif";
         numCorrect++;
 
         answerContainers[questionNumber].style.color = "lightgreen";

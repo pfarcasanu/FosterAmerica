@@ -6,7 +6,7 @@ body{
     color: #333;
   font-weight: 300;
   text-align: center;
-  background-color: #f8f6f0;
+  background-color: lavender;
   overflow: hidden;
 }
 html {
@@ -67,4 +67,10 @@ button:hover{
   position: relative;
   height: 200px;
   margin-top: 40px;
+}
+
+.fakeTimer {
+  float: right;
+  height: 40%;
+  width: 20%;
 }
