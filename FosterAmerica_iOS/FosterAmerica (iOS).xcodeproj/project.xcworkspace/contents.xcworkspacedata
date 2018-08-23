@@ -2,10 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-<<<<<<< HEAD
-      location = "self:FosterAmerica (iOS).xcodeproj">
-=======
       location = "self:">
->>>>>>> origin/master
+   </FileRef>
+   <FileRef
+      location = "group:..">
    </FileRef>
 </Workspace>
