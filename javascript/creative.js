@@ -17,7 +17,8 @@ function levelSelect() {
 }*/
 
 
-//body scrolling
+//body scrolling that doesnt work rn 
+/*
 function stopBodyScrolling (bool) {
   if (bool === true) {
       document.body.addEventListener("touchmove", freezeVp, false);
@@ -30,7 +31,7 @@ var freezeVp = function(e) {
   e.preventDefault();
 };
 
-window.onload = stopBodyScrolling(true);
+window.onload = stopBodyScrolling(true); */
 
 /*
 (function($) {
