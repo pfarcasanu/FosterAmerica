@@ -8,10 +8,10 @@ window.onload = function(){
     // calculate num answered questions
     var array = str.split("|").join().split(",");
     array.forEach(element => {
-      if (parseInt(element) = 2) num_correct++;
+      if (parseInt(element) == 2) num_correct++;
     });
   }
-  document.getElementById("quesAnsLabel").innerHTML = "You Answered:</br>" + num_correct.toString() + "/24"
+  document.getElementById("quesAnsLabel").innerHTML = "You Answered:</br>" + num_correct.toString() + "/24" +
   												" (" + Math.floor(num_correct/24).toString()+ ")";
 }
 
@@ -29,4 +29,13 @@ function getCookie(cname) {
 		}
 	}
 	return "";
+}
+
+// control events
+function continueButtonClick(){
+  button_sound.play();
+
+  button_sound.onended = function(){
+    window.location.href = "homepage.html";
+  }  
 }

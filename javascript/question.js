@@ -48,11 +48,12 @@ function setQuestionAnswered(cname, level, question, value){
 (function() {
   const level1_questions = [
     {
-      question: "Hamilton is:",
+      question: "When and by whom was our foster care system created?",
       answers: {
-        a: "Cool",
-        b: "Funny",
-        c: "a loser"
+        a: "Cornelius Vanderbilt in 1815",
+        b: "John D. Rockefeller 1922",
+        c: "Charles Loring Brace in 1953",
+        d: "Thomas Jefferson in 1796"
       },
       correctAnswer: "c"
     },
