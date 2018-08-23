@@ -1,15 +1,20 @@
+var button_sound = document.getElementById("buttonSound"); 
+
 function buttonClick() {
-  //document.getElementById("buttonSound").load();
-  document.getElementById("buttonSound").play();
+  button_sound.play();
+
+  button_sound.onended = function(){
+    window.location.href = "levelselect_new.html";
+  }  
 }
 
 function levelSelect() {
   window.location = "levelselect_new.html";
 }
 
-function levelSelect2() {
+/*function levelSelect2() {
   window.setTimeout(levelSelect, 400)
-}
+}*/
 
 function stopBodyScrolling (bool) {
   if (bool === true) {
