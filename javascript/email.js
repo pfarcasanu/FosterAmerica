@@ -5,11 +5,10 @@ window.onload = function(){
     str = "array=" + empty_str;
     document.cookie = str;
   } else {
-	  
     // calculate num answered questions
     var array = str.split("|").join().split(",");
     array.forEach(element => {
-      if (parseInt(element) = 2) num_correct++;
+      if (parseInt(element) == 2) num_correct++;
     });
   }
   document.getElementById("quesAnsLabel").innerHTML = "You Answered:</br>" + num_correct.toString() + "/24"
