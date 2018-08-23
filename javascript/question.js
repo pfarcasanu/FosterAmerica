@@ -503,9 +503,10 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("correctSound").play();
         document.getElementById("backgroundMusic").stop();
         document.getElementById("timer").src="images/success.gif";
+        answerContainers[questionNumber].style.color = "lightgreen";
         numCorrect++;
 
-        answerContainers[questionNumber].style.color = "lightgreen";
+        
 
         resultsContainer.innerHTML = 'Correct!';
 
