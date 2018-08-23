@@ -507,6 +507,8 @@ function setQuestionAnswered(cname, level, question, value){
 
         answerContainers[questionNumber].style.color = "lightgreen";
 
+        resultsContainer.innerHTML = 'Correct!';
+
         setQuestionAnswered("array", level, question, correctness);
 
         setTimeout(newLevel, 1500);
