@@ -509,7 +509,6 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("timer").src="images/successFINAL.gif";
         answerContainers[questionNumber].style.color = "lightgreen";
         resultsContainer.innerHTML = 'Correct!';
-        setTimeout(document.body.innerHTML = '', 4000);
         setTimeout(explanation, 4000)
         numCorrect++;
 
