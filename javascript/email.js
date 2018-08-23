@@ -5,6 +5,7 @@ window.onload = function(){
     str = "array=" + empty_str;
     document.cookie = str;
   } else {
+	  
     // calculate num answered questions
     var array = str.split("|").join().split(",");
     array.forEach(element => {
@@ -29,4 +30,13 @@ function getCookie(cname) {
 		}
 	}
 	return "";
+}
+
+// control events
+function continueButtonClick(){
+  button_sound.play();
+
+  button_sound.onended = function(){
+    window.location.href = "homepage.html";
+  }  
 }
