@@ -62,7 +62,7 @@ function setQuestionAnswered(cname, level, question, value){
       answers: {
         a: "SitePoint super long super long super long super long super long super long super long",
         b: "Simple Steps short",
-        c: "Trick question; they're both the best long long long long long longlfdsafdsafdsafdsafdsafdsafasdfdsafdasfdsafdsfadsf"
+        c: "Trick question; they're both the best long long long long long longlfdsafds afdsafdsafdsafdsa fasdfds afdasfdsafdsfadsf"
       },
       correctAnswer: "c"
     },
@@ -446,8 +446,8 @@ function setQuestionAnswered(cname, level, question, value){
   // pull the specific questions
   var question = getNumber(getCookie("question"));
   var level = getNumber(getCookie("level"));
-  //const myQuestions = [questions_collect[level][question]];
-  const myQuestions = [questions_collect[0][0]];
+  const myQuestions = [questions_collect[level][question]];
+  //const myQuestions = [questions_collect[0][1]];
 
   // the user hasn't gottena  question wrong yet
   var correctness = 2;
