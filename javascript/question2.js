@@ -446,8 +446,8 @@ function setQuestionAnswered(cname, level, question, value){
   // pull the specific questions
   var question = getNumber(getCookie("question"));
   var level = getNumber(getCookie("level"));
-  //const myQuestions = [questions_collect[level][question]];
-  const myQuestions = [questions_collect[0][1]];
+  const myQuestions = [questions_collect[level][question]];
+  //const myQuestions = [questions_collect[0][1]];
 
   // the user hasn't gotten a  question wrong yet
   var correctness = 2;
