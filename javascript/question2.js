@@ -60,9 +60,9 @@ function setQuestionAnswered(cname, level, question, value){
     {
       question: "Level 1: Question 2",
       answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
+        a: "SitePoint super long super long super long super long super long super long super long",
+        b: "Simple Steps short",
+        c: "Trick question; they're both the best long long long long long longlfdsafdsafdsafdsafdsafdsafasdfdsafdasfdsafdsfadsf"
       },
       correctAnswer: "c"
     },
