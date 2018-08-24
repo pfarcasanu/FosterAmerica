@@ -1,0 +1,15 @@
+.questionText {
+  font-size: 80%;
+}
+
+.answers {
+  text-align: start;
+}
+
+#ans_collect {
+    width: 100%; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
