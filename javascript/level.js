@@ -41,5 +41,5 @@ function questionClick(e){
     console.log("targID = " + targID);
     console.log(typeof targID);
     questionWasPressed(targID);
-    window.location = 'question.html';
+    window.location = 'question2.html';
 }
