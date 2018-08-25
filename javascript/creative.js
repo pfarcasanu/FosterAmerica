@@ -4,7 +4,7 @@ function buttonClick() {
   button_sound.play();
 
   button_sound.onended = function(){
-    window.location.href = "levelselect_new.html";
+    window.location.href = "disclaimer.html";
   }  
 }
 
