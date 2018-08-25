@@ -447,7 +447,7 @@ function setQuestionAnswered(cname, level, question, value){
   var question = getNumber(getCookie("question"));
   var level = getNumber(getCookie("level"));
   const myQuestions = [questions_collect[level][question]];
-  //const myQuestions = [questions_collect[0][1]];
+  //const myQuestions = [questions_collect[1][1]];
 
   // the user hasn't gotten a  question wrong yet
   var correctness = 2;
@@ -478,8 +478,7 @@ function setQuestionAnswered(cname, level, question, value){
       // add this question and its answers to the output
       output.push(
         `<div class="slide">
-           <div class="answers"> ${answers.join("")} </div>
-           </br>
+           <div class="answers"> ${answers.join("</br>")} </div>
          </div>`
       );
     });
