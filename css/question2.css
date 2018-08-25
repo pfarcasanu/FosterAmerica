@@ -13,3 +13,7 @@
     padding: 20px;
     position: relative;
 }
+
+body {
+  background-color: teal;
+}

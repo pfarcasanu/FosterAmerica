@@ -1,3 +1,7 @@
+window.onload = function() {
+  document.getElementById("backgroundMusic").play();
+}
+
 function newLevel() {
   window.location = 'levelnew.html';
 }
