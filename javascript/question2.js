@@ -11,6 +11,11 @@ window.onresize = function() {
 $(function() {
   window.onresize();
 });
+
+targetElement.ontouchend = (e) => {
+  e.preventDefault();
+};
+
 window.onload = function() {
   document.getElementById("backgroundMusic").play();
 }

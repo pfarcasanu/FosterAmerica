@@ -26,6 +26,10 @@ $(function() {
   window.onresize();
 });
 
+targetElement.ontouchend = (e) => {
+  e.preventDefault();
+};
+
 /*function levelSelect2() {
   window.setTimeout(levelSelect, 400)
 }*/

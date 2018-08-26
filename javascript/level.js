@@ -57,3 +57,7 @@ document.body.addEventListener('touchmove', function(event) {
   $(function() {
     window.onresize();
   });
+
+  targetElement.ontouchend = (e) => {
+    e.preventDefault();
+};
