@@ -196,7 +196,7 @@ header.masthead p {
 @media (min-width: 300px){
   header.masthead {
     /*height: 100vh;*/
-    height: 93vh;
+    height: 93%;
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
@@ -212,7 +212,7 @@ header.masthead p {
 @media (min-width: 992px) {
   header.masthead {
     /*height: 100vh;*/
-    height: 93vh;
+    height: 93%;
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
@@ -366,12 +366,12 @@ div.image {
   }
 
   .top{
-    height: 7vh;
+    height: 7%;
     width: 100%;
   }
 
   .bottom{
-    height: 93vh;
+    height: 93%;
     width: 100%;
   }
 
