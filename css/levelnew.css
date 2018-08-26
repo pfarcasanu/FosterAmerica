@@ -348,7 +348,7 @@ div.image {
     background-image: url(fostercare101.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 93vh;
+    background-size: auto 100%;
     background-attachment: inherit;
     height: 100%;
     width: 100%;
