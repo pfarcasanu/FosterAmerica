@@ -43,3 +43,8 @@ function questionClick(e){
     questionWasPressed(targID);
     window.location = 'question2.html';
 }
+
+document.body.addEventListener("touchmove", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+}, false);

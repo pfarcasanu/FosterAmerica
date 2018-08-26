@@ -1,3 +1,8 @@
+document.body.addEventListener("touchmove", function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+}, false);
+
 function newLevel() {
   window.location = 'levelnew.html';
 }

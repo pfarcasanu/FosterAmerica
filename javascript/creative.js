@@ -12,6 +12,12 @@ function levelSelect() {
   window.location = "levelselect_new.html";
 }
 
+document.body.addEventListener("touchmove", function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+}, false);
+
+
 /*function levelSelect2() {
   window.setTimeout(levelSelect, 400)
 }*/

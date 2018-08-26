@@ -12,3 +12,8 @@ var button_sound2 = document.getElementById("buttonSound2");
 function testSound() {
     button_sound2.play();
 }
+
+document.body.addEventListener("touchmove", function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+}, false);

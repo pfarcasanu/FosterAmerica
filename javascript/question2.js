@@ -1,3 +1,8 @@
+document.body.addEventListener("touchmove", function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+}, false);
+
 window.onload = function() {
   document.getElementById("backgroundMusic").play();
 }
