@@ -8,6 +8,14 @@ function buttonClick() {
   }  
 }
 
+function buttonClick2() {
+  button_sound.play();
+
+  button_sound.onended = function(){
+    window.location.href = "levelnew.html";
+  }  
+}
+
 function levelSelect() {
   window.location = "levelselect_new.html";
 }
