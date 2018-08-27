@@ -334,20 +334,9 @@ div.square{
  font-size: 300%;
 }
 
-
-div.image {
-    content: url(white.png);
-    background-image: url(fosteramericalogo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50% 50%;
-    /*background-color: dodgerblue;*/
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    background-image: url(fostercare101.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -356,16 +345,6 @@ div.image {
     width: 100%;
   }
   
-  .grid-content{
-    content: url(white.png);
-    /*background-image: url(fosteramericalogo.png);*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50% 50%;
-    background-color: dodgerblue;
-    height: 100%;
-    width: 100%;
-  }
 
   .top{
     height: 8.2%;
@@ -379,7 +358,6 @@ div.image {
 
   .box {
     background-image: url(fosteramericalogo.png), url(border3.gif);
-    background-color: dodgerblue;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
     background-size: 50% auto, 100% 100%;
