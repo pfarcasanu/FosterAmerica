@@ -4,8 +4,14 @@ function buttonClick() {
   button_sound.play();
 
   button_sound.onended = function(){
+    var disclaimer = getCookie("disclaimer");
+    if (disclaimer != ""){
+      window.location.href = "levelselect_new.html";
+      }
+    else{
     document.cookie = "disclaimer=0";
     window.location.href = "disclaimer.html";
+    }
   }  
 }
 
@@ -16,15 +22,6 @@ function buttonClick2() {
     window.location.href = "levelselect_new.html";
   }  
 }
-
-
-window.onload = function(){
-  var disclaimer = getCookie("disclaimer");
-  if (disclaimer != ""){
-    document.getElementById("mybutton").onmousedown = buttonClick2();
-  }
-}
-
 
 function getCookie(cname) {
   var name = cname + "=";
