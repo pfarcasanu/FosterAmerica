@@ -1,3 +1,15 @@
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
+
+
 window.onload = function(){
 var x = document.getElementById("grid");
 var y = x.getElementsByClassName("box");
@@ -9,7 +21,7 @@ var questions = str.split("|")[level].split(",");
 for (i = 0; i<questions.length; i++){
     if (questions[i] != 0){
     document.getElementById(i).onclick = null;
-    document.getElementById(i).style.opacity = 0;
+    document.getElementById(i).remove();
         }
     }
 
