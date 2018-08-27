@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+
+button{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 44px;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 10px;
+  padding: 35px;
+  cursor: pointer;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  box-shadow: 5px 10px #888888;
+}
+
+p {
+  justify-content: left;
+  font-size: 10%;
+}
+
+a {
+  font-size: 100%;
+}
+
+.twoButtons {
+  align-content: center;
+  max-width: 100%;
+}
