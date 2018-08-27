@@ -5,6 +5,7 @@ var z;
 var str = getCookie("array");
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
+this.console.log(questions);
 
 for (i = 0; i<questions.length; i++){
     if (questions[i] != 0){
