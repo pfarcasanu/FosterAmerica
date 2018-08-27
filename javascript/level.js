@@ -8,6 +8,10 @@ for (i = 0; i<questions.length; i++){
     document.getElementById(i).style.opacity = 0;
         }
     }
+if (level == 0) {
+    document.getElementsByClassName("box").backgroundcolor = "red";
+    document.getElementsByClassName("grid-container").backgroundimage = "url(fostercare101.png)";
+    document.getElementsByClassName("navbar-brand1").innerHTML = "Foster Care 101";
 }
       
 function setQuestionCookie(cname, new_question) {
