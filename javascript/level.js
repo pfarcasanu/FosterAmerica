@@ -2,11 +2,11 @@ window.onload = function(){
 var str = getCookie("array");
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
-/*if (level == 0) {
+if (level == 0) {
     document.getElementsByClassName("box").style.backgroundColor = "red";
     document.getElementsByClassName("grid-container").style.backgroundImage = "url(fostercare101.png)";
     document.getElementsByClassName("navbar-brand1").innerHTML = "Foster Care 101";
-}*/
+}
 for (i = 0; i<questions.length; i++){
     if (questions[i] != 0){
     document.getElementById(i).onclick = null;
