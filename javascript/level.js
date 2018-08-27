@@ -5,14 +5,14 @@ var z;
 var str = getCookie("array");
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
-if (level == 0) {
-    for (i = 0; i<questions.length; i++){
-        if (questions[i] != 0){
-        document.getElementById(i).onclick = null;
-        document.getElementById(i).style.opacity = 0;
-            }
+for (i = 0; i<questions.length; i++){
+    if (questions[i] != 0){
+    document.getElementById(i).onclick = null;
+    document.getElementById(i).style.opacity = 0;
         }
-    
+    }
+
+if (level == 0) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
     }
@@ -23,13 +23,6 @@ if (level == 0) {
 
 
 if (level == 1) {
-    for (i = 0; i<questions.length; i++){
-        if (questions[i] != 0){
-        document.getElementById(i).onclick = null;
-        document.getElementById(i).style.opacity = 0;
-            }
-        }
-    
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "orange";
     }
@@ -38,12 +31,6 @@ if (level == 1) {
 }
 
 if (level == 2) {
-    for (i = 0; i<questions.length; i++){
-        if (questions[i] != 0){
-        document.getElementById(i).onclick = null;
-        document.getElementById(i).style.opacity = 0;
-            }
-        }
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "yellow";
     }
@@ -52,12 +39,6 @@ if (level == 2) {
 }
 
 if (level == 3) {
-    for (i = 0; i<questions.length; i++){
-        if (questions[i] != 0){
-        document.getElementById(i).onclick = null;
-        document.getElementById(i).style.opacity = 0;
-            }
-        }
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "green";
     }
@@ -66,12 +47,6 @@ if (level == 3) {
 }
 
 if (level == 4) {
-    for (i = 0; i<questions.length; i++){
-        if (questions[i] != 0){
-        document.getElementById(i).onclick = null;
-        document.getElementById(i).style.opacity = 0;
-            }
-        }
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "blue";
     }
@@ -80,19 +55,13 @@ if (level == 4) {
 }
 
 if (level == 5) {
-    for (i = 0; i<questions.length; i++){
-        if (questions[i] != 0){
-        document.getElementById(i).onclick = null;
-        document.getElementById(i).style.opacity = 0;
-            }
-        }
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "purple";
     }
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "A Problem We Can Solve";
     x.style.backgroundImage = "../images/header.jpg";
 }
-}
+
       
 function setQuestionCookie(cname, new_question) {
     document.cookie = cname + "=" +  new_question + ";";
@@ -116,6 +85,7 @@ function getCookie(cname) {
         }
     }
     return "";
+}
 }
 
 function questionClick(e){
