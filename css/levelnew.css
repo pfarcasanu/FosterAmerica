@@ -341,13 +341,13 @@ div.image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;
-    background-color: dodgerblue;
+    /*background-color: dodgerblue;*/
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    background-image: url(fostercare101.png);
+    background-color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;

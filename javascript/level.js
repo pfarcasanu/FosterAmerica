@@ -9,8 +9,8 @@ if (level == 0) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
     }
-    x.style.backgroundImage = "url(levelselect.png)";
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Foster Care 101";
+    x.style.backgroundImage = "../images/header.jpg";
 }
 for (i = 0; i<questions.length; i++){
     if (questions[i] != 0){
