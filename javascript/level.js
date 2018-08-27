@@ -6,12 +6,19 @@ var str = getCookie("array");
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
 
+for (i = 0; i<questions.length; i++){
+    if (questions[i] != 0){
+    document.getElementById(i).onclick = null;
+    document.getElementById(i).style.opacity = 0;
+        }
+    }
+
 if (level == 0) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
     }
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Foster Care 101";
-    x.style.backgroundImage = "../images/fostercare101.png";
+    x.style.backgroundImage = "url('fostercare101.png')";
 }
     
 
@@ -21,7 +28,7 @@ if (level == 1) {
         y[z].style.backgroundColor = "orange";
     }
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Facts and Figures";
-    x.style.backgroundImage = "../images/header.jpg";
+    x.style.backgroundImage = "url('levelselect.png')";
 }
 
 if (level == 2) {
@@ -29,7 +36,7 @@ if (level == 2) {
         y[z].style.backgroundColor = "yellow";
     }
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Diary of an Orphan";
-    x.style.backgroundImage = "../images/header.jpg";
+    x.style.backgroundImage = "url('levelselect.png')";
 }
 
 if (level == 3) {
@@ -37,7 +44,7 @@ if (level == 3) {
         y[z].style.backgroundColor = "green";
     }
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Governments as Parents";
-    x.style.backgroundImage = "../images/header.jpg";
+    x.style.backgroundImage = "url('levelselect.png')";
 }
 
 if (level == 4) {
@@ -45,7 +52,7 @@ if (level == 4) {
         y[z].style.backgroundColor = "blue";
     }
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "So You Turned 18";
-    x.style.backgroundImage = "../images/header.jpg";
+    x.style.backgroundImage = "url('levelselect.png')";
 }
 
 if (level == 5) {
@@ -53,14 +60,8 @@ if (level == 5) {
         y[z].style.backgroundColor = "purple";
     }
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "A Problem We Can Solve";
-    x.style.backgroundImage = "../images/header.jpg";
+    x.style.backgroundImage = "url('levelselect.png')";
 }
-for (i = 0; i<questions.length; i++){
-    if (questions[i] != 0){
-    document.getElementById(i).onclick = null;
-    document.getElementById(i).style.opacity = 0;
-        }
-    }
 }
       
 function setQuestionCookie(cname, new_question) {
