@@ -7,6 +7,7 @@ for (i = 0; i<questions.length; i++){
     document.getElementById(i).onclick = null;
     document.getElementById(i).style.opacity = 0;
         }
+    }
 
 if (level == 0) {
     document.getElementsByClassName("box").style.backgroundColor = "red";
@@ -47,4 +48,4 @@ function questionClick(e){
     console.log(typeof targID);
     questionWasPressed(targID);
     window.location = 'question2.html';
-}}
+}
