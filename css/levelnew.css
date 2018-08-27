@@ -358,7 +358,7 @@ div.image {
   
   .grid-content{
     content: url(white.png);
-    background-image: url(fosteramericalogo.png);
+    /*background-image: url(fosteramericalogo.png);*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;
