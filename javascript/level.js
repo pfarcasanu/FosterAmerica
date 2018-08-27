@@ -61,7 +61,7 @@ if (level == 5) {
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "A Problem We Can Solve";
     x.style.backgroundImage = "../images/header.jpg";
 }
-
+}
       
 function setQuestionCookie(cname, new_question) {
     document.cookie = cname + "=" +  new_question + ";";
@@ -85,7 +85,6 @@ function getCookie(cname) {
         }
     }
     return "";
-}
 }
 
 function questionClick(e){
