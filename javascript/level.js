@@ -47,4 +47,4 @@ function questionClick(e){
     console.log(typeof targID);
     questionWasPressed(targID);
     window.location = 'question2.html';
-}
+}}
