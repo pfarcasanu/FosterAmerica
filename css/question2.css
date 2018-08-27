@@ -86,11 +86,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 70px);
-<<<<<<< HEAD
   background-image: url("../images/darkbluebg.jpg");
-=======
-  background-color: rgb(36, 34, 34);
->>>>>>> 8b4ff8ab76a7f7ee1ea9e93584e549922dce16c6
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
