@@ -3,9 +3,9 @@ var str = getCookie("array");
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
 if (level == 0) {
-    document.getElementsByClassName("box").style.backgroundColor = "red";
-    document.getElementsByClassName("grid-container").style.backgroundImage = "url(fostercare101.png)";
-    document.getElementsByClassName("navbar-brand1").innerHTML = "Foster Care 101";
+    document.getElementsByClassName("box")[0,1,2,3].style.backgroundColor = "red";
+    document.getElementsByClassName("grid-container")[0].style.backgroundImage = "url(fostercare101.png)";
+    document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Foster Care 101";
 }
 for (i = 0; i<questions.length; i++){
     if (questions[i] != 0){
