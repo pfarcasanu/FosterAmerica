@@ -9,8 +9,8 @@ for (i = 0; i<questions.length; i++){
         }
 
 if (level == 0) {
-    document.getElementsByClassName("box").backgroundcolor = "red";
-    document.getElementsByClassName("grid-container").backgroundimage = "url(fostercare101.png)";
+    document.getElementsByClassName("box").style.backgroundColor = "red";
+    document.getElementsByClassName("grid-container").style.backgroundImage = "url(fostercare101.png)";
     document.getElementsByClassName("navbar-brand1").innerHTML = "Foster Care 101";
 }
 }
