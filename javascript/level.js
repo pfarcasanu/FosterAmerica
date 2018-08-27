@@ -15,7 +15,7 @@ for (i = 0; i<questions.length; i++){
     }
 
 if (level == 0) {
-    document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Foster Care 101";
+    document.getElementById("category").innerHTML = "Foster Care 101";
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
     }
@@ -28,7 +28,7 @@ if (level == 1) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "orange";
     }
-    document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Facts and Figures";
+    document.getElementById("category").innerHTML = "Facts and Figures";
     /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 
@@ -36,7 +36,7 @@ if (level == 2) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "yellow";
     }
-    document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Diary of an Orphan";
+    document.getElementById("category").innerHTML = "Diary of an Orphan";
     /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 
@@ -44,7 +44,7 @@ if (level == 3) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "green";
     }
-    document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Governments as Parents";
+    document.getElementById("category").innerHTML = "Governments as Parents";
     /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 
@@ -52,7 +52,7 @@ if (level == 4) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "blue";
     }
-    document.getElementsByClassName("navbar-brand1")[0].innerHTML = "So You Turned 18";
+    document.getElementById("category").innerHTML = "So You Turned 18";
     /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 
@@ -60,7 +60,7 @@ if (level == 5) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "purple";
     }
-    document.getElementsByClassName("navbar-brand1")[0].innerHTML = "A Problem We Can Solve";
+    document.getElementById("category").innerHTML = "A Problem We Can Solve";
     /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 }
