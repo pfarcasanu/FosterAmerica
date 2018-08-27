@@ -19,7 +19,7 @@ if (level == 0) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
     }
-    /*x.style.backgroundImage = "url('fostercare101.png')";*/
+    x.style.background = "../images/header.jpg";
 }
     
 
