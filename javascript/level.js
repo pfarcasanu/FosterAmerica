@@ -5,12 +5,6 @@ var z;
 var str = getCookie("array");
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
-for (i = 0; i<questions.length; i++){
-    if (questions[i] != 0){
-    document.getElementById(i).onclick = null;
-    document.getElementById(i).style.opacity = 0;
-        }
-    }
 
 if (level == 0) {
     for (z = 0; z < y.length; z++) {
@@ -61,6 +55,12 @@ if (level == 5) {
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "A Problem We Can Solve";
     x.style.backgroundImage = "../images/header.jpg";
 }
+for (i = 0; i<questions.length; i++){
+    if (questions[i] != 0){
+    document.getElementById(i).onclick = null;
+    document.getElementById(i).style.opacity = 0;
+        }
+    }
 }
       
 function setQuestionCookie(cname, new_question) {
