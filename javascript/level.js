@@ -9,7 +9,7 @@ if (level == 0) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
     }
-    x.style.backgroundImage = "url(../images/header.jpg)";
+    x.style.backgroundImage = "url(levelselect.png)";
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Foster Care 101";
 }
 for (i = 0; i<questions.length; i++){
