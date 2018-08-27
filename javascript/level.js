@@ -1,13 +1,15 @@
 window.onload = function(){
+var x = document.getElementById("grid");
+var y = x.getElementsByClassName("box");
+var z;
 var str = getCookie("array");
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
 if (level == 0) {
-    document.getElementsByClassName("box")[0].style.backgroundColor = "red";
-    document.getElementsByClassName("box")[1].style.backgroundColor = "red";
-    document.getElementsByClassName("box")[2].style.backgroundColor = "red";
-    document.getElementsByClassName("box")[3].style.backgroundColor = "red";
-    document.getElementsByClassName("grid-container")[0].style.backgroundImage = "url(fostercare101.png)";
+    for (z = 0; z < y.length; z++) {
+        y[z].style.backgroundColor = "red";
+    }
+    x.style.backgroundImage = "url(../images/header.jpg)";
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Foster Care 101";
 }
 for (i = 0; i<questions.length; i++){
