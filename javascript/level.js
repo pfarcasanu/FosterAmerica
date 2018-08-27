@@ -15,7 +15,7 @@ for (i = 0; i<questions.length; i++){
     }
 
 if (level == 0) {
-    x.style.background = "url(levelselect.png)";
+    x.style.background = "url('levelselect.png')";
     document.getElementById("category").innerHTML = "Foster Care 101";
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
