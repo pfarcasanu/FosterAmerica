@@ -13,13 +13,13 @@ for (i = 0; i<questions.length; i++){
         }
     }
 
-/*if (level == 0) {
+if (level == 0) {
     document.getElementsByClassName("navbar-brand1")[0].innerHTML = "Foster Care 101";
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
     }
-    /*x.style.backgroundImage = "url('fostercare101.png')";
-}*/
+    /*x.style.backgroundImage = "url('fostercare101.png')";*/
+}
     
 
 
