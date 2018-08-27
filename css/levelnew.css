@@ -347,7 +347,7 @@ div.image {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    /*background-color: white;*/
+    background-image: url(fostercare101.png)
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
