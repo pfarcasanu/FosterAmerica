@@ -11,7 +11,7 @@ window.onload = function(){
       if (parseInt(element) == 2) num_correct++;
     });
 	}
-	str = "You Answered:</br>" + num_correct.toString() + "/24" + " (" + Math.floor(num_correct/24).toString()+ ")";
+	str = "You Answered:</br>" + num_correct.toString() + "/24" + " (" + Math.floor(num_correct*100/24).toString()+ ")";
 	document.getElementById("quesAnsLabel").innerHTML = str;
 	this.console.log(str);
 	this.console.log(Math.floor(num_correct/24).toString());
