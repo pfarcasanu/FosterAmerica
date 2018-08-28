@@ -14,10 +14,6 @@ for (i = 0; i<questions.length; i++){
         }
     }
 
-if (questions.all(x => x != 0)){
-    window.alert('all answered');
-}
-
 if (level == 0) {
     ChangeBackgroundImageOfGrid("fostercare101");
     document.getElementById("category").innerHTML = "Foster Care 101";
