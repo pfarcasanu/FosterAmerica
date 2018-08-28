@@ -15,7 +15,7 @@ for (i = 0; i<questions.length; i++){
     }
 
 if (level == 0) {
-    document.getElementById("grid").style.backgroundImage = "url(../images/fostercare101.png)";
+    ChangeBackgroundImageOfGrid("fostercare101");
     document.getElementById("category").innerHTML = "Foster Care 101";
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
@@ -97,4 +97,10 @@ function questionClick(e){
     console.log(typeof targID);
     questionWasPressed(targID);
     window.location = 'question2.html';
+}
+
+function ChangeBackgroundImageOfGrid(imagePrefix)
+{
+    var urlString = 'url(..images/' + imagePrefix + '.png)';
+    document.getElementById("grid").style.backgroundImage =  urlString;
 }

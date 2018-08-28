@@ -337,6 +337,7 @@ div.square{
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
+    background-image: "..images/white.jpg";
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
