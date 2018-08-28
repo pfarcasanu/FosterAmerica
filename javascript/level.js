@@ -18,7 +18,7 @@ for (i = 0; i<questions.length; i++){
     
     
 if (level == 0) {
-    ChangeBackgroundImageOfGrid("header");
+    ChangeBackgroundImageOfGrid("fostercare101blurry");
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
         FadeBackground("fostercare101");
