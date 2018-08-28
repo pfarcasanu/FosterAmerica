@@ -38,6 +38,6 @@ function continueButtonClick(){
   button_sound.play();
 
   button_sound.onended = function(){
-    window.location.href = "homepage.html";
+    window.location.href = "index.html";
   }  
 }
