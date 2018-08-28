@@ -112,6 +112,6 @@ function ChangeBackgroundImageOfGrid(imagePrefix){
 function FadeBackground(imagePrefix){
     $('#grid').delay(1000).fadeTo('slow', 0.3, function(){
     $(this).css('background-image', 'url(' + imagePrefix + '.png)');
-})
+}).fadeTo('slow', 1)
 }
     
