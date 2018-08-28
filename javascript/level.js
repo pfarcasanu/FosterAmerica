@@ -22,46 +22,45 @@ if (level == 0) {
     }
 }
     
-
-
 if (level == 1) {
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "orange";
     }
+    ChangeBackgroundImageOfGrid("header");
     document.getElementById("category").innerHTML = "Facts and Figures";
-    /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 
 if (level == 2) {
+    ChangeBackgroundImageOfGrid("header");
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "yellow";
     }
     document.getElementById("category").innerHTML = "Diary of an Orphan";
-    /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 
 if (level == 3) {
+    ChangeBackgroundImageOfGrid("header");
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "green";
     }
     document.getElementById("category").innerHTML = "Governments as Parents";
-    /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 
 if (level == 4) {
+    ChangeBackgroundImageOfGrid("header");
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "blue";
     }
     document.getElementById("category").innerHTML = "So You Turned 18";
-    /*x.style.backgroundImage = "url('fostercare101.png')";*/
 }
 
 if (level == 5) {
+    ChangeBackgroundImageOfGrid("header");
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "purple";
     }
     document.getElementById("category").innerHTML = "A Problem We Can Solve";
-    /*x.style.backgroundImage = "url('fostercare101.png')";*/
+    
 }
 }
       
