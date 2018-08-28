@@ -101,3 +101,4 @@ function questionClick(e){
 function ChangeBackgroundImageOfGrid(imagePrefix){
     $('#grid').css('background-image','url(images/' + imagePrefix + '.png)');
 }
+
