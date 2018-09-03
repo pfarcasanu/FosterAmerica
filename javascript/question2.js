@@ -1,5 +1,8 @@
+var music = document.getElementById("backgroundMusic");
+music.volume = 0.2;
+
 window.onload = function() {
-  document.getElementById("backgroundMusic").play();
+  music.play();
 }
 
 function newLevel() {
