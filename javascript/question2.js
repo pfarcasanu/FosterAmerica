@@ -533,7 +533,7 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("incorrectSound").play();
         answerContainers[questionNumber].style.color = "red";
         correctness = 1;
-        //resultsContainer.innerHTML = 'Try Again!'
+        resultsContainer.innerHTML = 'Try Again!'
       }
     });
 
