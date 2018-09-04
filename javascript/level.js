@@ -24,9 +24,9 @@ if (level == 0) {
         FadeBackground("fostercare101");
     }
     document.getElementById("category").innerHTML = "Foster Care 101";
+    document.getElementsByClassName("touchHere").innerHTML = "Touch Here!";
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
-        document.getElementById("instructions").innerHTML = "Touch Here!";
      }
 }
         
