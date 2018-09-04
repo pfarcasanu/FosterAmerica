@@ -52,6 +52,7 @@ function bodyClicked(e) {
 
 function ResetGame(){
   document.cookie = "array=0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
+  document.cookie = "";
   window.location = "index.html";
 }
 
