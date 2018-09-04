@@ -23,6 +23,18 @@ function buttonClick2() {
   }  
 }
 
+function buttonClick3() {
+    var disclaimer = getCookie("disclaimer");
+    if (disclaimer != ""){
+      window.location.href = "levelselect_new.html";
+      }
+    else{
+    document.cookie = "disclaimer=0";
+    window.location.href = "disclaimer.html";
+    }
+  
+}
+
 function homePage() {
   button_sound.play();
 
