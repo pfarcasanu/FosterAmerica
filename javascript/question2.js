@@ -533,7 +533,7 @@ function setQuestionAnswered(cname, level, question, value){
         // color the answers red
         document.getElementById("incorrectSound").play();
         answerContainers[questionNumber].style.color = "red";
-        document.getElementById("resultsText").innerHTML = "Try again";
+        document.getElementById("resultsText").innerHTML = "Try again!";
         correctness = 1;
         resultsContainer.innerHTML = 'Try Again!';
       }
