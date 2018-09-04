@@ -535,7 +535,6 @@ function setQuestionAnswered(cname, level, question, value){
         answerContainers[questionNumber].style.color = "red";
         document.getElementById("resultsText").innerHTML = "Try again!";
         correctness = 1;
-        resultsContainer.innerHTML = 'Try Again!';
       }
     });
 
