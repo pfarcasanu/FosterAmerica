@@ -23,6 +23,14 @@ function buttonClick2() {
   }  
 }
 
+function homePage() {
+  button_sound.play();
+
+  button_sound.onended = function(){
+    window.location.href = "index.html";
+  }  
+}
+
 function getCookie(cname) {
   var name = cname + "=";
   var ca = document.cookie.split(';');
