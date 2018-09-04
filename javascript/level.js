@@ -24,13 +24,13 @@ if (level == 0) {
         FadeBackground("fostercare101");
     }
     document.getElementById("category").innerHTML = "Foster Care 101";
-    document.getElementsByClassName("touchHere").innerHTML = "Touch Here!";
     for (z = 0; z < y.length; z++) {
         y[z].style.backgroundColor = "red";
      }
 }
         
 if (level == 1) {
+    document.getElementsByClassName("touchHere").innerHTML = "";
     for (z = 0; z < y.length; z++) {
     y[z].style.backgroundColor = "orange";
     }
