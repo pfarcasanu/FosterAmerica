@@ -18,6 +18,7 @@ for (i = 0; i<questions.length; i++){
     
     
 if (level == 0) {
+    document.getElementsByClassName("touchHere").innerHTML = "Touch Here!";
     ChangeBackgroundImageOfGrid("fostercare101blurry");
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
@@ -30,7 +31,6 @@ if (level == 0) {
 }
         
 if (level == 1) {
-    document.getElementsByClassName("touchHere").innerHTML = "";
     for (z = 0; z < y.length; z++) {
     y[z].style.backgroundColor = "orange";
     }
