@@ -362,7 +362,9 @@ div.square{
     background-repeat: no-repeat, no-repeat;
     background-size: 50% auto, 100% 100%;
     text-align: center;
-    line-height: 110%;
+    font-size: 75%;
+    height: 50%;
+    line-height: 25%;
   }
 
   #mainNav .navbar-brand1 {
