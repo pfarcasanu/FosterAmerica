@@ -454,6 +454,8 @@ function setQuestionAnswered(cname, level, question, value){
   var question = getNumber(getCookie("question"));
   var level = getNumber(getCookie("level"));
   const myQuestions = [questions_collect[level][question]];
+  console.log(level)
+  console.log(question)
   //const myQuestions = [questions_collect[0][1]];
   console.log(myQuestions);
 
