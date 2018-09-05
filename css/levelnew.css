@@ -361,10 +361,8 @@ div.square{
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
     background-size: 50% auto, 100% 100%;
-    background-color: black;
     color: purple;
     text-align: center;
-    vertical-align: text-bottom;
   }
 
   #mainNav .navbar-brand1 {
