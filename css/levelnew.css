@@ -364,7 +364,9 @@ div.square{
   }
 
   .touchHere {
-    padding-top: 90%;
+    font-size: 100%;
+    height: 100%;
+    line-height: 100%;
     text-align: center;
     color: gray;
   }
