@@ -363,7 +363,7 @@ div.square{
     background-size: 50% auto, 100% 100%;
     text-align: center;
     color: white;
-    bottom: 10%;
+    top: 75%;
   }
 
   #mainNav .navbar-brand1 {
