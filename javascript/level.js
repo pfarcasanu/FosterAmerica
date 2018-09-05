@@ -1,4 +1,6 @@
 window.onload = function(){
+var w = document.getElementsByClassName("touchHere");
+var v;
 var x = document.getElementById("grid");
 var y = x.getElementsByClassName("box");
 var z;
@@ -18,7 +20,9 @@ for (i = 0; i<questions.length; i++){
     
     
 if (level == 0) {
-    document.getElementsByClassName("touchHere").innerHTML = "Touch Here!";
+    for (v = 0; v < w.length; v++) {
+        w[v].innerHTML = "Touch Here!"
+     }
     ChangeBackgroundImageOfGrid("fostercare101blurry");
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
