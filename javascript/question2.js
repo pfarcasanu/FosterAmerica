@@ -454,9 +454,9 @@ function setQuestionAnswered(cname, level, question, value){
   var question = getNumber(getCookie("question"));
   var level = getNumber(getCookie("level"));
   const myQuestions = [questions_collect[level][question]];
+  //const myQuestions = [questions_collect[0][1]];
   console.log(level)
   console.log(question)
-  //const myQuestions = [questions_collect[0][1]];
   console.log(myQuestions);
 
   // the user hasn't gotten a  question wrong yet
@@ -465,8 +465,6 @@ function setQuestionAnswered(cname, level, question, value){
   function buildQuiz() {
     // we'll need a place to store the HTML output
     const output = [];
-    
-    
 
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
@@ -504,7 +502,7 @@ function setQuestionAnswered(cname, level, question, value){
     // gather answer containers from our quiz
     //window.location = 'rightanswer.html';
    const answerContainers = document.getElementById("ans_collect").querySelectorAll(".answers");
-
+  
     // keep track of user's answers
     let numCorrect = 0;
 
@@ -515,6 +513,7 @@ function setQuestionAnswered(cname, level, question, value){
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
+      document.getElementById("resultsText").style.visibility = "visible";
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers

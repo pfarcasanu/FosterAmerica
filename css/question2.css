@@ -246,4 +246,5 @@ div.wrap {
   margin-top: 2%;
   color: white;
   font-size: 75%;
+  visibility: hidden;
 }
