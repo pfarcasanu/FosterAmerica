@@ -21,8 +21,10 @@ for (i = 0; i<questions.length; i++){
     
 if (level == 0) {
     for (v = 0; v < w.length; v++) {
-        w[v].innerHTML = "Touch Here!"
-     }
+    if (questions.every(x => x == 0)){
+        w[v].innerHTML = "Touch Here!"}
+    else {w[v].innerHTML = ""}
+    }
     ChangeBackgroundImageOfGrid("fostercare101blurry");
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
