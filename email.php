@@ -23,7 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/creative.css">
-    <link rel="stylesheet" href="css/email.css"
+    <link rel="stylesheet" href="css/email.css">
   </head>
 
   <body id="page-top">
@@ -63,7 +63,7 @@
               <label for="exampleInputEmail1">Share your email with us for blah blah blah reason.</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
-            <a class="btn btn-primary btn-xl" onmousedown="continueButtonClick();// levelSelect2()">Submit</a>
+            <a class="btn btn-primary btn-xl" onmousedown="emailButtonClick();// levelSelect2()">Submit</a>
           </div>
         </div>
       </div>
