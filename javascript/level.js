@@ -121,7 +121,3 @@ function FadeBackground(imagePrefix){
     $(this).css('background-image', 'url(images/' + imagePrefix + '.png)');
 }).fadeTo('slow', 1)
 }
-
-function touchHere3() {
-    document.getElementById("3").click();
-}
