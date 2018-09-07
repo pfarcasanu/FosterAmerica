@@ -22,7 +22,10 @@ for (i = 0; i<questions.length; i++){
 if (level == 0) {
     for (v = 0; v < w.length; v++) {
     if (questions.every(x => x == 0)){
-        w[v].innerHTML = "Touch Here!"}
+        w[0].innerHTML = "Touch Here!"
+        w[1].innerHTML = "Or Here!"
+        w[2].innerHTML = "Or Here!"
+        w[3].innerHTML = "Or Even Here!"}
     else {w[v].innerHTML = ""}
     }
     ChangeBackgroundImageOfGrid("fostercare101blurry");
@@ -32,7 +35,7 @@ if (level == 0) {
     }
     document.getElementById("category").innerHTML = "Foster Care 101";
     for (z = 0; z < y.length; z++) {
-        y[z].style.backgroundColor = "red";
+        y[z].style.backgroundColor = "SteelBlue";
      }
 }
         
