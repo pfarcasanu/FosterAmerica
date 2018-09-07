@@ -357,7 +357,7 @@ div.square{
   }
 
   .box {
-    background-image: url(border4.png);
+    background-image: url(fosteramericalogo.png), url(border4.png);
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
     background-size: 50% auto, 100% 100%;
