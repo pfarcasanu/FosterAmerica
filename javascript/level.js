@@ -105,15 +105,16 @@ function getCookie(cname) {
     return "";
 }
     
-/*function questionClick(e){
-    var targ;
+function questionClick(e){
+    /*var targ;
     targ=e.srcElement;
     targID = targ.id;
     console.log("targID = " + targID);
     console.log(typeof targID);
     questionWasPressed(targID);
-    window.location = 'question2.html';
-}*/
+    window.location = 'question2.html';*/
+    fanfair_sound.play();
+}
     
 function ChangeBackgroundImageOfGrid(imagePrefix){
     $('#grid').css('background-image','url(images/' + imagePrefix + '.png)');
