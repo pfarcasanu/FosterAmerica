@@ -1,6 +1,4 @@
 window.onload = function(){
-var w = document.getElementsByClassName("touchHere");
-var v;
 var x = document.getElementById("grid");
 var y = x.getElementsByClassName("box");
 var z;
@@ -21,62 +19,46 @@ for (i = 0; i<questions.length; i++){
     
     
 if (level == 0) {
-    for (v = 0; v < w.length; v++) {
     if (questions.every(x => x == 0)){
-        w[0].innerHTML = "Touch Here!"
-        w[1].innerHTML = "Or Here!"
-        w[2].innerHTML = "Or Here!"
-        w[3].innerHTML = "Or Even Here!"}
-    else {w[v].innerHTML = ""}
-    }
+        document.getElementsByClassName("unclicked btn-3d cyan one")[0].innerHTML = "Click Me!"
+        document.getElementsByClassName("unclicked btn-3d cyan two")[0].innerHTML = "Click Me!"
+        document.getElementsByClassName("unclicked btn-3d cyan three")[0].innerHTML = "Click Me!"
+        document.getElementsByClassName("unclicked btn-3d cyan four")[0].innerHTML = "Click Me!"}
+    else {
+        document.getElementsByClassName("unclicked btn-3d cyan one")[0].innerHTML = "Question 1"
+        document.getElementsByClassName("unclicked btn-3d cyan two")[0].innerHTML = "Question 2"
+        document.getElementsByClassName("unclicked btn-3d cyan three")[0].innerHTML = "Question 3"
+        document.getElementsByClassName("unclicked btn-3d cyan four")[0].innerHTML = "Question 4"}
     ChangeBackgroundImageOfGrid("fostercare101blurry");
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
         FadeBackground("fostercare101");
     }
     document.getElementById("category").innerHTML = "Foster Care 101";
-    for (z = 0; z < y.length; z++) {
-        y[z].style.backgroundColor = "black";
-     }
 }
         
 if (level == 1) {
-    for (z = 0; z < y.length; z++) {
-    y[z].style.backgroundColor = "orange";
-    }
     ChangeBackgroundImageOfGrid("header");
     document.getElementById("category").innerHTML = "Facts and Figures";
 }
     
 if (level == 2) {
     ChangeBackgroundImageOfGrid("header");
-    for (z = 0; z < y.length; z++) {
-        y[z].style.backgroundColor = "yellow";
-    }
     document.getElementById("category").innerHTML = "Diary of an Orphan";
 }
     
 if (level == 3) {
     ChangeBackgroundImageOfGrid("header");
-    for (z = 0; z < y.length; z++) {
-        y[z].style.backgroundColor = "green";
-    }
     document.getElementById("category").innerHTML = "Governments as Parents";
 }
     
 if (level == 4) {
     ChangeBackgroundImageOfGrid("header");
-    for (z = 0; z < y.length; z++) {
-    y[z].style.backgroundColor = "blue";
-}
     document.getElementById("category").innerHTML = "So You Turned 18";
 }
     
 if (level == 5) {
     ChangeBackgroundImageOfGrid("header");
-    for (z = 0; z < y.length; z++) {
-        y[z].style.backgroundColor = "purple";
-    }
     document.getElementById("category").innerHTML = "A Problem We Can Solve";
         
 }

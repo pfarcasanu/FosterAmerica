@@ -357,11 +357,11 @@ div.square{
   }
 
   .box {
-    background-image: url(levelbackground.jpg), url(blueborder.gif);
+    background-image: url(levelbackground.jpg), url(blueborder2.png);
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 93% 93%, 100% 100%;
-    background-color: lightgreen;
+    background-size: 93% 90%, 100% 100%;
+    background-color: gray;
     color: white;
     text-align: center;
   }
