@@ -115,6 +115,10 @@ function questionClick(e){
     console.log("targID = " + targID);
     console.log(typeof targID);
     questionWasPressed(targID);
+    setTimeout(question2, 100);
+}
+
+function question2() {
     window.location = 'question2.html';
 }
     
