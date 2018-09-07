@@ -9,6 +9,7 @@ var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
 var fanfair_sound = document.getElementById("fanFair"); 
 this.console.log(questions);
+
     
 for (i = 0; i<questions.length; i++){
     if (questions[i] != 0){
@@ -106,6 +107,8 @@ function getCookie(cname) {
 }
     
 function questionClick(e){
+    var click_Sound = document.getElementById("clickSound");
+    click_Sound.play();
     var targ;
     targ=e.srcElement;
     targID = targ.id;
