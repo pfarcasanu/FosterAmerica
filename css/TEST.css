@@ -27,9 +27,11 @@
 
 /* 3D Button */
 .btn-3d {
+	margin-top: 100%;
+	width: 50%;
 	position: relative;
 	display: inline-block;
-	font-size: 22px;
+	font-size: 150%;
 	padding: 20px 60px;
 	color: white;
 	margin: 20px 10px 10px;
