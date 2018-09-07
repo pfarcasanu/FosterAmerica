@@ -137,7 +137,7 @@ function changeClass1(){
     
                 function changeClass3(){
                     var a = document.getElementsByClassName("unclicked btn-3d cyan three");
-                            a[0]].className = "clicked btn-3d cyan three";
+                            a[0].className = "clicked btn-3d cyan three";
                             setTimeout(classBack3, 100);}
 function changeClass4(){
     var a = document.getElementsByClassName("unclicked btn-3d cyan four");
