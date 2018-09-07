@@ -115,7 +115,7 @@ function questionClick(e){
     console.log("targID = " + targID);
     console.log(typeof targID);
     questionWasPressed(targID);
-    setTimeout(question2, 100);
+    click_Sound.onended = question2();
 }
 
 function question2() {
