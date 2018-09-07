@@ -115,11 +115,9 @@ function questionClick(e){
     console.log("targID = " + targID);
     console.log(typeof targID);
     questionWasPressed(targID);
-    click_Sound.onended = question2();
+    click_Sound.onended = function(){
+        window.location = 'question2.html';
 }
-
-function question2() {
-    window.location = 'question2.html';
 }
     
 function ChangeBackgroundImageOfGrid(imagePrefix){
