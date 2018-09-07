@@ -382,7 +382,7 @@ div.square{
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    border-radius: 3px;
+    border-radius: 3px;}
   
     p {
       font-family: "Roboto";
@@ -392,11 +392,11 @@ div.square{
       user-select: none;
     }
   
-    &:hover {
+    :hover {
       cursor: pointer;
     }
   
-    &:after {
+    :after {
       content: "";
       display: block;
       position: absolute;
@@ -407,4 +407,4 @@ div.square{
       opacity: 0.4;
       bottom: -30px;
     }
-  }
+  
