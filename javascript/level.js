@@ -4,6 +4,8 @@ var v;
 var x = document.getElementById("grid");
 var y = x.getElementsByClassName("box");
 var z;
+var a = document.getElementsByClassName("cyan");
+var b;
 var str = getCookie("array");
 var level = parseInt(getCookie("level"));
 var questions = str.split("|")[level].split(",");
@@ -124,3 +126,10 @@ function FadeBackground(imagePrefix){
     $(this).css('background-image', 'url(images/' + imagePrefix + '.png)');
 }).fadeTo('slow', 1)
 }
+
+function changeClass(){
+    for (b = 0; b < a.length; b++) {
+            a[b].className = "clicked btn-3d cyan"}
+        
+    }
+

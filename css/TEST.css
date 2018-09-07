@@ -7,7 +7,7 @@
   margin: 40px auto;
 }
 
-.btn-3d.cyan {
+.unclicked {
 	background-color: #7fccde;
 	box-shadow: 0 0 0 1px #7fccde inset,
 				0 0 0 2px rgba(255,255,255,0.15) inset,
@@ -15,11 +15,14 @@
 				0 8px 0 1px rgba(0,0,0,.4),
 				0 8px 8px 1px rgba(0,0,0,0.5);
 }
-.btn-3d.cyan:active {
+.clicked {
 	box-shadow: 0 0 0 1px #7fccde inset,
 				0 0 0 2px rgba(255,255,255,0.15) inset,
 				0 0 0 1px rgba(0,0,0,0.4);
+	top: 9px;
+	background-color: #7fccde;
 }
+
 
 
 /* 3D Button */
@@ -38,6 +41,3 @@
 
 .btn-3d.cyan:hover   {background-color: #82D1E3;}
 
-.btn-3d:active {
-	top: 9px;
-}
