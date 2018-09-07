@@ -3,9 +3,9 @@
   max-width: 300px;
 }*/
 
-.content-3d {
+/*.content-3d {
   margin: 40px auto;
-}
+}*/
 
 .unclicked {
 	top: 28%;
@@ -41,7 +41,7 @@
 	color: white;
 	/*margin: 20px 10px 10px;*/
 	margin: 0 auto;
-	border-radius: 6000px;
+	border-radius: 6px;
 	text-align: center;
 	transition: top .01s linear;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
