@@ -35,5 +35,9 @@ function getCookie(cname) {
 
 // control events
 function emailButtonClick(){
-  button_sound.play();
+	button_sound.play();
+	
+	button_sound.onended = function(){
+		window.location = "apiCall.php";
+	}
 }
