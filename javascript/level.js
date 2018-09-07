@@ -105,7 +105,7 @@ function getCookie(cname) {
     return "";
 }
     
-function questionClick(e){
+/*function questionClick(e){
     var targ;
     targ=e.srcElement;
     targID = targ.id;
@@ -113,7 +113,7 @@ function questionClick(e){
     console.log(typeof targID);
     questionWasPressed(targID);
     window.location = 'question2.html';
-}
+}*/
     
 function ChangeBackgroundImageOfGrid(imagePrefix){
     $('#grid').css('background-image','url(images/' + imagePrefix + '.png)');
