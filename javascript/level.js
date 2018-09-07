@@ -158,7 +158,15 @@ function classBack1(){
             a[2].className = "unclicked btn-3d cyan";}
 
 
-            function classBack4(){
-                var a = document.getElementsByClassName("clicked btn-3d cyan");
-                a[3].className = "unclicked btn-3d cyan";}
+function classBack4(){
+    var a = document.getElementsByClassName("clicked btn-3d cyan");
+    a[3].className = "unclicked btn-3d cyan";}
 
+function changeClass() {
+    this.className = "clicked btn-3d cyan";
+    setTimeout(classBack, 100);
+}
+
+function classBack() {
+    this.className = "unclicked btn-3d cyan";
+}
