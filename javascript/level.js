@@ -126,47 +126,38 @@ function FadeBackground(imagePrefix){
 }
 
 function changeClass1(){
-    var a = document.getElementsByClassName("unclicked btn-3d cyan");
-            a[0].className = "clicked btn-3d cyan";
+    var a = document.getElementsByClassName("unclicked btn-3d cyan one");
+            a[0].className = "clicked btn-3d cyan one";
             setTimeout(classBack1, 100);}
 
         function changeClass2(){
-            var a = document.getElementsByClassName("unclicked btn-3d cyan");
-                    a[1].className = "clicked btn-3d cyan";
+            var a = document.getElementsByClassName("unclicked btn-3d cyan two");
+                    a[1].className = "clicked btn-3d cyan two";
                     setTimeout(classBack2, 100);}
     
                 function changeClass3(){
-                    var a = document.getElementsByClassName("unclicked btn-3d cyan");
-                            a[2].className = "clicked btn-3d cyan";
+                    var a = document.getElementsByClassName("unclicked btn-3d cyan three");
+                            a[2].className = "clicked btn-3d cyan three";
                             setTimeout(classBack3, 100);}
 function changeClass4(){
-    var a = document.getElementsByClassName("unclicked btn-3d cyan");
-            a[3].className = "clicked btn-3d cyan";
+    var a = document.getElementsByClassName("unclicked btn-3d cyan four");
+            a[3].className = "clicked btn-3d cyan four";
             setTimeout(classBack4, 100);}
     
 function classBack1(){
-    var a = document.getElementsByClassName("clicked btn-3d cyan");
-        a[0].className = "unclicked btn-3d cyan";}
+    var a = document.getElementsByClassName("clicked btn-3d cyan one");
+        a[0].className = "unclicked btn-3d cyan one";}
         
 
     function classBack2(){
-        var a = document.getElementsByClassName("clicked btn-3d cyan");
-        a[1].className = "unclicked btn-3d cyan";}
+        var a = document.getElementsByClassName("clicked btn-3d cyan two");
+        a[1].className = "unclicked btn-3d cyan two";}
             
         function classBack3(){
-            var a = document.getElementsByClassName("clicked btn-3d cyan");
-            a[2].className = "unclicked btn-3d cyan";}
+            var a = document.getElementsByClassName("clicked btn-3d cyan three");
+            a[2].className = "unclicked btn-3d cyan three";}
 
 
 function classBack4(){
-    var a = document.getElementsByClassName("clicked btn-3d cyan");
-    a[3].className = "unclicked btn-3d cyan";}
-
-function changeClass() {
-    this.className = "clicked btn-3d cyan";
-    setTimeout(classBack, 100);
-}
-
-function classBack() {
-    this.className = "unclicked btn-3d cyan";
-}
+    var a = document.getElementsByClassName("clicked btn-3d cyan four");
+    a[3].className = "unclicked btn-3d cyan four";}
