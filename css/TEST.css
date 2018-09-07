@@ -1,7 +1,7 @@
-.content-3d {
+/*.content-3d {
   width: 50%;
   max-width: 300px;
-}
+}*/
 
 .content-3d {
   margin: 40px auto;
@@ -27,14 +27,20 @@
 
 /* 3D Button */
 .btn-3d {
-	margin-top: 100%;
-	width: 50%;
+	align-self: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	top: 28%;
+	width: 60%;
 	position: relative;
 	display: inline-block;
-	font-size: 150%;
-	padding: 20px 60px;
+	font-size: 110%;
+	/*padding: 20px 60px;*/
 	color: white;
-	margin: 20px 10px 10px;
+	/*margin: 20px 10px 10px;*/
+	margin: 0 auto;
 	border-radius: 6px;
 	text-align: center;
 	transition: top .01s linear;
