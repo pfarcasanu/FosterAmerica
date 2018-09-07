@@ -129,7 +129,15 @@ function FadeBackground(imagePrefix){
 
 function changeClass(){
     for (b = 0; b < a.length; b++) {
-            a[b].className = "clicked btn-3d cyan"}
+            a[b].className = "clicked btn-3d cyan";
+            setTimeout(classBack, 100);}
         
     }
+    
+function classBack(){
+    for (b = 0; b < a.length; b++) {
+        a[b].className = "unclicked btn-3d cyan";}
+        
+    }
+
 
