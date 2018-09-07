@@ -125,20 +125,40 @@ function FadeBackground(imagePrefix){
 }).fadeTo('slow', 1)
 }
 
-function changeClass(){
+function changeClass1(){
     var a = document.getElementsByClassName("unclicked btn-3d cyan");
-    var b;
-    for (b = 0; b < a.length; b++) {
-            a[b].className = "clicked btn-3d cyan";
-            setTimeout(classBack, 100);}
-        }
-    
-function classBack(){
-    var a = document.getElementsByClassName("unclicked btn-3d cyan");
-    var b;
-    for (b = 0; b < a.length; b++) {
-        a[b].className = "unclicked btn-3d cyan";}
-        
-    }
+            a[0].className = "clicked btn-3d cyan";
+            setTimeout(classBack1, 100);}
 
+        function changeClass2(){
+            var a = document.getElementsByClassName("unclicked btn-3d cyan");
+                    a[1].className = "clicked btn-3d cyan";
+                    setTimeout(classBack2, 100);}
+    
+                function changeClass3(){
+                    var a = document.getElementsByClassName("unclicked btn-3d cyan");
+                            a[2].className = "clicked btn-3d cyan";
+                            setTimeout(classBack3, 100);}
+function changeClass4(){
+    var a = document.getElementsByClassName("unclicked btn-3d cyan");
+            a[3].className = "clicked btn-3d cyan";
+            setTimeout(classBack4, 100);}
+    
+function classBack1(){
+    var a = document.getElementsByClassName("clicked btn-3d cyan");
+        a[0].className = "unclicked btn-3d cyan";}
+        
+
+    function classBack2(){
+        var a = document.getElementsByClassName("clicked btn-3d cyan");
+        a[1].className = "unclicked btn-3d cyan";}
+            
+        function classBack3(){
+            var a = document.getElementsByClassName("clicked btn-3d cyan");
+            a[2].className = "unclicked btn-3d cyan";}
+
+
+            function classBack4(){
+                var a = document.getElementsByClassName("clicked btn-3d cyan");
+                a[3].className = "unclicked btn-3d cyan";}
 
