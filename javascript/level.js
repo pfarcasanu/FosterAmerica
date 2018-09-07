@@ -106,14 +106,13 @@ function getCookie(cname) {
 }
     
 function questionClick(e){
-    /*var targ;
+    var targ;
     targ=e.srcElement;
     targID = targ.id;
     console.log("targID = " + targID);
     console.log(typeof targID);
     questionWasPressed(targID);
-    window.location = 'question2.html';*/
-    fanfair_sound.play();
+    window.location = 'question2.html';
 }
     
 function ChangeBackgroundImageOfGrid(imagePrefix){
