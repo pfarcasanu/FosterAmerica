@@ -32,7 +32,7 @@ if (level == 0) {
     }
     document.getElementById("category").innerHTML = "Foster Care 101";
     for (z = 0; z < y.length; z++) {
-        y[z].style.backgroundColor = "red";
+        y[z].style.backgroundColor = "SteelBlue";
      }
 }
         
