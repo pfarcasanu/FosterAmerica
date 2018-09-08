@@ -3,28 +3,32 @@ var x = document.getElementById("grid");
 var y = x.getElementsByClassName("box");
 var z;
 var str = getCookie("array");
-var level = parseInt(getCookie("level"));
-var questions = str.split("|")[level].split(",");
-var fanfair_sound = document.getElementById("fanFair"); 
-this.console.log(questions);
 
-    
-for (i = 0; i<questions.length; i++){
-    if (questions[i] != 0){
-    document.getElementById(i).onclick = null;
-    document.getElementById(i).style.opacity = 0;
+var level = 0;
+var levelstr = getCookie("level");
+if (levelstr != "") level = parseInt(levelstr);
+
+try{
+    var questions = str.split("|")[level].split(",");
+    for (i = 0; i<questions.length; i++){
+        if (questions[i] != 0){
+        document.getElementById(i).onclick = null;
+        document.getElementById(i).style.opacity = 0;
+            }
         }
-    }
-    
+} catch{
+    this.console.log("load failed");
+}
+var fanfair_sound = document.getElementById("fanFair"); 
     
     
 if (level == 0) {
-    if (questions.every(x => x == 0)){
+    /*if (questions.every(x => x == 0)){
         document.getElementsByClassName("unclicked btn-3d cyan one")[0].innerHTML = "Click Me!"
         document.getElementsByClassName("unclicked btn-3d cyan two")[0].innerHTML = "Click Me!"
         document.getElementsByClassName("unclicked btn-3d cyan three")[0].innerHTML = "Click Me!"
         document.getElementsByClassName("unclicked btn-3d cyan four")[0].innerHTML = "Click Me!"}
-    /*else {
+    else {
         document.getElementsByClassName("unclicked btn-3d cyan one")[0].innerHTML = "Question 1"
         document.getElementsByClassName("unclicked btn-3d cyan two")[0].innerHTML = "Question 2"
         document.getElementsByClassName("unclicked btn-3d cyan three")[0].innerHTML = "Question 3"
@@ -61,7 +65,7 @@ if (level == 3) {
         fanfair_sound.play();
         FadeBackground("governmentsasparents");
     }
-    document.getElementById("category").innerHTML = "Governments as Parents";
+    document.getElementById("category").innerHTML = "Uncle Sam";
 }
     
 if (level == 4) {
@@ -79,7 +83,7 @@ if (level == 5) {
         fanfair_sound.play();
         FadeBackground("aproblemwecansolve");
     }
-    document.getElementById("category").innerHTML = "A Problem We Can Solve";
+    document.getElementById("category").innerHTML = "We Can Fix It";
         
 }
 }
