@@ -69,7 +69,8 @@ function setQuestionAnswered(cname, level, question, value){
       answers: {
         a: "Grover Cleveland",
         b: "J.P. Morgan",
-        c: "John D. Rockefeller"
+        c: "Charles Loring Brace",
+        d: "John D. Rockefeller"
       },
       correctAnswer: "c"
     },
@@ -98,7 +99,7 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level2_questions = [
     {
-      question: "Level 2: Question 1",
+      question: "What is the total number of children who interact with the foster care system annually?",
       answers: {
         a: "Superman",
         b: "The Terminator",
@@ -107,7 +108,7 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "c"
     },
     {
-      question: "Level 2: Question 2",
+      question: "What is the average length of time children spend in foster care?",
       answers: {
         a: "SitePoint",
         b: "Simple Steps Code",
@@ -116,7 +117,7 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "c"
     },
     {
-      question: "Level 2: Question 3",
+      question: "What is the average age of kids entering foster care?",
       answers: {
         a: "Antarctica",
         b: "Exploring the Pacific Ocean",
@@ -125,19 +126,20 @@ function setQuestionAnswered(cname, level, question, value){
       },
       correctAnswer: "d"
     },{
-      question: "Level 2: Question 4",
+      question: "What percentage of foster children end up getting adopted?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "All foster kids eventually get adopted.",
+        b: "About 25%",
+        c: "About 50%",
+        d: "Foster kids can’t be adopted."
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     }
   ];
 
   const level3_questions = [
     {
-      question: "Level 3: Question 1",
+      question: "What percentage of foster kids have reunification with their biological parents as their goal?",
       answers: {
         a: "Superman",
         b: "The Terminator",
@@ -146,7 +148,7 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "c"
     },
     {
-      question: "Level 3: Question 2",
+      question: "What percentage of foster children are separated from their siblings while in foster care?",
       answers: {
         a: "SitePoint",
         b: "Simple Steps Code",
@@ -155,20 +157,20 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "c"
     },
     {
-      question: "Level 3: Question 3",
+      question: "Are foster youth allowed to go on sleepovers with friends?",
       answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "Yes",
+        b: "No",
+        c: "Only if their social workers thinks it’s okay",
+        d: "If their foster parents think it’s okay"
       },
       correctAnswer: "d"
     },{
-      question: "Level 3: Question 4",
+      question: "What is the average number of moves experienced by foster children while in the foster system?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "1-2",
+        b: "3-4",
+        c: "5 or more"
       },
       correctAnswer: "c"
     }
@@ -176,32 +178,34 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level4_questions = [
     {
-      question: "Level 4: Question 1",
+      question: "How much money do foster parents receive per day for taking care of a foster child?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 4: Question 2",
-      answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 4: Question 3",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "$10 to $20 a day",
+        b: "Over $50 a day",
+        c: "$30 to $40 a day",
+        d: "$30 to $40 a day"
       },
       correctAnswer: "d"
+    },
+    {
+      question: "How much do local, state and federal government agencies spend on the foster care system annually?",
+      answers: {
+        a: "$10B to $20B ",
+        b: "$50B to $60B",
+        c: "$20B to $25B",
+        d: "$25B to $30B",
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "What is the average cost to raise a child in the United States? ",
+      answers: {
+        a: "$100,000 to $150,000",
+        b: "$150,000 to $200,000",
+        c: "$200,000 to $250,000",
+        d: "$300,000 or more"
+      },
+      correctAnswer: "c"
     },{
       question: "Level 4: Question 4",
       answers: {
@@ -215,38 +219,41 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level5_questions = [
     {
-      question: "Level 5: Question 1",
+      question: "At what age do foster kids stop receiving foster care support?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 5: Question 2",
-      answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 5: Question 3",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "16",
+        b: "18",
+        c: "21",
+        d: "It depends."
       },
       correctAnswer: "d"
-    },{
-      question: "Level 5: Question 4",
+    },
+    {
+      question: "What percentage of foster youth who “age out” of the system without finding a permanent home become incarcerated within two years?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "10%",
+        b: "25%",
+        c: "50%",
+        d: "Pretty much all of them."
+      },
+      correctAnswer: "B"
+    },
+    {
+      question: "What percentage of foster children graduate high school?",
+      answers: {
+        a: "87%",
+        b: "34%",
+        c: "58%",
+        d: "22%"
+      },
+      correctAnswer: "c"
+    },{
+      question: "What percentage of former foster children go on to get college degrees?",
+      answers: {
+        a: "33%",
+        b: "13%",
+        c: "3%",
+        c: "0%"
       },
       correctAnswer: "c"
     }
@@ -290,167 +297,9 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "c"
     }
   ];
-
-  const level7_questions = [
-    {
-      question: "Level 7: Question 1",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 7: Question 2",
-      answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 7: Question 3",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
-      },
-      correctAnswer: "d"
-    },{
-      question: "Level 7: Question 4",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    }
-  ];
-
-  const level8_questions = [
-    {
-      question: "Level 8: Question 1",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 8: Question 2",
-      answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 8: Question 3",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
-      },
-      correctAnswer: "d"
-    },{
-      question: "Level 8: Question 4",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    }
-  ];
-
-  const level9_questions = [
-    {
-      question: "Level 9: Question 1",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 9: Question 2",
-      answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 9: Question 3",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
-      },
-      correctAnswer: "d"
-    },{
-      question: "Level 9: Question 4",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    }
-  ];
-
-  const level10_questions = [
-    {
-      question: "Level 10: Question 1",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 10: Question 2",
-      answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 10: Question 3",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
-      },
-      correctAnswer: "d"
-    },{
-      question: "Level 10: Question 4",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    }
-  ];
   // compile the questions
   const questions_collect = [level1_questions, level2_questions, level3_questions,
-							level4_questions, level5_questions, level6_questions,
-							level7_questions, level8_questions, level9_questions, 
-							level10_questions];
+							level4_questions, level5_questions, level6_questions,];
 
   // pull the specific questions
   var question = getNumber(getCookie("question"));
