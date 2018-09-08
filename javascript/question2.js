@@ -243,7 +243,7 @@ function setQuestionAnswered(cname, level, question, value){
         a: "0%",
         b: "3%",
         c: "13%",
-        c: "33%"
+        d: "33%"
       },
       correctAnswer: "b"
     },{
@@ -252,7 +252,7 @@ function setQuestionAnswered(cname, level, question, value){
         a: "10%",
         b: "20%",
         c: "50%",
-        c: "80%"
+        d: "80%"
       },
       correctAnswer: "c"
     }

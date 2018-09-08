@@ -68,9 +68,9 @@ if (level == 4) {
     ChangeBackgroundImageOfGrid("soyouturned18blurry");
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
-        FadeBackground("fostercare101");
+        FadeBackground("soyouturned18");
     }
-    document.getElementById("soyouturned18").innerHTML = "So You Turned 18";
+    document.getElementById("category").innerHTML = "So You Turned 18";
 }
     
 if (level == 5) {
