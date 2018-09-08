@@ -426,6 +426,10 @@ div.square{
     margin-top: 3.5%;
   }
 
+  .rounded {
+    border-radius: 1000px;
+  }
+
   #mainNav .navbar-brand1 {
     font-weight: 1000;
     font-size: 85%;
