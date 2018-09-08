@@ -336,7 +336,7 @@ div.square{
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
