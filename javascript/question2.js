@@ -207,18 +207,6 @@ function setQuestionAnswered(cname, level, question, value){
       },
       correctAnswer: "c"
     },{
-      question: "Level 4: Question 4",
-      answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    }
-  ];
-
-  const level5_questions = [
-    {
       question: "At what age do foster kids stop receiving foster care support?",
       answers: {
         a: "16",
@@ -227,7 +215,10 @@ function setQuestionAnswered(cname, level, question, value){
         d: "It depends."
       },
       correctAnswer: "d"
-    },
+    }
+  ];
+
+  const level5_questions = [
     {
       question: "What percentage of foster youth who “age out” of the system without finding a permanent home become incarcerated within two years?",
       answers: {
@@ -247,7 +238,8 @@ function setQuestionAnswered(cname, level, question, value){
         d: "22%"
       },
       correctAnswer: "c"
-    },{
+    },
+    {
       question: "What percentage of former foster children go on to get college degrees?",
       answers: {
         a: "33%",
@@ -256,43 +248,55 @@ function setQuestionAnswered(cname, level, question, value){
         c: "0%"
       },
       correctAnswer: "c"
+    },{
+      question: "What percentage of foster children become pregnant while still in their teens?",
+      answers: {
+        a: "10%",
+        b: "20%",
+        c: "50%",
+        c: "80%"
+      },
+      correctAnswer: "c"
     }
   ];
 
   const level6_questions = [
     {
-      question: "Level 6: Question 1",
+      question: "What percentage of college tuition is covered by government grants for former foster youth?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 6: Question 2",
-      answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Level 6: Question 3",
-      answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "0%",
+        b: "33%",
+        c: "50%",
+        d: "100%"
       },
       correctAnswer: "d"
-    },{
-      question: "Level 6: Question 4",
+    },
+    {
+      question: "What major shift in federal foster care policy resulted from passage of the Family First Law in February, 2018?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "More foster children will now be placed in group homes.",
+        b: "Blood relatives (kin) will now be required by law to take in children who have been removed from parents who are related.",
+        c: "Foster children will now be allowed to parent themselves.",
+        d: "States will now be reimbursed by the federal government for expenses they incur trying to keep families together and preventing abuse and neglect, so fewer kids end up in foster care in the first place."
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "Between 2012 and 2017, how many states had fewer beds available in foster homes than were needed for the number of foster children in their system?",
+      answers: {
+        a: "Less than 10%",
+        b: "ELess than 25%",
+        c: "More than 50%",
+        d: "In pretty much every state, there were not enough beds for the number of foster kids who needed placement"
+      },
+      correctAnswer: "c"
+    },{
+      question: "What percentage of foster parents give up their foster care licenses each year?",
+      answers: {
+        a: "10% - 20%",
+        b: "60% - 80%",
+        c: "30% - 50%",
+        d: "80% - 90%"
       },
       correctAnswer: "c"
     }
