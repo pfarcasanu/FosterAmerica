@@ -57,7 +57,7 @@ function setQuestionAnswered(cname, level, question, value){
     {
       question: "What is the purpose of the foster care system?",
       answers: {
-        a: "To remove children from parents until they obtain parenting licenses",
+        a: "To remove children from parents until they obtain parenting licenses", 
         b: "To care for children who have been removed from their biological parents due to abuse, neglect or parental incapacity until a permanent placement can be found",
         c: "To give the state a larger role in raising children",
         d: "To punish parents who neglect their children"
@@ -67,22 +67,22 @@ function setQuestionAnswered(cname, level, question, value){
     {
       question: "Who was the founder of the modern foster care system?",
       answers: {
-        a: "Grover Cleveland",
+        a: "Charles L. Brace",
         b: "J.P. Morgan",
-        c: "Charles Loring Brace",
+        c: "Grover Cleveland",
         d: "John D. Rockefeller"
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
     },
     {
       question: "What is the most common reason children wind up removed from their parents and placed in foster care?",
       answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "Neglect by parents",
+        b: "Physical abuse by parents",
+        c: "Parents cannot afford to raise them",
+        d: "Drug abuse by parents"
       },
-      correctAnswer: "d"
+      correctAnswer: "a"
     },
     {
       question: "Which of these stars spent time in foster care?",
@@ -101,30 +101,29 @@ function setQuestionAnswered(cname, level, question, value){
     {
       question: "What is the total number of children who interact with the foster care system annually?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "452,000",
+        b: "687,000",
+        c: "836,000"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },
     {
       question: "What is the average length of time children spend in foster care?",
       answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
+        a: "6 months",
+        b: "1 years",
+        c: "2 years"
       },
       correctAnswer: "c"
     },
     {
       question: "What is the average age of kids entering foster care?",
       answers: {
-        a: "Antarctica",
-        b: "Exploring the Pacific Ocean",
-        c: "Sitting in a tree",
-        d: "Minding his own business, so stop asking"
+        a: "5",
+        b: "7",
+        c: "9"
       },
-      correctAnswer: "d"
+      correctAnswer: "b"
     },{
       question: "What percentage of foster children end up getting adopted?",
       answers: {
@@ -141,20 +140,20 @@ function setQuestionAnswered(cname, level, question, value){
     {
       question: "What percentage of foster kids have reunification with their biological parents as their goal?",
       answers: {
-        a: "Superman",
-        b: "The Terminator",
-        c: "Waluigi, obviously"
+        a: "55%",
+        b: "75%",
+        c: "95%"
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
     },
     {
       question: "What percentage of foster children are separated from their siblings while in foster care?",
       answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
+        a: "30%",
+        b: "40%",
+        c: "50%"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },
     {
       question: "Are foster youth allowed to go on sleepovers with friends?",
@@ -181,21 +180,20 @@ function setQuestionAnswered(cname, level, question, value){
       question: "How much money do foster parents receive per day for taking care of a foster child?",
       answers: {
         a: "$10 to $20 a day",
-        b: "Over $50 a day",
-        c: "$30 to $40 a day",
-        d: "$30 to $40 a day"
+        b: "$30 to $40 a day",
+        c: "$40 to $50 a day",
+        d: "Over $50 a day"
       },
-      correctAnswer: "d"
+      correctAnswer: "b"
     },
     {
       question: "How much do local, state and federal government agencies spend on the foster care system annually?",
       answers: {
-        a: "$10B to $20B ",
-        b: "$50B to $60B",
-        c: "$20B to $25B",
-        d: "$25B to $30B",
+        a: "$25B to $30B ",
+        b: "$35B to $40B",
+        c: "$40B to $45B"
       },
-      correctAnswer: "d"
+      correctAnswer: "a"
     },
     {
       question: "What is the average cost to raise a child in the United States? ",
@@ -232,24 +230,24 @@ function setQuestionAnswered(cname, level, question, value){
     {
       question: "What percentage of foster children graduate high school?",
       answers: {
-        a: "87%",
-        b: "34%",
-        c: "58%",
-        d: "22%"
+        a: "58%",
+        b: "67%",
+        c: "79%",
+        d: "87%"
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
     },
     {
       question: "What percentage of former foster children go on to get college degrees?",
       answers: {
-        a: "33%",
-        b: "13%",
-        c: "3%",
-        c: "0%"
+        a: "0%",
+        b: "3%",
+        c: "13%",
+        c: "33%"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },{
-      question: "What percentage of foster children become pregnant while still in their teens?",
+      question: "What percentage of female foster children become pregnant while still in their teens?",
       answers: {
         a: "10%",
         b: "20%",
@@ -284,8 +282,8 @@ function setQuestionAnswered(cname, level, question, value){
     {
       question: "Between 2012 and 2017, how many states had fewer beds available in foster homes than were needed for the number of foster children in their system?",
       answers: {
-        a: "Less than 10%",
-        b: "ELess than 25%",
+        a: "More than 10%",
+        b: "More than 25%",
         c: "More than 50%",
         d: "In pretty much every state, there were not enough beds for the number of foster kids who needed placement"
       },
@@ -294,11 +292,11 @@ function setQuestionAnswered(cname, level, question, value){
       question: "What percentage of foster parents give up their foster care licenses each year?",
       answers: {
         a: "10% - 20%",
-        b: "60% - 80%",
-        c: "30% - 50%",
+        b: "30% - 50%",
+        c: "60% - 80%",
         d: "80% - 90%"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     }
   ];
   // compile the questions
