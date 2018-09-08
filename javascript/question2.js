@@ -270,14 +270,13 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "d"
     },
     {
-      question: "What major shift in federal foster care policy resulted from passage of the Family First Law in February, 2018?",
+      question: "What major shift in federal foster care policy resulted from the passage of the Family First Law in 2018?",
       answers: {
-        a: "More foster children will now be placed in group homes.",
-        b: "Blood relatives (kin) will now be required by law to take in children who have been removed from parents who are related.",
-        c: "Foster children will now be allowed to parent themselves.",
-        d: "States will now be reimbursed by the federal government for expenses they incur trying to keep families together."
+        a: "States will now be reimbursed by the federal government for expenses they incur trying to keep families together.",
+        b: "Biological relatives will now be required by law to take in children who have been removed from parents who are related.",
+        c: "More foster children will now be placed in group homes."
       },
-      correctAnswer: "d"
+      correctAnswer: "a"
     },
     {
       question: "Between 2012 and 2017, how many states had fewer beds available in foster homes than were needed for the number of foster children in their system?",
