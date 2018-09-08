@@ -55,42 +55,44 @@ function setQuestionAnswered(cname, level, question, value){
 (function() {
   const level1_questions = [
     {
-      question: "When and by whom was our foster care system created?",
+      question: "What is the purpose of the foster care system?",
       answers: {
-        a: "Cornelius Vanderbilt in 1815",
-        b: "John D. Rockefeller 1922",
-        c: "Charles Loring Brace in 1953",
-        d: "Thomas Jefferson in 1796"
+        a: "To remove children from parents until they obtain parenting licenses",
+        b: "To care for children who have been removed from their biological parents due to abuse, neglect or parental incapacity until a permanent placement can be found",
+        c: "To give the state a larger role in raising children",
+        d: "To punish parents who neglect their children"
       },
       correctAnswer: "c"
     },
     {
-      question: "Level 1: Question 2",
+      question: "Who was the founder of the modern foster care system?",
       answers: {
-        a: "SitePoint super long super long super long super long super long super long super long",
-        b: "Simple Steps short",
-        c: "Trick question; they're both the best long long long long long longlfdsafds afdsafdsafdsafdsa fasdfds afdasfdsafdsfadsf"
+        a: "Grover Cleveland",
+        b: "J.P. Morgan",
+        c: "John D. Rockefeller"
       },
       correctAnswer: "c"
     },
     {
-      question: "Level 1: Question 3",
+      question: "What is the most common reason children wind up removed from their parents and placed in foster care?",
       answers: {
         a: "Antarctica",
         b: "Exploring the Pacific Ocean",
         c: "Sitting in a tree",
         d: "Minding his own business, so stop asking"
       },
-      correctAnswer: "d"
+      correctAnswer: "Which of these stars spent time in foster care?"
     },
     {
-      question: "Level 1: Question 4",
+      question: "Which of these stars spent time in foster care?",
       answers: {
-        a: "SitePoint",
-        b: "Simple Steps Code",
-        c: "Trick question; they're both the best"
+        a: "Marilyn Monroe",
+        b: "Eddie Murphy",
+        c: "Sylvester Stallone",
+        d: "Tiffany Haddish",
+        e: "All the above",
       },
-      correctAnswer: "c"
+      correctAnswer: "e"
     }
   ];
 
