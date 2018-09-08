@@ -82,7 +82,7 @@ function setQuestionAnswered(cname, level, question, value){
         c: "Sitting in a tree",
         d: "Minding his own business, so stop asking"
       },
-      correctAnswer: "Which of these stars spent time in foster care?"
+      correctAnswer: "d"
     },
     {
       question: "Which of these stars spent time in foster care?",
@@ -227,7 +227,7 @@ function setQuestionAnswered(cname, level, question, value){
         c: "50%",
         d: "Pretty much all of them."
       },
-      correctAnswer: "B"
+      correctAnswer: "b"
     },
     {
       question: "What percentage of foster children graduate high school?",
@@ -277,7 +277,7 @@ function setQuestionAnswered(cname, level, question, value){
         a: "More foster children will now be placed in group homes.",
         b: "Blood relatives (kin) will now be required by law to take in children who have been removed from parents who are related.",
         c: "Foster children will now be allowed to parent themselves.",
-        d: "States will now be reimbursed by the federal government for expenses they incur trying to keep families together and preventing abuse and neglect, so fewer kids end up in foster care in the first place."
+        d: "States will now be reimbursed by the federal government for expenses they incur trying to keep families together."
       },
       correctAnswer: "d"
     },
