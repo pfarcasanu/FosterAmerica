@@ -6,7 +6,7 @@ window.onload = function() {
 }
 
 function newLevel() {
-  window.location = 'levelnew.html';
+  window.location = 'testlevel.html';
 }
 
 function explanation() {
