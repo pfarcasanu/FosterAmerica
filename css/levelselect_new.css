@@ -40,3 +40,9 @@
   .moveDown {
     padding-top: 15%;
   }
+
+@media (max-width: 367px){
+  .moveDown{
+    padding-top: 0%;
+  }
+}

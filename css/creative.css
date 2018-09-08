@@ -199,6 +199,19 @@ header.masthead p {
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: 0.9rem;
+  }
+  header.masthead hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 367px){
+  header.masthead {
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
