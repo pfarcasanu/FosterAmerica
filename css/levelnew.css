@@ -337,10 +337,12 @@ div.square{
 .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-attachment: inherit;
+    background-color: teal;
     height: 100%;
     width: 100%;
   }
@@ -356,14 +358,64 @@ div.square{
     width: 100%;
   }
 
-  .box {
-    background-image: url(levelbackground.jpg), url(blueborder2.png);
+  .box1 {
+    /*background-image: url(levelbackground.jpg), url(blueborder2.png);
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 93% 90%, 100% 100%;
-    background-color: gray;
+    background-size: 93% 90%, 100% 100%;*/
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 6px;
     color: white;
     text-align: center;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    /*background-image: url(levelbackground.jpg), url(blueborder2.png);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 93% 90%, 100% 100%;*/
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 6px;
+    color: white;
+    text-align: center;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+
+  .box3 {
+    /*background-image: url(levelbackground.jpg), url(blueborder2.png);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 93% 90%, 100% 100%;*/
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 6px;
+    color: white;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+
+  .box4 {
+    /*background-image: url(levelbackground.jpg), url(blueborder2.png);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 93% 90%, 100% 100%;*/
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 6px;
+    color: white;
+    text-align: center;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
 
   #mainNav .navbar-brand1 {
