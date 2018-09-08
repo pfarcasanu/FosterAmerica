@@ -434,3 +434,12 @@ div.square{
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     align-content: left;
   }
+
+  @media (min-width: 1200px) { #mainNav .navbar-brand1 {
+    font-weight: 1000;
+    font-size: 85%;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    align-content: center;
+  } }
