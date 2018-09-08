@@ -38,27 +38,47 @@ if (level == 0) {
 }
         
 if (level == 1) {
-    ChangeBackgroundImageOfGrid("header");
+    ChangeBackgroundImageOfGrid("factsandfiguresblurry");
+    if (questions.every(x => x != 0)){
+        fanfair_sound.play();
+        FadeBackground("factsandfigures");
+    }
     document.getElementById("category").innerHTML = "Facts and Figures";
 }
     
 if (level == 2) {
-    ChangeBackgroundImageOfGrid("header");
+    ChangeBackgroundImageOfGrid("diaryofanorphanblurry");
+    if (questions.every(x => x != 0)){
+        fanfair_sound.play();
+        FadeBackground("diaryofanorphan");
+    }
     document.getElementById("category").innerHTML = "Diary of an Orphan";
 }
     
 if (level == 3) {
-    ChangeBackgroundImageOfGrid("header");
+    ChangeBackgroundImageOfGrid("governmentsasparentsblurry");
+    if (questions.every(x => x != 0)){
+        fanfair_sound.play();
+        FadeBackground("governmentsasparents");
+    }
     document.getElementById("category").innerHTML = "Governments as Parents";
 }
     
 if (level == 4) {
-    ChangeBackgroundImageOfGrid("header");
-    document.getElementById("category").innerHTML = "So You Turned 18";
+    ChangeBackgroundImageOfGrid("soyouturned18blurry");
+    if (questions.every(x => x != 0)){
+        fanfair_sound.play();
+        FadeBackground("fostercare101");
+    }
+    document.getElementById("soyouturned18").innerHTML = "So You Turned 18";
 }
     
 if (level == 5) {
-    ChangeBackgroundImageOfGrid("header");
+    ChangeBackgroundImageOfGrid("aproblemwecansolveblurry");
+    if (questions.every(x => x != 0)){
+        fanfair_sound.play();
+        FadeBackground("aproblemwecansolve");
+    }
     document.getElementById("category").innerHTML = "A Problem We Can Solve";
         
 }
