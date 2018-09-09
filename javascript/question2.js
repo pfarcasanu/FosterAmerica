@@ -371,11 +371,11 @@ function setQuestionAnswered(cname, level, question, value){
         // add to the number of correct answers
         document.getElementById("correctSound").play();
         document.getElementById("backgroundMusic").pause();
-        document.getElementById("timer").src="images/successFINAL.gif";
+        //document.getElementById("timer").src="images/successFINAL.gif";
         document.getElementById("resultsText").innerHTML = "Correct!";
         answerContainers[questionNumber].style.color = "lightgreen";
         //resultsContainer.innerHTML = 'Correct!';
-        setTimeout(explanation, 4000)
+        setTimeout(explanation, 3000)
         numCorrect++;
 
         setQuestionAnswered("array", level, question, correctness);
