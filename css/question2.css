@@ -87,7 +87,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 70px);
   /*background-image: url("../images/darkbluebg.jpg");*/
-  background-color: skyblue;
+  background-color: #71ace8;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
