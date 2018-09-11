@@ -1,10 +1,7 @@
 window.onload = function(){
 	var str = getCookie("array");
 	var num_correct = 0;
-	if (str == ""){
-    str = "array=" + empty_str;
-    document.cookie = str;
-  } else {
+	if (str != ""){
     // calculate num answered questions
     var array = str.split("|").join().split(",");
     array.forEach(element => {
