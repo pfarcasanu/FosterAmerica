@@ -1,0 +1,15 @@
+<?php 
+
+//$email_to_add = $_POST['email'];
+$email_to_add = 'john@example.com';
+
+if (strlen($email_to_add)<100 and filter_var($email_to_add, FILTER_VALIDATE_EMAIL)){
+    $tmpfname = tempnam("./tmp", "usr");
+    $handle = fopen($tmpfname, "w");
+    fwrite($handle, $email_to_add);
+    fclose($handle);
+} 
+
+// echo the thank you page
+
+?>
