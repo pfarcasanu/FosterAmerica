@@ -50,7 +50,7 @@ function bodyClicked(e) {
 
 function ResetGame(){
   document.cookie = "array=0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0|0,0,0,0";
-  document.cookie = "";
+  document.cookie = "disclaimer=";
   window.location = "index.html";
 }
 

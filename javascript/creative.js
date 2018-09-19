@@ -23,6 +23,14 @@ function buttonClick2() {
   }  
 }
 
+function readmore() {
+  button_sound.play();
+
+  button_sound.onended = function(){
+    window.location.href = "readmore.html";
+  }  
+}
+
 function buttonClick3() {
     var disclaimer = getCookie("disclaimer");
     if (disclaimer != ""){
