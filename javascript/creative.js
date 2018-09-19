@@ -15,6 +15,14 @@ function buttonClick() {
   }  
 }
 
+function toLevelSelect(){
+  button_sound.play();
+
+  button_sound.onended = function(){
+      window.location.href = "levelselect_new.html";
+  }
+}
+
 function buttonClick2() {
   button_sound.play();
 
