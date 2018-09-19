@@ -50,7 +50,7 @@ window.onload = function(){
     console.log(lvl);
     console.log(q);
     if (lvlstr != "") lvl = parseInt(lvlstr);
-    if (q != "") q = parseInt(qstr);
+    if (qstr != "") q = parseInt(qstr);
     
     document.getElementById("explanationID").innerHTML = explanationarr[lvl][q];
 }
