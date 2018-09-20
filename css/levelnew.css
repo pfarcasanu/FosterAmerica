@@ -444,4 +444,11 @@ div.square{
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     align-content: center;
     margin-left: 15%;
-  } }
+  } 
+}
+
+@media (max-width: 400px){
+  #category {
+    font-size: 75%;
+  }
+}
