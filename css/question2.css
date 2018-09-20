@@ -102,8 +102,7 @@ header.masthead hr {
 }
 
 header.masthead h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.2rem;
   text-align: left;
 }
 
@@ -220,11 +219,6 @@ header.masthead p {
 div.wrap {
   height:100%; 
   overflow:hidden;
-}
-
-.questionText {
-  font-size: 50%;
-  line-height: 95%;
 }
 
 .answers {
