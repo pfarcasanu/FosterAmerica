@@ -14,6 +14,9 @@ window.onload = function(){
     array.forEach(element => {
       if (parseInt(element)>0) num_answered++;
     });
+    if (num_answered == 24){
+      window.location = "email.html"
+    }
   }
   document.getElementById("quesAnsLabel").innerHTML = "Completed: " + num_answered.toString() + "/24";
 }
