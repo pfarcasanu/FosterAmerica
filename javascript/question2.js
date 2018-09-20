@@ -37,6 +37,15 @@ function getNumber(cookie){
   }
 }
 
+function fromLetters(str) {
+  "use strict";
+  var out = 0, len = str.length, pos = len;
+  while (--pos > -1) {
+      out += (str.charCodeAt(pos) - 64) * Math.pow(26, len - 1 - pos);
+  }
+  return out;
+}
+
 function setQuestionAnswered(cname, level, question, value){
   console.log("level = " + level);
   console.log(typeof level);
@@ -364,7 +373,10 @@ function setQuestionAnswered(cname, level, question, value){
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-      console.log(userAnswer)
+      const numAns = fromLetters(userAnswer)
+      console.log(answerContainer)
+      console.log(answerContainer[questionNumber])
+      console.log(answerContainer[questionNumber][0])
 
       document.getElementById("resultsText").style.visibility = "visible";
       // if answer is correct
