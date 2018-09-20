@@ -5,6 +5,7 @@ window.onload = function(){
   console.log("onload str = " + str);
   
   var num_answered = 0;
+  output = ''
 	if (str == ""){
     str = "array=" + empty_str;
     document.cookie = str;
@@ -14,11 +15,18 @@ window.onload = function(){
     array.forEach(element => {
       if (parseInt(element)>0) num_answered++;
     });
+    if (num_answered < 4){
+      output = "Let's get started!"
+    } else if ( num_answered < 20){
+      output = num_answered.toString() + '/24'
+    } else if (num_answered < 24){
+      output = "Almost there! (" + num_answered.toString() + '/24)'
+    }
     if (num_answered == 24){
       window.location = "email.html"
     }
   }
-  document.getElementById("quesAnsLabel").innerHTML = "Completed: " + num_answered.toString() + "/24";
+  document.getElementById("quesAnsLabel").innerHTML = output;
 }
 
 function setCookie(cname, new_level) {
