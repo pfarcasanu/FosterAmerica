@@ -364,6 +364,7 @@ function setQuestionAnswered(cname, level, question, value){
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+      console.log(userAnswer)
 
       document.getElementById("resultsText").style.visibility = "visible";
       // if answer is correct
