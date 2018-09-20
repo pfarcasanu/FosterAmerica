@@ -38,12 +38,14 @@ function getNumber(cookie){
 }
 
 function fromLetters(str) {
-  "use strict";
-  var out = 0, len = str.length, pos = len;
-  while (--pos > -1) {
-      out += (str.charCodeAt(pos) - 64) * Math.pow(26, len - 1 - pos);
-  }
-  return out;
+  var hash = {
+    'a' : 0,
+    'b' : 1,
+    'c' : 2,
+    'd' : 3,
+    'e' : 4
+   }
+   return hash[str]
 }
 
 function setQuestionAnswered(cname, level, question, value){
@@ -374,9 +376,10 @@ function setQuestionAnswered(cname, level, question, value){
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
       const numAns = fromLetters(userAnswer)
-      console.log(answerContainer)
-      console.log(answerContainer[questionNumber])
-      console.log(answerContainer[questionNumber][0])
+      var parent = document.getElementsByClassName("answers")[0];
+      /* Selects all childs of parent having <span> as the element */
+      var child= parent.querySelectorAll("label");
+      var ans = child[numAns]
 
       document.getElementById("resultsText").style.visibility = "visible";
       // if answer is correct
@@ -386,7 +389,7 @@ function setQuestionAnswered(cname, level, question, value){
         document.getElementById("backgroundMusic").pause();
         //document.getElementById("timer").src="images/successFINAL.gif";
         document.getElementById("resultsText").innerHTML = "Correct!";
-        answerContainers[questionNumber].style.color = "lightgreen";
+        ans.style.color = "lightgreen";
         //resultsContainer.innerHTML = 'Correct!';
         setTimeout(explanation, 3000)
         numCorrect++;
@@ -399,7 +402,7 @@ function setQuestionAnswered(cname, level, question, value){
         // if answer is wrong or blank
         // color the answers red
         document.getElementById("incorrectSound").play();
-        answerContainers[questionNumber].style.color = "red";
+        ans.style.color = "grey";
         document.getElementById("resultsText").innerHTML = "Try again!";
         correctness = 1;
       }
