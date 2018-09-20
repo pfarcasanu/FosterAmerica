@@ -5,7 +5,7 @@ window.onload = function(){
   console.log("onload str = " + str);
   
   var num_answered = 0;
-  output = ''
+  output = "Let's go!"
 	if (str == ""){
     str = "array=" + empty_str;
     document.cookie = str;
@@ -16,7 +16,7 @@ window.onload = function(){
       if (parseInt(element)>0) num_answered++;
     });
     if (num_answered < 4){
-      output = "Let's get started!"
+      output = "Let's go!"
     } else if ( num_answered < 20){
       output = num_answered.toString() + '/24'
     } else if (num_answered < 24){
