@@ -381,16 +381,14 @@ function setQuestionAnswered(cname, level, question, value){
       var child= parent.querySelectorAll("label");
       var ans = child[numAns]
 
-      document.getElementById("resultsText").style.visibility = "visible";
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         document.getElementById("correctSound").play();
         document.getElementById("backgroundMusic").pause();
         //document.getElementById("timer").src="images/successFINAL.gif";
-        document.getElementById("resultsText").innerHTML = "Correct!";
+        document.getElementById("submit").innerHTML = "Correct!";
         ans.style.color = "lightgreen";
-        //resultsContainer.innerHTML = 'Correct!';
         setTimeout(explanation, 3000)
         numCorrect++;
 
@@ -403,7 +401,7 @@ function setQuestionAnswered(cname, level, question, value){
         // color the answers red
         document.getElementById("incorrectSound").play();
         ans.style.color = "grey";
-        document.getElementById("resultsText").innerHTML = "Try again!";
+        document.getElementById("submit").innerHTML = "Try again!";
         correctness = 1;
       }
     });

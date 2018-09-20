@@ -102,8 +102,9 @@ header.masthead hr {
 }
 
 header.masthead h1 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: left;
+  font-weight: 700;
 }
 
 header.masthead p {
@@ -202,18 +203,19 @@ header.masthead p {
   padding: 1rem 2rem;
 }
 
-.btn-primary {
-  background-color: orange;
-  border-color: orange;
+.btn-primary , .btn-primary:focus {
+  background-color: orange !important;
+  border-color: orange !important;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: #ee4b28 ;
 }
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  background: #ee4b28;
 }
 
 div.wrap {
@@ -229,7 +231,7 @@ div.wrap {
     width: 100%; /*can be in percentage also.*/
     height: auto;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px;
     position: relative;
 }
 
@@ -241,7 +243,7 @@ div.wrap {
   right: 5px;
 }
 
-.resultsText {
+#resultsText {
   margin-top: 2%;
   color: white;
   font-size: 75%;
