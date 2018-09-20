@@ -336,11 +336,11 @@ div.square{
 
    .arrow {
      font-size: 1.2rem;
-     margin-left: -13px;
+     margin-left: -17px;
      padding-left: 0px;
    }
    .navbar-toggler{
-     margin-right: -13px;
+     margin-right: -17px;
    }
 
    a, a:hover, a:active, a:visited, a:focus {
