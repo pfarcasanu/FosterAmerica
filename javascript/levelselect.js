@@ -8,7 +8,7 @@ window.onload = function(){
   output = "Let's go!"
 	if (str == ""){
     str = "array=" + empty_str;
-    document.cookie = str;
+    document.cookie = str+";max-age="+(3600*24*999);
   } else {
     // calculate num answered questions
     var array = str.split("|").join().split(",");
@@ -30,7 +30,7 @@ window.onload = function(){
 }
 
 function setCookie(cname, new_level) {
-    document.cookie = cname + "=" + new_level;
+    document.cookie = cname + "=" + new_level+";max-age="+(3600*24*999);
 }
   
 function getCookie(cname) {

@@ -60,7 +60,7 @@ function setQuestionAnswered(cname, level, question, value){
   q_arr[question] = value.toString();
   level_arr[level] = q_arr.join(",");
   str = level_arr.join("|");
-  document.cookie = cname + "=" + str;
+  document.cookie = cname + "=" + str+";max-age="+(3600*24*999);
 }
 
 (function() {

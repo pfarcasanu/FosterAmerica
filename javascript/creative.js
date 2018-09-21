@@ -9,12 +9,12 @@ function buttonClick() {
       window.location.href = "levelselect_new.html";
       }
     else{
-    document.cookie = "disclaimer=0";
+    document.cookie = "disclaimer=0;max-age=315360000";
     window.location.href = "disclaimer.html";
     }
   }  
 }
-
++";max-age="+(3600*24);
 
 function buttonClick2() {
   button_sound.play();

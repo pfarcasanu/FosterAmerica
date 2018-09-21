@@ -89,7 +89,7 @@ if (level == 5) {
 }
           
 function setQuestionCookie(cname, new_question) {
-    document.cookie = cname + "=" +  new_question + ";";
+    document.cookie = cname + "=" +  new_question + ";max-age="+(3600*24*999);
 }
     
 function questionWasPressed(q_number) {
