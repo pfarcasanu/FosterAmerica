@@ -73,7 +73,7 @@ function setQuestionAnswered(cname, level, question, value){
         c: "To give the state a larger role in raising children",
         d: "To punish parents who neglect their children"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },
     {
       question: "Who was the founder of the modern foster care system?",
