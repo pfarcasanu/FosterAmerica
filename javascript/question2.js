@@ -66,45 +66,44 @@ function setQuestionAnswered(cname, level, question, value){
 (function() {
   const level1_questions = [
     {
+      question: "How many children are in foster care in the U.S.?",
+      answers: {
+        a: "231,000", 
+        b: "437,000",
+        c: "687,000",
+        d: "1.2 million"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "What's the average length of time children spend in foster care?",
+      answers: {
+        a: "6 months",
+        b: "1 year",
+        c: "2 years",
+        d: "4 years"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "What is the most common reason children are placed in foster care?",
+      answers: {
+        a: "Outside observers report abuse to local authorities",
+        b: "The children seek help",
+        c: "Drug abuse",
+        d: "Children's basic needs neglected"
+      },
+      correctAnswer: "c"
+    },
+    {
       question: "What is the purpose of the foster care system?",
       answers: {
-        a: "To remove children from parents until they obtain parenting licenses", 
-        b: "To care for children who have been removed from their biological parents due to abuse, neglect or parental incapacity until a permanent placement can be found",
-        c: "To give the state a larger role in raising children",
-        d: "To punish parents who neglect their children"
+        a: "To remove children from unfit parents",
+        b: "To give the state a larger role in overseeing abused children",
+        c: "To care for children who have been removed from biological parents due to abuse, neglect or parental incapacity until a permanent placement can be found",
+        d: "To put abused children in permanent care of other families",
       },
-      correctAnswer: "b"
-    },
-    {
-      question: "Who was the founder of the modern foster care system?",
-      answers: {
-        a: "Charles L. Brace",
-        b: "J.P. Morgan",
-        c: "Grover Cleveland",
-        d: "John D. Rockefeller"
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "What is the most common reason children wind up removed from their parents and placed in foster care?",
-      answers: {
-        a: "Neglect by parents",
-        b: "Physical abuse by parents",
-        c: "Parents cannot afford to raise them",
-        d: "Drug abuse by parents"
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "Which of these stars spent time in foster care?",
-      answers: {
-        a: "Marilyn Monroe",
-        b: "Eddie Murphy",
-        c: "Sylvester Stallone",
-        d: "Tiffany Haddish",
-        e: "All the above",
-      },
-      correctAnswer: "e"
+      correctAnswer: "c"
     }
   ];
 
