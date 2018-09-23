@@ -226,8 +226,9 @@ div.square{
 
 .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    /*grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;*/
+    grid-template-rows: 25% 25% 25% 25%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -249,20 +250,36 @@ div.square{
   }
 
   .anybox{
-    text-align: center;
     color: white;
-    padding-top: 14vh;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    padding-top: 8vh;
+    padding-left: 5%;
+    font-size: 2rem;
   }
 
-  .box1 {
-    /*background-image: url(levelbackground.jpg), url(blueborder2.png);
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 93% 90%, 100% 100%;*/
-    /*border-color: white;
-    border-style: solid;
-    border-width: 6px;*/
+  .box-arr{
+    position: fixed;
+    right: 5%;
+    margin-top: 2.5vh;
+  }
+   
+  .box1{
+    background-color: #FFAF04;
+  }
+
+  .box2 {
+    background-color: #5790A9;
+  }
+
+  .box3 {
+    background-color: #346B80;
+  }
+
+  .box4 {
+    background-color: #285C71;
+  }
+
+  /*.box1 {
     margin-left: 7%;
     margin-top: 3vh;
     margin-bottom: 1.5vh;
@@ -270,13 +287,6 @@ div.square{
   }
 
   .box2 {
-    /*background-image: url(levelbackground.jpg), url(blueborder2.png);
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 93% 90%, 100% 100%;*/
-    /*border-color: white;
-    border-style: solid;
-    border-width: 6px;*/
     margin-right: 7%;
     margin-top: 3vh;
     margin-left: 3.5%;
@@ -284,13 +294,6 @@ div.square{
   }
 
   .box3 {
-    /*background-image: url(levelbackground.jpg), url(blueborder2.png);
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 93% 90%, 100% 100%;*/
-    /*border-color: white;
-    border-style: solid;
-    border-width: 6px;*/
     margin-left: 7%;
     margin-bottom: 3vh;
     margin-right: 3.5%;
@@ -298,13 +301,6 @@ div.square{
   }
 
   .box4 {
-    /*background-image: url(levelbackground.jpg), url(blueborder2.png);
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 93% 90%, 100% 100%;*/
-    /*border-color: white;
-    border-style: solid;
-    border-width: 6px;*/
     margin-right: 7%;
     margin-bottom: 3vh;
     margin-left: 3.5%;
@@ -314,7 +310,7 @@ div.square{
   .rounded {
     border-radius: 1000px;
     background-color: orange;
-  }
+  }*/
 
   .ghost-button {
     color: white;
