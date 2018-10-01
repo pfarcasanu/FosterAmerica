@@ -109,59 +109,55 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level2_questions = [
     {
-      question: "What is the total number of children who interact with the foster care system annually?",
+      question: "Who was the founder of the modern foster care system?",
       answers: {
-        a: "452,000",
-        b: "687,000",
-        c: "836,000"
+        a: "Grover Cleveland",
+        b: "Charles Loring Brace",
+        c: "Patrick James McCarthy",
+        d: "John D. Rockefeller"
       },
       correctAnswer: "b"
     },
     {
-      question: "What is the average length of time children spend in foster care?",
+      question: "Which of these stars spent time in foster care?",
       answers: {
-        a: "6 months",
-        b: "1 years",
-        c: "2 years"
+        a: "Marilyn Monroe",
+        b: "Eddie Murphy",
+        c: "Tiffany Haddish",
+        d: "Sylvester Stallone",
+        e: "All of the above"
       },
-      correctAnswer: "c"
+      correctAnswer: "e"
     },
     {
-      question: "What is the average age of kids entering foster care?",
+      question: "What is the average number of moves experienced by foster children while in the foster system?",
       answers: {
-        a: "5",
-        b: "7",
-        c: "9"
+        a: "1-2",
+        b: "3-4",
+        c: "5 or more",
+        d: "They usually don't move once they're placed"
       },
       correctAnswer: "b"
     },{
-      question: "What percentage of foster children end up getting adopted?",
+      question: "What percentage of foster kids have reunification with their biological parents as their goal?",
       answers: {
-        a: "All foster kids eventually get adopted.",
-        b: "About 25%",
-        c: "About 50%",
-        d: "Foster kids can’t be adopted."
+        a: "Less than 10%",
+        b: "28%",
+        c: "55%",
+        d: "84%"
       },
-      correctAnswer: "b"
+      correctAnswer: "c"
     }
   ];
 
   const level3_questions = [
     {
-      question: "What percentage of foster kids have reunification with their biological parents as their goal?",
-      answers: {
-        a: "55%",
-        b: "75%",
-        c: "95%"
-      },
-      correctAnswer: "a"
-    },
-    {
       question: "What percentage of foster children are separated from their siblings while in foster care?",
       answers: {
-        a: "30%",
+        a: "25%",
         b: "40%",
-        c: "50%"
+        c: "55%",
+        d: "63%"
       },
       correctAnswer: "b"
     },
@@ -170,82 +166,94 @@ function setQuestionAnswered(cname, level, question, value){
       answers: {
         a: "Yes",
         b: "No",
-        c: "Only if their social workers thinks it’s okay",
-        d: "If their foster parents think it’s okay"
+        c: "Only if their social workers allow",
+        d: "Only if their foster parents allow"
+      },
+      correctAnswer: "d"
+    },
+    {
+      question: "What percentage of female foster children become pregnant while still in their teens?",
+      answers: {
+        a: "20%",
+        b: "25%",
+        c: "50%",
+        d: "More than 50%"
       },
       correctAnswer: "d"
     },{
-      question: "What is the average number of moves experienced by foster children while in the foster system?",
+      question: "Approximately what percentage of adopted foster care kids are adopted by their foster parents?",
       answers: {
-        a: "1-2",
-        b: "3-4",
-        c: "5 or more"
+        a: "15%",
+        b: "25%",
+        c: "33%",
+        d: "50%"
       },
-      correctAnswer: "c"
+      correctAnswer: "d"
     }
   ];
 
   const level4_questions = [
     {
-      question: "How much money do foster parents receive per day for taking care of a foster child?",
+      question: "What percentage of foster youth who leave the system without finding a permanent home (age out) become incarcerated?",
       answers: {
-        a: "$10 to $20 a day",
-        b: "$30 to $40 a day",
-        c: "$40 to $50 a day",
-        d: "Over $50 a day"
+        a: "10%",
+        b: "25%",
+        c: "40%",
+        d: "50%"
       },
       correctAnswer: "b"
     },
     {
-      question: "How much do local, state and federal government agencies spend on the foster care system annually?",
+      question: "What percentage of former foster children become homeless once they age out of the system?",
       answers: {
-        a: "$25B to $30B ",
-        b: "$35B to $40B",
-        c: "$40B to $45B"
+        a: "20%",
+        b: "25%",
+        c: "40%",
+        d: "45%"
       },
       correctAnswer: "a"
     },
     {
-      question: "What is the average cost to raise a child in the United States? ",
+      question: "What percentage of foster children graduate high school?",
       answers: {
-        a: "$100,000 to $150,000",
-        b: "$150,000 to $200,000",
-        c: "$200,000 to $250,000",
-        d: "$300,000 or more"
+        a: "33%",
+        b: "58%",
+        c: "70%",
+        d: "87%"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },{
-      question: "At what age do foster kids stop receiving foster care support?",
+      question: "What percentage of former foster children go on to get college degrees?",
       answers: {
-        a: "16",
-        b: "18",
-        c: "21",
-        d: "It depends."
+        a: "3%",
+        b: "26%",
+        c: "48%",
+        d: "75%"
       },
-      correctAnswer: "d"
+      correctAnswer: "a"
     }
   ];
 
   const level5_questions = [
     {
-      question: "What percentage of foster youth who “age out” of the system without finding a permanent home become incarcerated within two years?",
+      question: "How much do local, state and federal government agencies spend on the foster care system annually?",
       answers: {
-        a: "10%",
-        b: "25%",
-        c: "50%",
-        d: "Pretty much all of them."
+        a: "Nearly $8 billion",
+        b: "$29 billion",
+        c: "$60 billion",
+        d: "Over $100 billion"
       },
       correctAnswer: "b"
     },
     {
-      question: "What percentage of foster children graduate high school?",
+      question: "How much money do foster parents receive on average per day for taking care of a foster child?",
       answers: {
-        a: "58%",
-        b: "67%",
-        c: "79%",
-        d: "87%"
+        a: "They do not receive any money",
+        b: "Between $20-$25/day",
+        c: "$75/day",
+        d: "$100-$150/day"
       },
-      correctAnswer: "a"
+      correctAnswer: "b"
     },
     {
       question: "What percentage of former foster children go on to get college degrees?",
