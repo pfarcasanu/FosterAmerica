@@ -47,7 +47,7 @@ if (level == 1) {
         fanfair_sound.play();
         FadeBackground("factsandfigures");
     }
-    document.getElementById("category").innerHTML = "Facts and Figures";
+    document.getElementById("category").innerHTML = "Diary of a Foster Kid";
 }
     
 if (level == 2) {
@@ -56,7 +56,7 @@ if (level == 2) {
         fanfair_sound.play();
         FadeBackground("diaryofanorphan");
     }
-    document.getElementById("category").innerHTML = "Diary of an Orphan";
+    document.getElementById("category").innerHTML = "So Now You're 18";
 }
     
 if (level == 3) {
@@ -74,7 +74,7 @@ if (level == 4) {
         fanfair_sound.play();
         FadeBackground("soyouturned18");
     }
-    document.getElementById("category").innerHTML = "So You Turned 18";
+    document.getElementById("category").innerHTML = "Facts and Figures";
 }
     
 if (level == 5) {
