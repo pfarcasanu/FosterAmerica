@@ -109,44 +109,16 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level2_questions = [
     {
-<<<<<<< Updated upstream
-      question: "Who was the founder of the modern foster care system?",
-      answers: {
-        a: "Grover Cleveland",
-        b: "Charles Loring Brace",
-        c: "Patrick James McCarthy",
-        d: "John D. Rockefeller"
-=======
       question: "What percentage of foster children are separated from their siblings while in foster care?",
       answers: {
         a: "25%",
         b: "40%",
         c: "55%",
         d: "63%"
->>>>>>> Stashed changes
       },
       correctAnswer: "b"
     },
     {
-<<<<<<< Updated upstream
-      question: "Which of these stars spent time in foster care?",
-      answers: {
-        a: "Marilyn Monroe",
-        b: "Eddie Murphy",
-        c: "Tiffany Haddish",
-        d: "Sylvester Stallone",
-        e: "All of the above"
-      },
-      correctAnswer: "e"
-    },
-    {
-      question: "What is the average number of moves experienced by foster children while in the foster system?",
-      answers: {
-        a: "1-2",
-        b: "3-4",
-        c: "5 or more",
-        d: "They usually don't move once they're placed"
-=======
       question: "What percentage of foster children become pregnant while still in their teens?",
       answers: {
         a: "20%",
@@ -163,25 +135,15 @@ function setQuestionAnswered(cname, level, question, value){
         b: "About 30%",
         c: "More than 50%",
         d: "Foster kids are ineligible for adoption"
->>>>>>> Stashed changes
       },
       correctAnswer: "a"
     },{
-<<<<<<< Updated upstream
-      question: "What percentage of foster kids have reunification with their biological parents as their goal?",
-      answers: {
-        a: "Less than 10%",
-        b: "28%",
-        c: "55%",
-        d: "84%"
-=======
       question: "What's the average length of time children spend in foster care?",
       answers: {
         a: "6 months",
         b: "1 year",
         c: "2 years",
         d: "4 years"
->>>>>>> Stashed changes
       },
       correctAnswer: "c"
     }
@@ -189,14 +151,6 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level3_questions = [
     {
-<<<<<<< Updated upstream
-      question: "What percentage of foster children are separated from their siblings while in foster care?",
-      answers: {
-        a: "25%",
-        b: "40%",
-        c: "55%",
-        d: "63%"
-=======
       question: "What percentage of foster youth who leave the system without finding a permanent home ('age out') become incarcerated?",
       answers: {
         a: "10%",
@@ -213,47 +167,19 @@ function setQuestionAnswered(cname, level, question, value){
         b: "25%",
         c: "40%",
         d: "45%"
->>>>>>> Stashed changes
       },
       correctAnswer: "a"
     },
     {
       question: "What percentage of foster children graduate high school? ",
       answers: {
-<<<<<<< Updated upstream
-        a: "Yes",
-        b: "No",
-        c: "Only if their social workers allow",
-        d: "Only if their foster parents allow"
-      },
-      correctAnswer: "d"
-    },
-    {
-      question: "What percentage of female foster children become pregnant while still in their teens?",
-      answers: {
-        a: "20%",
-        b: "25%",
-        c: "50%",
-        d: "More than 50%"
-=======
         a: "33%",
         b: "58%",
         c: "70%",
         d: "87%"
->>>>>>> Stashed changes
       },
       correctAnswer: "b"
     },{
-<<<<<<< Updated upstream
-      question: "Approximately what percentage of adopted foster care kids are adopted by their foster parents?",
-      answers: {
-        a: "15%",
-        b: "25%",
-        c: "33%",
-        d: "50%"
-      },
-      correctAnswer: "d"
-=======
       question: "What percentage of former foster children go on to get college degrees?",
       answers: {
         a: "3%",
@@ -262,65 +188,37 @@ function setQuestionAnswered(cname, level, question, value){
         d: "75%"
       },
       correctAnswer: "a"
->>>>>>> Stashed changes
     }
   ];
 
   const level4_questions = [
     {
-<<<<<<< Updated upstream
-      question: "What percentage of foster youth who leave the system without finding a permanent home (age out) become incarcerated?",
-      answers: {
-        a: "10%",
-        b: "25%",
-        c: "40%",
-        d: "50%"
-=======
       question: "How much do local, state and federal government agencies spend on the foster care system annually?",
       answers: {
         a: "Nearly $8 billion",
         b: "$29 billion",
         c: "$63 billion",
         d: "Over $100 billion"
->>>>>>> Stashed changes
       },
       correctAnswer: "b"
     },
     {
-<<<<<<< Updated upstream
-      question: "What percentage of former foster children become homeless once they age out of the system?",
-      answers: {
-        a: "20%",
-        b: "25%",
-        c: "40%",
-        d: "45%"
-=======
       question: "What percentage of college tuition is covered by government grants for former foster youth on average?",
       answers: {
         a: "None",
         b: "It varies greatly by state",
         c: "50%, if they attend a state school",
         d: "Various generous options are available"
->>>>>>> Stashed changes
       },
       correctAnswer: "d"
     },
     {
-<<<<<<< Updated upstream
-      question: "What percentage of foster children graduate high school?",
-      answers: {
-        a: "33%",
-        b: "58%",
-        c: "70%",
-        d: "87%"
-=======
       question: "How much money do foster parents receive on average per day for taking care of a foster child?",
       answers: {
         a: "They do not receive any money",
         b: "Between $20-$25/day",
         c: "$75/day",
         d: "$100-$150/day"
->>>>>>> Stashed changes
       },
       correctAnswer: "b"
     },{
@@ -337,35 +235,16 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level5_questions = [
     {
-<<<<<<< Updated upstream
-      question: "How much do local, state and federal government agencies spend on the foster care system annually?",
-      answers: {
-        a: "Nearly $8 billion",
-        b: "$29 billion",
-        c: "$60 billion",
-        d: "Over $100 billion"
-=======
       question: "How many children are in foster care in the U.S.?",
       answers: {
         a: "231,000",
         b: "437,000",
         c: "687,000",
         d: "1.2 million"
->>>>>>> Stashed changes
       },
       correctAnswer: "c"
     },
     {
-<<<<<<< Updated upstream
-      question: "How much money do foster parents receive on average per day for taking care of a foster child?",
-      answers: {
-        a: "They do not receive any money",
-        b: "Between $20-$25/day",
-        c: "$75/day",
-        d: "$100-$150/day"
-      },
-      correctAnswer: "b"
-=======
       question: "Between 2012 and 2017, how many states had fewer beds available in foster homes than were needed for the number of foster children in their system?",
       answers: {
         a: "Less than 10%",
@@ -374,7 +253,6 @@ function setQuestionAnswered(cname, level, question, value){
         d: "Every state"
       },
       correctAnswer: "c"
->>>>>>> Stashed changes
     },
     {
       question: "What's the average length of time children spend in foster care? ",
