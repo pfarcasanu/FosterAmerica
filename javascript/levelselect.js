@@ -20,7 +20,7 @@ window.onload = function(){
     } else if ( num_answered < 20){
       output = num_answered.toString() + '/24'
     } else if (num_answered < 24){
-      output = "Almost there! (" + num_answered.toString() + '/24)'
+      output = num_answered.toString() + '/24'
     }
     if (num_answered == 24){
       window.location = "email.html"
