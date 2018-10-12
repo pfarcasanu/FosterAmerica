@@ -76,7 +76,7 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "b"
     },
     {
-      question: "Which of these stars spent time in foster care? ",
+      question: "Which of these stars spent time in foster care?",
       answers: {
         a: "Marilyn Monroe",
         b: "Eddie Murphy",
@@ -91,12 +91,12 @@ function setQuestionAnswered(cname, level, question, value){
         a: "Drug abuse",
         b: "Outside observers report abuse to local authorities",
         c: "The children seek help",
-        d: "Children's basic needs are neglected"
+        d: "Children's basic needs neglected"
       },
       correctAnswer: "a"
     },
     {
-      question: "How many times do foster care chidren change schools each academic year?",
+      question: "How many times do foster care children change schools each academic year?",
       answers: {
         a: "1",
         b: "1-2",
@@ -129,7 +129,7 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "d"
     },
     {
-      question: "What percentage of foster children end up getting adopted?  ",
+      question: "What percentage of foster children end up getting adopted?",
       answers: {
         a: "Less than 25%",
         b: "About 30%",
@@ -138,7 +138,7 @@ function setQuestionAnswered(cname, level, question, value){
       },
       correctAnswer: "a"
     },{
-      question: "What's the average length of time children spend in foster care?",
+      question: "What's the average length of time children spent in foster care?",
       answers: {
         a: "6 months",
         b: "1 year",
@@ -151,7 +151,7 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level3_questions = [
     {
-      question: "What percentage of foster youth who leave the system without finding a permanent home ('age out') become incarcerated?",
+      question: "What percentage of foster youth who leave the system without finding a permanent home (age out) become incarcerated?",
       answers: {
         a: "10%",
         b: "25%",
@@ -171,7 +171,7 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "a"
     },
     {
-      question: "What percentage of foster children graduate high school? ",
+      question: "What percentage of foster children graduate high school?",
       answers: {
         a: "33%",
         b: "58%",
@@ -193,12 +193,22 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level4_questions = [
     {
-      question: "How much do local, state and federal government agencies spend on the foster care system annually?",
+      question: "How much do local, state, and federal government agencies spend on the foster system annually?",
       answers: {
         a: "Nearly $8 billion",
         b: "$29 billion",
         c: "$63 billion",
         d: "Over $100 billion"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "How much money do foster parents receive on average per day for taking care of a foster child?",
+      answers: {
+        a: "They do not receive any money",
+        b: "Between $20-$25/day",
+        c: "$75/day",
+        d: "$100-$150/day"
       },
       correctAnswer: "b"
     },
@@ -211,25 +221,15 @@ function setQuestionAnswered(cname, level, question, value){
         d: "Various generous options are available"
       },
       correctAnswer: "d"
-    },
-    {
-      question: "How much money do foster parents receive on average per day for taking care of a foster child?",
-      answers: {
-        a: "They do not receive any money",
-        b: "Between $20-$25/day",
-        c: "$75/day",
-        d: "$100-$150/day"
-      },
-      correctAnswer: "b"
     },{
-      question: "What percentage of former foster children go on to get college degrees?",
+      question: "At what age do foster kids stop receiving foster care support?",
       answers: {
-        a: "3%",
-        b: "26%",
-        c: "48%",
-        d: "75%"
+        a: "16",
+        b: "18",
+        c: "21",
+        d: "It depends"
       },
-      correctAnswer: "a"
+      correctAnswer: "d"
     }
   ];
 
@@ -250,12 +250,12 @@ function setQuestionAnswered(cname, level, question, value){
         a: "Less than 10%",
         b: "Less than 25%",
         c: "More than 50%",
-        d: "Every state"
+        d: "In every state"
       },
       correctAnswer: "c"
     },
     {
-      question: "What's the average length of time children spend in foster care? ",
+      question: "What's the average length of time children spend in foster care?",
       answers: {
         a: "6 months",
         b: "1 year",
@@ -279,7 +279,7 @@ function setQuestionAnswered(cname, level, question, value){
     {
       question: "What is the largest generation living in the United States today?",
       answers: {
-        a: "Baby Boomers (between ages 55-75)",
+        a: "Baby Boomers (between ages ~55-75)",
         b: "Generation X (35-55)",
         c: "Millenials (25-35)",
         d: "Generation Z (15-25)"
@@ -297,7 +297,7 @@ function setQuestionAnswered(cname, level, question, value){
       correctAnswer: "a"
     },
     {
-      question: "In March, 2018, the Family First Prevention Services Act was passed into federal law. How many years ago did the last piece of major foster care legislation pass?",
+      question: "In March, 2018, the Family First Prevention Services Act was passed into federal law.  How many years ago did the last piece of major foster care legislation pass?",
       answers: {
         a: "10",
         b: "20",
