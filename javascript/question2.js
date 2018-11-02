@@ -250,7 +250,7 @@ function setQuestionAnswered(cname, level, question, value){
         a: "Less than 10%",
         b: "Less than 25%",
         c: "More than 50%",
-        d: "In every state"
+        d: "Every state"
       },
       correctAnswer: "c"
     },
