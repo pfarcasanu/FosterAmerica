@@ -193,7 +193,7 @@ function setQuestionAnswered(cname, level, question, value){
 
   const level4_questions = [
     {
-      question: "How much do local, state, and federal government agencies spend on the foster system annually?",
+      question: "How much do local, state, and federal government agencies spend on the foster care system annually?",
       answers: {
         a: "Nearly $8 billion",
         b: "$29 billion",
