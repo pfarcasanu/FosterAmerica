@@ -138,7 +138,7 @@ function setQuestionAnswered(cname, level, question, value){
       },
       correctAnswer: "a"
     },{
-      question: "What's the average length of time children spent in foster care?",
+      question: "What's the average length of time children spend in foster care?",
       answers: {
         a: "6 months",
         b: "1 year",
