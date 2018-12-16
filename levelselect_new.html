@@ -40,12 +40,12 @@
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="credits.html">Credits</a>
               </li>
-              <!--li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="email.html">Learn More</a>
-                </li-->
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio" onmousedown="ResetGame()">Reset Game</a>
-                  </li>
+                </li>
+                <li class="nav-item">
+                  <a id = "mutebtn" class="nav-link js-scroll-trigger" onclick="mutebtn_click()">Mute</a>
+                </li>
           </ul>
         </div>
       </div>
@@ -85,6 +85,8 @@
     <script async src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script async src="javascript/levelselect.js"></script>
     <audio id="buttonSound" src="music/zap.mp3" preload="auto"></audio>
+
+    <script src="javascript/mute.js"></script>
 
   </body>
 </html>
