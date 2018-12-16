@@ -18,7 +18,7 @@ function getCookie(cname) {
 }
 
 // On load and On Click
-window.onload = function mutebtn_click(){
+function mutebtn_click(){
   var muted = getCookie("mute");
   if (muted == ""){
     document.cookie = "muted=0";
@@ -27,6 +27,10 @@ window.onload = function mutebtn_click(){
   muted = parseInt(muted);
   MuteOperations(muted);
   UpdateUI(muted);
+}
+
+window.onload = function(){
+  mutebtn_click();
 }
 
 // Muting and Unmuting
