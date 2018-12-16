@@ -55,12 +55,10 @@ function UpdateUI(muted){
 
 function mute(elem) {
   elem.muted = true;
-  elem.pause();
 }
 
 function unmute(elem){
   elem.muted = false;
-  elem.play();
 }
 
 
