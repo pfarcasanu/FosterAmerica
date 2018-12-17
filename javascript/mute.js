@@ -20,7 +20,7 @@ function getCookie(cname) {
 
 // On load and On Click
 function LoadPageMute(){
-  var muted = getCookie("mute");
+  var muted = getCookie("muted");
   if (muted == ""){
     document.cookie = "muted=0";
     muted = 0; 
@@ -32,7 +32,7 @@ function LoadPageMute(){
 }
 
 function mutebtn_click(){
-  var muted = getCookie("mute");
+  var muted = getCookie("muted");
   console.log("mute pressed. Cookie: ", muted );
   if (muted == ""){
     document.cookie = "muted=0";
@@ -45,7 +45,7 @@ function mutebtn_click(){
     muted = 1;
   }
   document.cookie = "muted=" + muted;
-  console.log("mute = ", muted);
+  console.log("mute = ", getCookie);
   MuteOperations(muted);
   UpdateUI(muted);
 }
