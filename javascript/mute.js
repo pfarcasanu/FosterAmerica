@@ -1,5 +1,5 @@
 // if a mute button exists, pull that element
-var mute_btn = document.getElementById("mute_btn");
+var mute_btn = document.getElementById("mutebtn");
 addLoadEvent(LoadPageMute);
 
 // Cookie Ops
@@ -62,6 +62,7 @@ function MuteOperations(muted){
 
 function UpdateUI(muted){
   console.log("update UI called");
+  console.log(mute_btn);
   if (mute_btn != null){
     if (muted){
       mute_btn.innerHTML = "Unmute";
