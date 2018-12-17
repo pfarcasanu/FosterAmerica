@@ -103,7 +103,7 @@ header.masthead hr {
 
 header.masthead h1 {
   font-size: 1.4rem;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
 }
 
@@ -135,7 +135,6 @@ header.masthead p {
   }
   header.masthead h1 {
     font-size: 3rem;
-    text-align: center;
   }
 }
 
