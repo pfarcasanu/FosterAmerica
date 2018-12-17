@@ -45,7 +45,7 @@ function mutebtn_click(){
     muted = 1;
   }
   document.cookie = "muted=" + muted;
-  console.log("mute = ", getCookie);
+  console.log("mute = ", getCookie('muted'));
   MuteOperations(muted);
   UpdateUI(muted);
 }
