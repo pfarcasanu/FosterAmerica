@@ -4,7 +4,7 @@ html{
   overflow: hidden;
   }
   body{
-  position: fixed;
+  position: relative;
   width:100%;
   height:100%;
   overflow: hidden;
@@ -135,6 +135,8 @@ header.masthead p {
   }
   header.masthead h1 {
     font-size: 3rem;
+    word-wrap: break-word;
+    text-align: center;
   }
 }
 
