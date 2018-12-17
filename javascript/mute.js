@@ -20,7 +20,6 @@ function getCookie(cname) {
 
 // On load and On Click
 function LoadPageMute(){
-  console.log("mute pressed");
   var muted = getCookie("mute");
   if (muted == ""){
     document.cookie = "muted=0";
@@ -40,7 +39,11 @@ function mutebtn_click(){
     muted = 0; 
   }
   muted = parseInt(muted);
-  muted = muted ^ muted;
+  if (muted){
+    muted = 0;
+  } else {
+    muted = 1;
+  }
   document.cookie = "muted=" + muted;
   console.log("mute = ", muted);
   MuteOperations(muted);
