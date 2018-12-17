@@ -1,8 +1,12 @@
 var music = document.getElementById("backgroundMusic");
 music.volume = 0.2;
+var muted = getCookie("muted");
+muted = parseInt(muted);
 
 window.onload = function() {
-  music.play();
+  if (!muted) {
+    music.play();
+  }
 }
 
 function newLevel() {
@@ -392,7 +396,9 @@ function setQuestionAnswered(cname, level, question, value){
       // if answer is correct
       if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
-        document.getElementById("correctSound").play();
+        if (!muted){
+          document.getElementById("correctSound").play();
+        }
         document.getElementById("backgroundMusic").pause();
         document.getElementById("timer").src="images/successFINAL.gif";
         document.getElementById("submit").innerHTML = "Correct!";
@@ -407,7 +413,9 @@ function setQuestionAnswered(cname, level, question, value){
       } else {
         // if answer is wrong or blank
         // color the answers red
-        document.getElementById("incorrectSound").play();
+        if (!muted){
+          document.getElementById("incorrectSound").play();
+        }
         ans.style.color = "grey";
         document.getElementById("submit").innerHTML = "Try again!";
         correctness = 1;
