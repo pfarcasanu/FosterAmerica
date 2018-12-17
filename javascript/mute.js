@@ -1,6 +1,6 @@
 // if a mute button exists, pull that element
 var mute_btn = document.getElementById("mute_btn");
-addLoadEvent(mutebtn_click);
+addLoadEvent(LoadPageMute);
 
 // Cookie Ops
 function getCookie(cname) {
@@ -19,6 +19,21 @@ function getCookie(cname) {
 }
 
 // On load and On Click
+
+
+function LoadPageMute(){
+  console.log("mute pressed");
+  var muted = getCookie("mute");
+  if (muted == ""){
+    document.cookie = "muted=0";
+    muted = 0; 
+  }
+  muted = parseInt(muted);
+  console.log("mute = ", muted);
+  MuteOperations(muted);
+  UpdateUI(muted);
+}
+
 function mutebtn_click(){
   console.log("mute pressed");
   var muted = getCookie("mute");
@@ -27,6 +42,7 @@ function mutebtn_click(){
     muted = 0; 
   }
   muted = parseInt(muted);
+  muted = muted ^ muted;
   console.log("mute = ", muted);
   MuteOperations(muted);
   UpdateUI(muted);
