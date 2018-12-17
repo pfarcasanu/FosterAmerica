@@ -19,8 +19,6 @@ function getCookie(cname) {
 }
 
 // On load and On Click
-
-
 function LoadPageMute(){
   console.log("mute pressed");
   var muted = getCookie("mute");
@@ -35,8 +33,8 @@ function LoadPageMute(){
 }
 
 function mutebtn_click(){
-  console.log("mute pressed");
   var muted = getCookie("mute");
+  console.log("mute pressed. Cookie: ", muted );
   if (muted == ""){
     document.cookie = "muted=0";
     muted = 0; 
