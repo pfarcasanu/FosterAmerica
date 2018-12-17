@@ -19,12 +19,14 @@ function getCookie(cname) {
 
 // On load and On Click
 function mutebtn_click(){
+  console.log("mute pressed");
   var muted = getCookie("mute");
   if (muted == ""){
     document.cookie = "muted=0";
     muted = 0; 
   }
   muted = parseInt(muted);
+  console.log("mute = ", muted);
   MuteOperations(muted);
   UpdateUI(muted);
 }
@@ -44,6 +46,7 @@ function MuteOperations(muted){
 }
 
 function UpdateUI(muted){
+  console.log("update UI called");
   if (mute_btn != null){
     if (muted){
       mute_btn.innerHTML = "Unmute";
