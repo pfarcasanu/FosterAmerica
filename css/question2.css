@@ -135,6 +135,8 @@ header.masthead p {
   }
   header.masthead h1 {
     font-size: 3rem;
+    word-wrap: break-word;
+    text-align: center;
   }
 }
 
