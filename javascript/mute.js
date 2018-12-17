@@ -1,5 +1,6 @@
 // if a mute button exists, pull that element
 var mute_btn = document.getElementById("mute_btn");
+addLoadEvent(mutebtn_click);
 
 // Cookie Ops
 function getCookie(cname) {
@@ -31,10 +32,6 @@ function mutebtn_click(){
   UpdateUI(muted);
 }
 
-window.onload = function(){
-  mutebtn_click();
-}
-
 // Muting and Unmuting
 function MuteOperations(muted){
   var elems = document.querySelectorAll("video, audio");
@@ -64,5 +61,17 @@ function unmute(elem){
   elem.muted = false;
 }
 
-
-
+// add load event handler
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
