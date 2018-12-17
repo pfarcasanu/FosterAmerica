@@ -42,8 +42,8 @@ function mutebtn_click(){
     muted = 0; 
   }
   muted = parseInt(muted);
-  document.cookie = "muted=" + muted;
   muted = muted ^ muted;
+  document.cookie = "muted=" + muted;
   console.log("mute = ", muted);
   MuteOperations(muted);
   UpdateUI(muted);
