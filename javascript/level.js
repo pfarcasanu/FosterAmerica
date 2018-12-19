@@ -23,20 +23,11 @@ var fanfair_sound = document.getElementById("fanFair");
     
     
 if (level == 0) {
-    /*if (questions.every(x => x == 0)){
-        document.getElementsByClassName("unclicked btn-3d cyan one")[0].innerHTML = "Click Me!"
-        document.getElementsByClassName("unclicked btn-3d cyan two")[0].innerHTML = "Click Me!"
-        document.getElementsByClassName("unclicked btn-3d cyan three")[0].innerHTML = "Click Me!"
-        document.getElementsByClassName("unclicked btn-3d cyan four")[0].innerHTML = "Click Me!"}
-    else {
-        document.getElementsByClassName("unclicked btn-3d cyan one")[0].innerHTML = "Question 1"
-        document.getElementsByClassName("unclicked btn-3d cyan two")[0].innerHTML = "Question 2"
-        document.getElementsByClassName("unclicked btn-3d cyan three")[0].innerHTML = "Question 3"
-        document.getElementsByClassName("unclicked btn-3d cyan four")[0].innerHTML = "Question 4"}*/
     ChangeBackgroundImageOfGrid("fostercare101blurry");
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
         FadeBackground("fostercare101");
+        CreateNextButton(0);
     }
     document.getElementById("category").innerHTML = "Foster Care 101";
 }
@@ -46,6 +37,7 @@ if (level == 1) {
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
         FadeBackground("factsandfigures");
+        CreateNextButton(1);
     }
     document.getElementById("category").innerHTML = "Diary of a Foster Kid";
 }
@@ -55,6 +47,7 @@ if (level == 2) {
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
         FadeBackground("diaryofanorphan");
+        CreateNextButton(2);
     }
     document.getElementById("category").innerHTML = "So Now You're 18";
 }
@@ -64,6 +57,7 @@ if (level == 3) {
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
         FadeBackground("governmentsasparents");
+        CreateNextButton(3);
     }
     document.getElementById("category").innerHTML = "Uncle Sam";
 }
@@ -73,6 +67,7 @@ if (level == 4) {
     if (questions.every(x => x != 0)){
         fanfair_sound.play();
         FadeBackground("soyouturned18");
+        CreateNextButton(4);
     }
     document.getElementById("category").innerHTML = "Facts and Figures";
 }
@@ -86,6 +81,22 @@ if (level == 5) {
     document.getElementById("category").innerHTML = "We Can Fix It";
         
 }
+}
+
+function CreateNextButton(level){
+    var btn = document.getElementById("nxtBtn");
+    btn.style.visibility = "visible";
+}
+
+function NextButtonClick(){
+    var lvl = getCookie("level");
+    if (lvl != ""){
+        lvl = parseInt(lvl);
+        var cookie = "level=" + (lvl + 1);
+        console.log(cookie);
+        document.cookie = cookie;
+        location.reload();
+    }
 }
           
 function setQuestionCookie(cname, new_question) {

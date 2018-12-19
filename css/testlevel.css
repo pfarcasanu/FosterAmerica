@@ -279,6 +279,14 @@ div.square{
     background-color: #285C71;
   }
 
+  .nextBtn{
+    visibility: hidden;
+    background-color: #FFAF04;
+    position: absolute;
+    bottom: 50%;
+    right: 5px;
+  }
+
   /*.box1 {
     margin-left: 7%;
     margin-top: 3vh;
