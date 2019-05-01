@@ -196,7 +196,7 @@ header.masthead p {
   border: none;
   border-radius: 300px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  color: #212529;
+  color: #ffffff !important;
 }
 
 .btn-xl {
@@ -281,10 +281,8 @@ div.square{
 
   .nextBtn{
     visibility: hidden;
-    background-color: #FFAF04;
-    position: absolute;
-    bottom: 50%;
-    right: 5px;
+    /* background-color: #FFAF04; */
+    /* position: absolute; */
   }
 
   /*.box1 {

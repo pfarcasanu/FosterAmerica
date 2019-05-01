@@ -86,6 +86,7 @@ if (level == 5) {
 function CreateNextButton(level){
     var btn = document.getElementById("nxtBtn");
     btn.style.visibility = "visible";
+    btn.style.color = "green";
 }
 
 function NextButtonClick(){
