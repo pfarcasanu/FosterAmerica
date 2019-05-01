@@ -251,6 +251,10 @@ div.wrap {
   visibility: hidden;
 }
 
+#qLabel {
+  max-width: 600px;
+}
+
 .qcontainer {
   display: block;
   position: relative;
