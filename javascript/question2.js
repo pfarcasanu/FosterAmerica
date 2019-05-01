@@ -400,10 +400,10 @@ function setQuestionAnswered(cname, level, question, value){
           document.getElementById("correctSound").play();
         }
         document.getElementById("backgroundMusic").pause();
-        document.getElementById("timer").src="images/successFINAL.gif";
+        // document.getElementById("timer").src="images/successFINAL.gif";
         document.getElementById("submit").innerHTML = "Correct!";
         ans.style.color = "lightgreen";
-        setTimeout(explanation, 3000)
+        setTimeout(explanation, 2000)
         numCorrect++;
 
         setQuestionAnswered("array", level, question, correctness);
