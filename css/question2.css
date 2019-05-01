@@ -306,8 +306,8 @@ div.wrap {
 
 /* Style the indicator (dot/circle) */
 .qcontainer .checkmark:after {
- 	top: 7px;
-	left: 7px;
+ 	top: 6px;
+	left: 6px;
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
