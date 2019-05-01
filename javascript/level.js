@@ -28,6 +28,7 @@ if (level == 0) {
         fanfair_sound.play();
         FadeBackground("fostercare101");
         CreateNextButton(0);
+        console.log("create new button called");
     }
     document.getElementById("category").innerHTML = "Foster Care 101";
 }
@@ -38,6 +39,7 @@ if (level == 1) {
         fanfair_sound.play();
         FadeBackground("factsandfigures");
         CreateNextButton(1);
+        console.log("create new button called");
     }
     document.getElementById("category").innerHTML = "Diary of a Foster Kid";
 }
@@ -86,7 +88,7 @@ if (level == 5) {
 function CreateNextButton(level){
     var btn = document.getElementById("nxtBtn");
     btn.style.visibility = "visible";
-    btn.style.color = "green";
+    console.log("create new button called");
 }
 
 function NextButtonClick(){
