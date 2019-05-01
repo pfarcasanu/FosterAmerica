@@ -134,8 +134,8 @@ header.masthead p {
     padding-bottom: 0;
   }
   header.masthead h1 {
-    font-size: 3rem;
-    word-wrap: break-word;
+    font-size: 2rem;
+    /* word-wrap: break-word; */
     text-align: center;
   }
 }
@@ -251,9 +251,9 @@ div.wrap {
   visibility: hidden;
 }
 
-#qLabel {
+/* #qLabel {
   max-width: 600px;
-}
+} */
 
 .qcontainer {
   display: block;
