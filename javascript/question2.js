@@ -352,7 +352,6 @@ function setQuestionAnswered(cname, level, question, value){
         answers.push(
           `<label class="qcontainer">
              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
               ${currentQuestion.answers[letter]}
               <span class="checkmark"></span>
            </label>`
