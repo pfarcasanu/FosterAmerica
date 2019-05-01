@@ -333,7 +333,6 @@ function setQuestionAnswered(cname, level, question, value){
   console.log(level)
   console.log(question)
   console.log(myQuestions);
-  console.log("here");
 
   // the user hasn't gotten a  question wrong yet
   var correctness = 2;
@@ -351,10 +350,11 @@ function setQuestionAnswered(cname, level, question, value){
       for (letter in currentQuestion.answers) {
         // ...add an HTML radio button
         answers.push(
-          `<label class="container">
+          `<label class="qcontainer">
              <input type="radio" name="question${questionNumber}" value="${letter}">
               ${letter} :
               ${currentQuestion.answers[letter]}
+              <span class="checkmark"></span>
            </label>`
         );
       }
